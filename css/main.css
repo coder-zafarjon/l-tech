@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: var(--grayscale-950);
+}
+
+:root {
+    --grayscale-50: rgb(249, 250, 251);
+    --grayscale-100: rgb(244, 246, 248);
+    --grayscale-400: rgb(99, 115, 129);
+    --grayscale-800: rgb(33, 43, 54);
+    --grayscale-950: rgb(22, 29, 37);
+    --brand: rgb(43, 103, 227);
+    --brand-variant: rgb(43, 103, 227);
+    --red: rgb(222, 54, 24);
+    --red-container: rgba(222, 54, 24, 0.1);
+    --yellow: rgb(238, 194, 0);
+    --yellow-container: rgba(238, 194, 0, 0.1);
+    --green: rgb(71, 193, 191);
+    --green-container: rgba(71, 193, 191, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0 16px 0;
+}
+
+.top .social-accounts,
+.right-links {
+    display: flex;
+    gap: 12px;
+}
+
+.right-links a {
+    font-size: 14px;
+    color: var(--grayscale-400);
+}
+
+header .line {
+    height: 1px;
+    width: 100%;
+    background: var(--grayscale-100);
+}
+
+header .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 16px 0;
+}
+
+header .search-field {
+    display: flex;
+    gap: 8px;
+    background: var(--grayscale-50);
+    border: 1px solid var(--grayscale-100);
+}
+
+.search-input, .category, .magnify {
+    height: 48px;
+    border: none;
+    background: var(--grayscale-50);
+}
+
+.search-input {
+    border-right: 1px solid var(--grayscale-100);
+    padding: 0 8px 0 8px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 8px 0 8px;
+}
+
+.magnify {
+    width: 48px;
+    background: var(--grayscale-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.icon-buttons .button {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--grayscale-100);
+    cursor: pointer;
+}
