@@ -1,0 +1,1466 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-VariableFont_opsz,wght.ttf");
+}
+@font-face {
+  font-family: "Epilogue";
+  src: url("../fonts/Epilogue/Epilogue-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik/Rubik-VariableFont_wght.ttf");
+}
+:root {
+  --grayscale-50: rgb(249, 250, 251);
+  --grayscale-100: rgb(244, 246, 248);
+  --grayscale-400: rgb(99, 115, 129);
+  --grayscale-800: rgb(33, 43, 54);
+  --grayscale-950: rgb(22, 29, 37);
+  --brand: rgb(43, 103, 227);
+  --brand-variant: rgb(43, 103, 227, 0.7);
+  --red: rgb(222, 54, 24);
+  --red-container: rgba(222, 54, 24, 0.1);
+  --yellow: rgb(238, 194, 0);
+  --yellow-container: rgba(238, 194, 0, 0.1);
+  --green: rgb(71, 193, 191);
+  --green-container: rgba(71, 193, 191, 0.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+input,
+button,
+textarea {
+  outline: none;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  border: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  cursor: text;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand);
+  border-radius: 1em;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+body header#lending {
+  width: 100%;
+  height: 100px;
+  background-color: var(--brand);
+}
+body header#lending .container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+body header#lending nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header#lending nav ul {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+body header#lending nav ul li {
+  list-style: none;
+}
+body header#lending nav ul li a {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+}
+body header#lending a.button {
+  border-radius: 100px;
+  background: #fff;
+  padding: 8px 16px;
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.36px;
+}
+body header#navbar .up .container {
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+body header#navbar .up .container .socials {
+  align-items: center;
+  gap: 12px;
+}
+body header#navbar .up .container .socials a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Inter;
+}
+body header#navbar .up .container .socials a svg {
+  width: 24px;
+  height: 24px;
+}
+body header#navbar .up .container .nav {
+  align-items: center;
+}
+body header#navbar .up .container .nav ul {
+  gap: 24px;
+}
+body header#navbar .up .container .nav ul li {
+  list-style: none;
+}
+body header#navbar .up .container .nav ul li a {
+  color: #637381;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.178px;
+}
+body header#navbar .up .container .nav ul li.lng {
+  align-items: center;
+  gap: 4px;
+}
+body header#navbar .up .container .nav ul li.lng img {
+  width: 20px;
+  margin-right: 4px;
+}
+body header#navbar .up .container .nav ul li.lng span {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.178px;
+}
+body header hr {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f4f6f8;
+}
+body .main header#navbar.down {
+  background: white;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+body .main header#navbar.down .container {
+  height: 90px;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main header#navbar.down .container .wrapper {
+  gap: 37px;
+  align-items: center;
+}
+body .main header#navbar.down .container .wrapper .search {
+  height: 44px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+body .main header#navbar.down .container .wrapper .search input {
+  width: 245px;
+  background: #f9fafb;
+  border-right: 1px solid #f4f6f8;
+  padding: 12px;
+  color: black;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body .main header#navbar.down .container .wrapper .search input::-moz-placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body .main header#navbar.down .container .wrapper .search input::placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body .main header#navbar.down .container .wrapper .search button.types {
+  transition: 0.15s;
+  width: 163px;
+  background: #f9fafb;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+body .main header#navbar.down .container .wrapper .search button.types span {
+  color: #161d25;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body .main header#navbar.down .container .wrapper .search button.types:hover {
+  background: #f4f6f8;
+}
+body .main header#navbar.down .container .wrapper .search button.iconbutton {
+  background: #212b36;
+  width: 44px;
+  border-radius: 2px;
+}
+body .main header#navbar.down .container .wrapper .search button.iconbutton svg {
+  width: 28px;
+  height: 28px;
+  margin-top: 1px;
+}
+body .main header#navbar.down .container .account {
+  align-items: center;
+  gap: 15px;
+}
+body .main header#navbar.down .container .account .iconbutton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #f4f6f8;
+  background: transparent;
+}
+body .main header#navbar.down .container .account .iconbutton svg {
+  margin-top: 1px;
+}
+body .main header#navbar.down .container .account .iconbutton.shop {
+  position: relative;
+}
+body .main header#navbar.down .container .account .iconbutton.shop.active::before {
+  content: "3";
+  color: white;
+  padding-top: 2px;
+  position: absolute;
+  width: 19px;
+  height: 17px;
+  background: #de3618;
+  border-radius: 4px;
+  top: -4px;
+  right: -8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+body .main header#navbar.down .container .account .user-info {
+  align-items: center;
+  gap: 16px;
+}
+body .main header#navbar.down .container .account .user-info .content {
+  gap: 4px;
+}
+body .main header#navbar.down .container .account .user-info .content p {
+  color: var(--Dark-Fill-Lighter, #637381);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.178px;
+}
+body .main header#navbar.down .container .account .user-info .content .setting {
+  gap: 8px;
+}
+body .main header#navbar.down .container .account .user-info .content .setting span {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0.178px;
+}
+body #lending #hero {
+  background-color: var(--brand);
+}
+body #lending #hero .container {
+  padding-top: 32px;
+  height: calc(100svh - 100px);
+  max-height: 1000px;
+}
+body #lending #hero .wrapper {
+  height: 100%;
+  justify-content: space-between;
+}
+body #lending #hero .wrapper .lh1 h1 {
+  color: #fff;
+  font-family: Epilogue;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -4.64px;
+}
+body #lending #hero .wrapper .lh1 .lh2 {
+  width: 50%;
+  gap: 16px;
+  padding-top: 16px;
+}
+body #lending #hero .wrapper .lh1 .lh2 h2 {
+  color: #fff;
+  font-family: Epilogue;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+body #lending #hero .wrapper .lh1 .lh2 .lh3 {
+  gap: 40px;
+}
+body #lending #hero .wrapper .lh1 .lh2 .lh3 .lh4 h3 {
+  color: #fff;
+  font-family: Epilogue;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+body #lending #hero .wrapper .lh1 .lh2 .lh3 .lh4 p {
+  color: #fff;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+body #lending #hero .wrapper img.hero-image {
+  width: 100%;
+}
+body #lending #about .container {
+  padding-top: 100px;
+  gap: 64px;
+}
+body #lending #about .container .wrapper {
+  justify-content: space-between;
+}
+body #lending #about .container .wrapper h1 {
+  color: #000;
+  font-family: Epilogue;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -2.32px;
+  width: 55%;
+}
+body #lending #about .container .wrapper .content {
+  width: 32%;
+  padding-top: 21px;
+  gap: 16px;
+}
+body #lending #about .container .wrapper .content h2 {
+  color: #000;
+  font-family: Epilogue;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+}
+body #lending #about .container .wrapper .content p {
+  color: #000;
+  font-family: Epilogue;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+body #lending #about .container .image-box {
+  width: 100%;
+  background: #151515;
+  padding: 28px;
+  gap: 40px;
+  align-items: center;
+}
+body #lending #about .container .image-box img {
+  width: 50%;
+}
+body #lending #about .container .image-box .content {
+  gap: 16px;
+}
+body #lending #about .container .image-box .content h3 {
+  color: #fff;
+  font-family: Epilogue;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+body #lending #about .container .image-box .content p.description {
+  color: #fff;
+  font-family: Epilogue;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  width: 80%;
+}
+body #lending #about .container .image-box .content a {
+  align-items: center;
+  gap: 8px;
+}
+body #lending #about .container .image-box .content a p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+}
+body #lending #products .container {
+  padding-top: 120px;
+  gap: 64px;
+  padding-bottom: 140px;
+}
+body #lending #products .container .wrapper {
+  justify-content: space-between;
+}
+body #lending #products .container .wrapper h1 {
+  color: #000;
+  font-family: Epilogue;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -2.32px;
+  width: 55%;
+}
+body #lending #products .container .wrapper .content {
+  width: 32%;
+  padding-top: 21px;
+  gap: 16px;
+}
+body #lending #products .container .wrapper .content h2 {
+  color: #000;
+  font-family: Epilogue;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+}
+body #lending #products .container .wrapper .content p {
+  color: #000;
+  font-family: Epilogue;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+body #lending #products .container .products-box {
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+}
+body #lending #products .container .products-box .product {
+  width: 32%;
+  gap: 20px;
+}
+body #lending #products .container .products-box .product img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #lending #products .container .products-box .product .label {
+  justify-content: space-between;
+  align-items: center;
+}
+body #lending #products .container .products-box .product .label p {
+  color: #000;
+  font-family: Epilogue;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+body #lending #products .container .products-box .product .label span {
+  color: #000;
+  text-align: right;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+body #lending #questions {
+  background-color: var(--brand);
+}
+body #lending #questions .container {
+  padding: 100px 0;
+  gap: 100px;
+}
+body #lending #questions .wrapper {
+  width: 40%;
+  gap: 40px;
+}
+body #lending #questions .wrapper h3 {
+  color: #fff;
+  font-family: Epilogue;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+body #lending #questions .wrapper p {
+  color: #fff;
+  font-family: Epilogue;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+body #lending #questions .questions {
+  width: 50%;
+}
+body #lending #questions .questions a.child {
+  padding: 32px 4px;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+}
+body #lending #questions .questions a.child p {
+  color: #fff;
+  font-family: Epilogue;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 105%;
+}
+body #lending #questions .questions a.child svg {
+  width: 32px;
+}
+body #homepage main #hero {
+  height: calc(100svh - 141px);
+  max-height: 800px;
+  background: #f9fafb;
+  position: relative;
+}
+body #homepage main #hero .container {
+  height: 100%;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+body #homepage main #hero .container .content {
+  width: 38%;
+  justify-content: space-between;
+  gap: 8px;
+}
+body #homepage main #hero .container .content p {
+  color: var(--brand);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  margin-bottom: 15px;
+}
+body #homepage main #hero .container .content h1 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 128.571%;
+  letter-spacing: 0.2px;
+  margin-bottom: 17px;
+}
+body #homepage main #hero .container .content h2 {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  margin-bottom: 30px;
+}
+body #homepage main #hero .container .content .buy {
+  margin-bottom: 55px;
+  gap: 22px;
+}
+body #homepage main #hero .container .content .buy button {
+  width: 160px;
+  height: 48px;
+  transition: 0.2s;
+  background: transparent;
+  border: 1px solid var(--brand);
+  color: var(--brand);
+  border-radius: 2px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #homepage main #hero .container .content .buy button:hover {
+  background: var(--brand);
+  color: #fff;
+}
+body #homepage main #hero .container .content .buy button.active {
+  background: var(--brand);
+  color: #fff;
+}
+body #homepage main #hero .container .content .buy button.active:hover {
+  background: #1b52c1 !important;
+}
+body #homepage main #hero .container img {
+  height: 100%;
+  padding-right: 4%;
+  padding-bottom: 1%;
+  max-height: 550px;
+}
+body #homepage main #hero .hero-right-button {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+body #homepage main #advantages {
+  height: 200px;
+  padding: 40px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f4f6f8;
+}
+body #homepage main #advantages .tab {
+  gap: 20px;
+  align-items: center;
+}
+body #homepage main #advantages .tab .column {
+  gap: 4px;
+}
+body #homepage main #advantages .tab h4 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 111.111%;
+  letter-spacing: 0.2px;
+}
+body #homepage main #advantages .tab p {
+  color: #5a7184;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #homepage main #hit-products {
+  padding: 80px 0;
+  gap: 14px;
+}
+body #homepage main #hit-products h2 {
+  color: #161d25;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.444%;
+  letter-spacing: 0.2px;
+}
+body #homepage main #hit-products p.subtitle {
+  color: #959ead;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 28px;
+}
+body #homepage main #hit-products .products {
+  gap: 30px;
+}
+body #homepage main #hit-products .products .card {
+  width: calc((100% - 90px) / 4);
+  transition: 0.15s;
+  height: auto;
+  border-radius: 2px;
+  padding: 20px;
+  z-index: 9;
+  gap: 12px;
+}
+body #homepage main #hit-products .products .card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+body #homepage main #hit-products .products .card:hover .wrapper .actions {
+  visibility: visible;
+  opacity: 1;
+}
+body #homepage main #hit-products .products .card .row {
+  align-items: center;
+  justify-content: space-between;
+}
+body #homepage main #hit-products .products .card .row .empty .sale {
+  display: none;
+  background: rgba(220, 54, 24, 0.1019607843);
+  border-radius: 2px;
+  padding: 2px 9px 4px;
+}
+body #homepage main #hit-products .products .card .row .empty .sale.active {
+  display: block;
+}
+body #homepage main #hit-products .products .card .row .empty .sale span {
+  color: #de3618;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+body #homepage main #hit-products .products .card .row .favorite {
+  background: white;
+  border: 1px solid rgba(196, 205, 213, 0.1019607843);
+  border-radius: 2px;
+  width: 36px;
+  height: 36px;
+}
+body #homepage main #hit-products .products .card .row .favorite svg {
+  width: 24px;
+  height: 24px;
+}
+body #homepage main #hit-products .products .card .row .favorite.active svg path {
+  fill: #454f5b;
+}
+body #homepage main #hit-products .products .card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px;
+}
+body #homepage main #hit-products .products .card .wrapper {
+  position: relative;
+}
+body #homepage main #hit-products .products .card .wrapper .title p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 7px;
+}
+body #homepage main #hit-products .products .card .wrapper .title h4 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+  margin-bottom: 10px;
+}
+body #homepage main #hit-products .products .card .wrapper .title .price p {
+  color: #2b67e3;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+}
+body #homepage main #hit-products .products .card .wrapper .title .price .rate {
+  gap: 4px;
+}
+body #homepage main #hit-products .products .card .wrapper .actions {
+  transition: 0.1s;
+  background: white;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 2.5px;
+  gap: 10px;
+}
+body #homepage main #hit-products .products .card .wrapper .actions button {
+  transition: 0.2s;
+  border: 1px solid #c4cdd5;
+  background: white;
+  height: 40px;
+  border-radius: 2px;
+  gap: 6px;
+  color: #919eab;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #homepage main #hit-products .products .card .wrapper .actions button.active {
+  background: var(--brand);
+  color: #fff;
+}
+body #homepage main #hit-products .products .card .wrapper .actions button.active:hover {
+  background: #1b52c1;
+}
+body #homepage main #hit-products .products .card .wrapper .actions button svg {
+  margin-bottom: 1px;
+}
+body #homepage main #hit-products .products .card .wrapper .actions button:hover {
+  background: var(--brand);
+  color: #fff;
+}
+body #homepage main #hit-products .products .card .wrapper .actions button:hover svg path {
+  fill: #fff;
+}
+body #homepage main #news {
+  height: 440px;
+  padding: 40px 0 60px;
+}
+body #homepage main #news .wrapper {
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(71, 194, 192, 0.1019607843);
+  border-radius: 2px;
+}
+body #homepage main #news .wrapper img {
+  height: 102%;
+  margin-top: 2%;
+}
+body #homepage main #news .wrapper .content {
+  width: 29%;
+  gap: 10px;
+}
+body #homepage main #news .wrapper .content .class {
+  color: #47c1bf;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  margin-bottom: 6px;
+}
+body #homepage main #news .wrapper .content h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.444%;
+  letter-spacing: 0.2px;
+}
+body #homepage main #news .wrapper .content .subtitle {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  margin-bottom: 19px;
+}
+body #homepage main #news .wrapper .content .price {
+  align-items: center;
+  gap: 26px;
+}
+body #homepage main #news .wrapper .content .price button {
+  padding: 13px 28px;
+  background: #47c1bf;
+  border-radius: 2px;
+  transition: 0.2s;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #homepage main #news .wrapper .content .price button:hover {
+  background: #39acaa;
+}
+body #homepage main #news .wrapper .content .price p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-decoration: line-through;
+}
+body #homepage main #categories {
+  padding: 50px 0;
+  gap: 30px;
+}
+body #homepage main #categories .title {
+  justify-content: space-between;
+}
+body #homepage main #categories .title h2 {
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 157.143%;
+  letter-spacing: 0.2px;
+}
+body #homepage main #categories .title a,
+body #homepage main #categories .title button {
+  transition: 0.2s;
+  padding: 12px 22px;
+  border-radius: 4px;
+  border: 2px solid #2b67e3;
+  background: white;
+  color: #2b67e3;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+}
+body #homepage main #categories .title a:hover,
+body #homepage main #categories .title button:hover {
+  background: var(--brand);
+  color: white;
+}
+body #homepage main #categories .categories {
+  gap: 30px;
+}
+body #homepage main #categories .categories .card {
+  width: calc((100% - 150px) / 6);
+  transition: 0.15s;
+  align-items: center;
+  border-radius: 2px;
+  background: white;
+}
+body #homepage main #categories .categories .card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+body #homepage main #categories .categories .card .icon {
+  padding: 46px 0;
+}
+body #homepage main #categories .categories .card h5 {
+  color: #161d25;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  margin-bottom: 8px;
+}
+body #homepage main #categories .categories .card p {
+  color: #959ead;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  margin-bottom: 24px;
+}
+body #homepage main #product-category {
+  padding: 90px 0;
+  gap: 30px;
+  border-bottom: 1px solid #f4f6f8;
+}
+body #homepage main #product-category .tab {
+  width: calc((100% - 60px) / 3);
+  gap: 20px;
+}
+body #homepage main #product-category .tab h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 136.364%;
+  letter-spacing: 0.2px;
+  padding-left: 20px;
+}
+body #homepage main #product-category .tab button.card {
+  gap: 16px;
+  align-items: center;
+  padding: 20px;
+  transition: 0.15s;
+  border-radius: 2px;
+  background: white;
+}
+body #homepage main #product-category .tab button.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+body #homepage main #product-category .tab button.card img {
+  height: 64px;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body #homepage main #product-category .tab button.card .column {
+  min-width: 60%;
+  align-items: start;
+  gap: 8px;
+}
+body #homepage main #product-category .tab button.card .column h4 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #homepage main #product-category .tab button.card .column .price {
+  width: 100%;
+  justify-content: space-between;
+}
+body #homepage main #product-category .tab button.card .column .price p {
+  color: #2b67e3;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #homepage main #product-category .tab button.card .column .price .rate {
+  gap: 6px;
+  align-items: center;
+}
+body #homepage main #product-category .tab button.card .column .price .rate span {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #homepage main #product-category .tab button.all-products {
+  padding: 0 20px;
+  background: white;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+body #homepage main #product-category .tab button.all-products span {
+  color: #2b67e3;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #homepage main #blog {
+  padding: 90px 0 60px;
+  gap: 34px;
+}
+body #homepage main #blog .title {
+  justify-content: space-between;
+  align-items: center;
+}
+body #homepage main #blog .title .column {
+  gap: 8px;
+}
+body #homepage main #blog .title .column h2 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.444%;
+  letter-spacing: 0.2px;
+}
+body #homepage main #blog .title .column p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #homepage main #blog .title a,
+body #homepage main #blog .title button {
+  transition: 0.2s;
+  padding: 12px 22px;
+  border-radius: 4px;
+  border: 2px solid #2b67e3;
+  background: white;
+  color: #2b67e3;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+}
+body #homepage main #blog .title a:hover,
+body #homepage main #blog .title button:hover {
+  background: var(--brand);
+  color: white;
+}
+body #homepage main #blog .wrapper {
+  gap: 30px;
+}
+body #homepage main #blog .wrapper .tab {
+  width: calc((100% - 60px) / 3);
+  transition: 0.15s;
+  border-radius: 2px;
+  background: white;
+  gap: 18px;
+}
+body #homepage main #blog .wrapper .tab img {
+  width: 100%;
+  border-radius: 2px;
+}
+body #homepage main #blog .wrapper .tab .content {
+  gap: 12px;
+}
+body #homepage main #blog .wrapper .tab .content p.date-time {
+  color: #2b67e3;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  margin-bottom: 6px;
+}
+body #homepage main #blog .wrapper .tab .content h4 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 111.111%;
+  letter-spacing: 0.2px;
+}
+body #homepage main #blog .wrapper .tab .content p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #homepage main #partners {
+  padding: 40px 0 60px;
+  gap: 60px;
+  justify-content: space-around;
+  align-items: center;
+}
+body #homepage main #partners .logo {
+  width: 120px;
+  height: 120px;
+  transition: 0.15s;
+  border-radius: 4px;
+  background: white;
+}
+body #homepage main #partners .logo:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+body #categories main {
+  background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 15%, transparent 15%, transparent 100%);
+}
+body #categories main #title-path {
+  padding: 60px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+body #categories main #title-path .column {
+  gap: 8px;
+}
+body #categories main #title-path .column h2 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.444%;
+  letter-spacing: 0.2px;
+}
+body #categories main #title-path .column p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #categories main #title-path .path {
+  align-items: center;
+  gap: 8px;
+}
+body #categories main #title-path .path .pathname {
+  gap: 8px;
+  align-items: center;
+}
+body #categories main #title-path .path .pathname span {
+  color: #5a7184;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #categories main #title-path .path .pathname.active span {
+  color: var(--brand);
+  font-weight: 500;
+}
+body #categories main #title-path .path .right-icon {
+  padding-top: 2px;
+}
+body #categories main #category {
+  gap: 30px;
+  border-bottom: 1px solid #f4f6f8;
+  padding-bottom: 72px;
+}
+body #categories main #category .card {
+  width: calc((100% - 60px) / 3);
+  transition: 0.15s;
+  border-radius: 2px;
+  padding: 20px;
+  border: 1px solid #f4f6f8;
+  background: #fff;
+  gap: 16px;
+}
+body #categories main #category .card:hover {
+  box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.04);
+  border-color: white;
+}
+body #categories main #category .card img {
+  width: 100%;
+  aspect-ratio: 86/50;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+  background: #efefef;
+  margin-bottom: 4px;
+}
+body #categories main #category .card .title {
+  align-items: center;
+  justify-content: space-between;
+}
+body #categories main #category .card .title h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 136.364%;
+  letter-spacing: 0.2px;
+}
+body #categories main #category .card .title p {
+  color: var(--brand);
+  text-align: right;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #categories main #category .card ul li {
+  list-style: none;
+  align-items: center;
+  height: 54px;
+  gap: 8px;
+}
+body #categories main #category .card ul li p {
+  width: 100%;
+  color: #161d25;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #categories main #category .card ul li span {
+  color: #959ead;
+  text-align: right;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #categories main #partners {
+  padding: 80px 0;
+  gap: 14px;
+}
+body #categories main #partners h2 {
+  color: #161d25;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.444%;
+  letter-spacing: 0.2px;
+}
+body #categories main #partners p.subtitle {
+  color: #959ead;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 34px;
+}
+body #categories main #partners .wrapper {
+  gap: 30px;
+}
+body #categories main #partners .wrapper img {
+  width: calc((100% - 90px) / 4);
+  border-radius: 2px;
+  aspect-ratio: 8/5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body footer#lending {
+  padding-bottom: 24px;
+}
+body footer#lending .up {
+  background: white;
+}
+body footer .up {
+  padding: 48px 0;
+  background: #f9fafb;
+}
+body footer .up .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+body footer .up .container .logo {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  width: 30.5%;
+}
+body footer .up .container .logo svg {
+  margin-bottom: 12px;
+}
+body footer .up .container .logo p {
+  color: #5a7184;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+}
+body footer .up .container .nav {
+  gap: 80px;
+  margin-top: 4px;
+}
+body footer .up .container .nav .tab {
+  gap: 16px;
+}
+body footer .up .container .nav .tab h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.237px;
+}
+body footer .up .container .nav .tab a {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+body footer .down {
+  background: #f4f6f8;
+  height: 50px;
+}
+body footer .down .container {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+body footer .down .container p {
+  color: #5a7184;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+body footer .down .container .socials {
+  gap: 24px;
+}
+body footer .down .container .socials a svg {
+  width: 28px;
+  height: 28px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}/*# sourceMappingURL=globals.css.map */

@@ -1,0 +1,309 @@
+#lending {
+  #hero {
+    background-color: var(--brand);
+
+    .container {
+      padding-top: 32px;
+      height: calc(100svh - 100px);
+      max-height: 1000px;
+    }
+
+    .wrapper {
+      height: 100%;
+      justify-content: space-between;
+
+      .lh1 {
+        h1 {
+          color: #fff;
+          font-family: Epilogue;
+          font-size: 90px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%;
+          letter-spacing: -4.64px;
+        }
+
+        .lh2 {
+          width: 50%;
+          gap: 16px;
+          padding-top: 16px;
+
+          h2 {
+            color: #fff;
+            font-family: Epilogue;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+
+          .lh3 {
+            gap: 40px;
+
+            .lh4 {
+              h3 {
+                color: #fff;
+                font-family: Epilogue;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+              }
+
+              p {
+                color: #fff;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+              }
+            }
+          }
+        }
+      }
+
+      img.hero-image {
+        width: 100%;
+      }
+    }
+  }
+
+  #about .container {
+    padding-top: 100px;
+    gap: 64px;
+
+    .wrapper {
+      justify-content: space-between;
+
+      h1 {
+        color: #000;
+        font-family: Epilogue;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -2.32px;
+        width: 55%;
+      }
+
+      .content {
+        width: 32%;
+        padding-top: 21px;
+        gap: 16px;
+
+        h2 {
+          color: #000;
+          font-family: Epilogue;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%;
+          letter-spacing: -0.6px;
+        }
+
+        p {
+          color: #000;
+          font-family: Epilogue;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+        }
+      }
+    }
+
+    .image-box {
+      width: 100%;
+      background: #151515;
+      padding: 28px;
+      gap: 40px;
+      align-items: center;
+
+      img {
+        width: 50%;
+      }
+
+      .content {
+        gap: 16px;
+
+        h3 {
+          color: #fff;
+          font-family: Epilogue;
+          font-size: 62px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%;
+          margin-bottom: 24px;
+        }
+
+        p.description {
+          color: #fff;
+          font-family: Epilogue;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+          width: 80%;
+        }
+
+        a {
+          align-items: center;
+          gap: 8px;
+
+          p {
+            color: #fff;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 200%;
+          }
+        }
+      }
+    }
+  }
+
+  #products .container {
+    padding-top: 120px;
+    gap: 64px;
+    padding-bottom: 140px;
+
+    .wrapper {
+      justify-content: space-between;
+
+      h1 {
+        color: #000;
+        font-family: Epilogue;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -2.32px;
+        width: 55%;
+      }
+
+      .content {
+        width: 32%;
+        padding-top: 21px;
+        gap: 16px;
+
+        h2 {
+          color: #000;
+          font-family: Epilogue;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%;
+          letter-spacing: -0.6px;
+        }
+
+        p {
+          color: #000;
+          font-family: Epilogue;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+        }
+      }
+    }
+
+    .products-box {
+      width: 100%;
+      gap: 20px;
+      justify-content: space-between;
+
+      .product {
+        width: 32%;
+        gap: 20px;
+
+        img {
+          width: 100%;
+          aspect-ratio: 2 / 3;
+          object-fit: cover;
+        }
+
+        .label {
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            color: #000;
+            font-family: Epilogue;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+          }
+
+          span {
+            color: #000;
+            text-align: right;
+            font-family: Epilogue;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+
+  #questions {
+    background-color: var(--brand);
+
+    .container {
+      padding: 100px 0;
+      gap: 100px;
+    }
+
+    .wrapper {
+      width: 40%;
+      gap: 40px;
+
+      h3 {
+        color: #fff;
+        font-family: Epilogue;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+      }
+
+      p {
+        color: #fff;
+        font-family: Epilogue;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+
+    .questions {
+      width: 50%;
+
+      a.child {
+        padding: 32px 4px;
+        align-items: center;
+        gap: 16px;
+        justify-content: space-between;
+
+        p {
+          color: #fff;
+          font-family: Epilogue;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 105%;
+        }
+
+        svg {
+          width: 32px;
+        }
+      }
+    }
+  }
+}

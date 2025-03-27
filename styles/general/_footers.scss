@@ -1,0 +1,96 @@
+footer {
+  &#lending {
+    padding-bottom: 24px;
+    .up {
+      background: white;
+    }
+  }
+
+  .up {
+    padding: 48px 0;
+    background: #f9fafb;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+
+      .logo {
+        display: flex;
+        align-items: start;
+        gap: 16px;
+        width: 30.5%;
+
+        svg {
+          margin-bottom: 12px;
+        }
+
+        p {
+          color: #5a7184;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 145%;
+        }
+      }
+
+      .nav {
+        gap: 80px;
+        margin-top: 4px;
+
+        .tab {
+          gap: 16px;
+
+          h3 {
+            color: #161d25;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+            letter-spacing: 0.237px;
+          }
+
+          a {
+            color: #161d25;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+          }
+        }
+      }
+    }
+  }
+
+  .down {
+    background: #f4f6f8;
+    height: 50px;
+
+    .container {
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: #5a7184;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+
+      .socials {
+        gap: 24px;
+
+        a svg {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}
