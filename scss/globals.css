@@ -119,6 +119,9 @@ body header#lending a.button {
 }
 body header#navbar .up {
   overflow: hidden;
+  background: white;
+  position: relative;
+  z-index: 15;
 }
 body header#navbar .up .container {
   align-items: center;
@@ -180,6 +183,8 @@ body header hr {
   width: 100%;
   height: 1px;
   background: #f4f6f8;
+  position: relative;
+  z-index: 20;
 }
 body .main header#navbar.down {
   background: white;
@@ -5218,6 +5223,469 @@ body #done main section button {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+body #login main {
+  height: calc(100svh - 140px);
+  max-height: 800px;
+  background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 45%, transparent 45%, transparent 100%);
+}
+body #login main .container {
+  height: 100%;
+  max-width: 1024px;
+}
+body #login main section {
+  height: 100%;
+  gap: 30px;
+}
+body #login main section .register {
+  width: 64%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: white;
+  border-radius: 2px;
+  padding: 30px;
+  gap: 30px;
+}
+body #login main section .register .title {
+  align-items: center;
+  justify-content: space-between;
+}
+body #login main section .register .title h2 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 157.143%;
+  letter-spacing: 0.2px;
+}
+body #login main section .register .title a,
+body #login main section .register .title button {
+  color: #2b67e3;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+  background: transparent;
+}
+body #login main section .register .providers {
+  gap: 18px;
+}
+body #login main section .register .providers .e-imzo {
+  width: calc(100% - 132px);
+  height: 48px;
+  border-radius: 2px;
+  background: #637381;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #login main section .register .providers .iconbutton {
+  width: 48px;
+  height: 48px;
+  border-radius: 2px;
+  background: #f4f6f8;
+}
+body #login main section .register .form {
+  gap: 20px;
+}
+body #login main section .register .form .box {
+  width: calc((100% - 30px) / 2);
+  gap: 8px;
+}
+body #login main section .register .form .box.poll {
+  width: calc((50% - 45px) / 2);
+}
+body #login main section .register .form .box.full {
+  width: 100%;
+}
+body #login main section .register .form .box label {
+  color: #5a7184;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #login main section .register .form .box input {
+  border: 1px solid #f4f6f8;
+  background: white;
+  border-radius: 2px;
+  padding: 12px 20px;
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #login main section .register .form .box input::-moz-placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #login main section .register .form .box input::placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #login main section .register .form .box select {
+  height: 42px;
+  padding: 10px 12px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+}
+body #login main section .register .form .box select,
+body #login main section .register .form .box select option {
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  cursor: pointer;
+}
+body #login main section .register .form .box select[selected],
+body #login main section .register .form .box select option[selected] {
+  color: #959ead;
+}
+body #login main section .register .form .box.pass .row {
+  justify-content: space-between;
+  align-items: center;
+}
+body #login main section .register .form .box.pass .row a {
+  color: #2b67e3;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #login main section .register .form button {
+  border-radius: 2px;
+  background: var(--brand);
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+}
+body #login main section .register hr {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f4f6f8;
+  margin: 8px 0;
+}
+body #login main section .slider {
+  width: calc(36% - 30px);
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+body #login main section .slider img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 6/11;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #login main section .slider .shadow {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(69, 86, 102, 0) 0%, rgba(55, 69, 83, 0.3921568627) 40%, #212b36 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 30px 40px 30px;
+  gap: 8px;
+}
+body #login main section .slider .shadow h3 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+body #login main section .slider .shadow p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #register main {
+  height: calc(100svh - 140px);
+  max-height: 800px;
+  background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 45%, transparent 45%, transparent 100%);
+}
+body #register main .container {
+  height: 100%;
+  max-width: 1024px;
+}
+body #register main section {
+  height: 100%;
+  gap: 30px;
+}
+body #register main section .register {
+  width: 64%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: white;
+  border-radius: 2px;
+  padding: 30px;
+  gap: 30px;
+}
+body #register main section .register .title {
+  align-items: center;
+  justify-content: space-between;
+}
+body #register main section .register .title h2 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 157.143%;
+  letter-spacing: 0.2px;
+}
+body #register main section .register .title a, body #register main section .register .title button {
+  color: #2b67e3;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+  background: transparent;
+}
+body #register main section .register .providers {
+  gap: 18px;
+}
+body #register main section .register .providers .e-imzo {
+  width: calc(100% - 132px);
+  height: 48px;
+  border-radius: 2px;
+  background: #637381;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #register main section .register .providers .iconbutton {
+  width: 48px;
+  height: 48px;
+  border-radius: 2px;
+  background: #f4f6f8;
+}
+body #register main section .register .form {
+  gap: 20px;
+}
+body #register main section .register .form .box {
+  width: calc((100% - 30px) / 2);
+  gap: 8px;
+}
+body #register main section .register .form .box.poll {
+  width: calc((50% - 45px) / 2);
+}
+body #register main section .register .form .box.full {
+  width: 100%;
+}
+body #register main section .register .form .box label {
+  color: #5a7184;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #register main section .register .form .box input {
+  border: 1px solid #f4f6f8;
+  background: white;
+  border-radius: 2px;
+  padding: 12px 20px;
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #register main section .register .form .box input::-moz-placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #register main section .register .form .box input::placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #register main section .register .form .box select {
+  height: 42px;
+  padding: 10px 12px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+}
+body #register main section .register .form .box select,
+body #register main section .register .form .box select option {
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  cursor: pointer;
+}
+body #register main section .register .form .box select[selected],
+body #register main section .register .form .box select option[selected] {
+  color: #959ead;
+}
+body #register main section .register .form .box.phones .phone {
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+  padding: 5px 0;
+}
+body #register main section .register .form .box.phones .phone .prefix {
+  width: 100px;
+  border-right: 1px solid #f4f6f8;
+  gap: 10px;
+}
+body #register main section .register .form .box.phones .phone .prefix img {
+  width: 24px;
+  height: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #register main section .register .form .box.phones .phone .prefix span {
+  color: #161d25;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #register main section .register .form .box.phones .phone input {
+  width: calc(100% - 100px);
+  border-radius: 2px;
+  border: 0;
+  background: white;
+  padding: 7px 14px;
+}
+body #register main section .register .form .box.primary {
+  gap: 12px;
+  padding-left: 2px;
+}
+body #register main section .register .form .box.primary input {
+  cursor: pointer;
+}
+body #register main section .register .form .box.primary label {
+  color: #161d25;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #register main section .register .form .box.primary label span {
+  color: var(--brand);
+}
+body #register main section .register .form button {
+  border-radius: 2px;
+  background: var(--brand);
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+}
+body #register main section .register hr {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f4f6f8;
+  margin: 8px 0;
+}
+body #register main section .slider {
+  width: calc(36% - 30px);
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+body #register main section .slider img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 6/11;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #register main section .slider .shadow {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(69, 86, 102, 0) 0%, rgba(55, 69, 83, 0.3921568627) 40%, #212b36 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 30px 40px 30px;
+  gap: 8px;
+}
+body #register main section .slider .shadow h3 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+body #register main section .slider .shadow p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
 }
 body footer {
   overflow: hidden;
