@@ -269,7 +269,7 @@
 
             .price {
               p {
-                color: #2b67e3;
+                color: var(--brand);
                 font-family: Inter;
                 font-size: 16px;
                 font-style: normal;
@@ -446,10 +446,10 @@
         transition: 0.2s;
         padding: 12px 22px;
         border-radius: 4px;
-        border: 2px solid #2b67e3;
+        border: 2px solid var(--brand);
         background: white;
 
-        color: #2b67e3;
+        color: var(--brand);
         text-align: center;
         font-feature-settings: "liga" off, "clig" off;
         font-size: 16px;
@@ -562,7 +562,7 @@
             justify-content: space-between;
 
             p {
-              color: #2b67e3;
+              color: var(--brand);
               font-family: Inter;
               font-size: 14px;
               font-style: normal;
@@ -594,7 +594,7 @@
         margin-top: 10px;
 
         span {
-          color: #2b67e3;
+          color: var(--brand);
           font-family: Inter;
           font-size: 16px;
           font-style: normal;
@@ -641,10 +641,10 @@
         transition: 0.2s;
         padding: 12px 22px;
         border-radius: 4px;
-        border: 2px solid #2b67e3;
+        border: 2px solid var(--brand);
         background: white;
 
-        color: #2b67e3;
+        color: var(--brand);
         text-align: center;
         font-feature-settings: "liga" off, "clig" off;
         font-size: 16px;
@@ -678,7 +678,7 @@
           gap: 12px;
 
           p.date-time {
-            color: #2b67e3;
+            color: var(--brand);
             font-family: Inter;
             font-size: 14px;
             font-style: normal;

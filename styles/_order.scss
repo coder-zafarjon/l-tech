@@ -1,0 +1,493 @@
+#order main {
+  background: linear-gradient(
+    180deg,
+    #f9fafb 0%,
+    #f9fafb 25%,
+    transparent 25%,
+    transparent 100%
+  );
+
+  #title-path {
+    padding: 60px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    .column {
+      gap: 8px;
+
+      h2 {
+        color: #161d25;
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 144.444%;
+        letter-spacing: 0.2px;
+      }
+
+      p {
+        color: #959ead;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 137.5%;
+      }
+    }
+
+    a,
+    button {
+      transition: 0.2s;
+      padding: 12px 17px;
+      border-radius: 4px;
+      border: 2px solid var(--brand);
+      background: white;
+
+      color: var(--brand);
+      text-align: center;
+      font-feature-settings: "liga" off, "clig" off;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 137.5%;
+
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      svg {
+        margin-bottom: 1px;
+        path {
+          transition: 0.2s;
+        }
+      }
+
+      &:hover {
+        background: var(--brand);
+        color: white;
+
+        svg path {
+          fill: white;
+        }
+      }
+    }
+  }
+
+  #shopping {
+    padding-bottom: 60px;
+    align-items: flex-start;
+    gap: 30px;
+
+    #package {
+      width: calc(100% - 380px);
+      border-radius: 2px;
+      border: 1px solid #f4f6f8;
+      background: white;
+      padding: 24px;
+
+      .box-title {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        h3 {
+          width: 100%;
+          color: #161d25;
+          font-family: Rubik;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 120%;
+          letter-spacing: 0.2px;
+        }
+
+        p {
+          color: #959ead;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 142.857%;
+          margin-top: 8px;
+        }
+
+        .order {
+          padding: 10px 15px;
+          border-radius: 2px;
+          background: #f9fafb;
+
+          h3 {
+            font-family: Inter;
+            font-size: 14px;
+          }
+
+          p {
+            color: #5a7184;
+            margin-top: 4px;
+          }
+        }
+      }
+
+      .progress {
+        justify-content: space-around;
+
+        .box {
+          align-items: center;
+          gap: 12px;
+
+          .icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 4px;
+            border: 1px solid #f4f6f8;
+            background: white;
+          }
+
+          p {
+            color: #959ead;
+            text-align: center;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 142.857%;
+          }
+
+          &.active {
+            .icon svg path{
+              fill: #2b67e3;
+            }
+
+            p {
+              color: #2b67e3;
+            }
+          }
+
+          &.next {
+            .icon {
+              background: #2b67e3;
+              border-color: #2b67e3;
+
+              svg path {
+                fill: white;
+              }
+            }
+
+            p {
+              color: #2b67e3;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      .box-details {
+        .title {
+          margin-bottom: 20px;
+          align-items: center;
+          justify-content: space-between;
+
+          h3 {
+            color: #161d25;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 137.5%;
+          }
+        }
+
+        .box {
+          height: 56px;
+          width: 100%;
+          border-radius: 2px;
+          padding: 18px 20px;
+          justify-content: space-between;
+
+          &:nth-child(even) {
+            background: #f9fafb;
+          }
+
+          .row {
+            align-items: center;
+            gap: 18px;
+          }
+
+          .radio {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid #454f5b;
+          }
+
+          p {
+            color: #161d25;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+          }
+
+          span {
+            color: #959ead;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 142.857%;
+          }
+        }
+      }
+
+      .problem {
+        padding: 20px 24px;
+        border-radius: 2px;
+        background: #2b67e31a;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+          gap: 4px;
+
+          h3 {
+            color: #161d25;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 137.5%;
+          }
+
+          p {
+            color: #959ead;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 142.857%;
+          }
+        }
+
+        button {
+          background: #2b67e3;
+          border-radius: 2px;
+          padding: 9px 15px;
+          gap: 6px;
+
+          span {
+            color: #fff;
+            text-align: center;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 137.5%;
+          }
+        }
+      }
+
+      hr {
+        all: unset;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #f4f6f8;
+        margin: 36px 0;
+      }
+    }
+
+    aside {
+      width: 350px;
+      position: sticky;
+      padding: 20px;
+      top: 90px;
+      gap: 20px;
+      border-radius: 2px;
+      border: 1px solid #f4f6f8;
+      background: white;
+
+      h3 {
+        color: #161d25;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 133.333%;
+      }
+
+      ul.shopping {
+        gap: 10px;
+
+        li {
+          align-items: center;
+          list-style: none;
+          gap: 16px;
+
+          img {
+            padding: 5px 0;
+            height: 80px;
+            border-radius: 8px;
+            aspect-ratio: 1;
+            object-fit: contain;
+          }
+
+          .name {
+            width: 100%;
+            gap: 4px;
+
+            h5 {
+              color: #5a7184;
+              font-family: Inter;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 133.333%;
+            }
+
+            .sub {
+              align-items: center;
+              justify-content: space-between;
+
+              p {
+                span.price {
+                  display: inline-block;
+                  color: #50b83c;
+                  font-family: Inter;
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 137.5%;
+                  min-width: 100px;
+                  margin-right: 16px;
+                }
+
+                span.items {
+                  color: #959ead;
+                  font-family: Inter;
+                  font-size: 13px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 142.857%;
+                }
+              }
+
+              .iconbutton {
+                width: 24px;
+                height: 24px;
+                background: white;
+                border-radius: 2px;
+                transition: 0.2s;
+                align-self: flex-end;
+
+                &:hover {
+                  background: #de36181a;
+
+                  svg path {
+                    fill: #de3618;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        button {
+          background: transparent;
+          gap: 4px;
+
+          color: #2b67e3;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          margin-top: 20px;
+          margin: 20px 0 10px;
+        }
+      }
+
+      ul.total {
+        gap: 15px;
+
+        li {
+          list-style: none;
+          justify-content: space-between;
+
+          p {
+            color: #959ead;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 137.5%;
+          }
+
+          span {
+            color: #161d25;
+            text-align: right;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 137.5%;
+          }
+
+          &.discount span {
+            color: #de3618;
+          }
+
+          &.bold {
+            p,
+            span {
+              color: #161d25;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .box.note {
+          gap: 10px;
+
+          label {
+            color: #959ead;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 142.857%;
+          }
+
+          .textarea {
+            border-radius: 2px;
+            background: #f9fafb;
+            padding: 12px 30px 26px 20px;
+
+            color: #161d25;
+            font-feature-settings: "liga" off, "clig" off;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 142.857%;
+
+            p {
+              color: #161d25;
+              font-feature-settings: "liga" off, "clig" off;
+              font-family: Inter;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 142.857%;
+            }
+          }
+        }
+      }
+
+      hr {
+        all: unset;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #f4f6f8;
+      }
+    }
+  }
+}

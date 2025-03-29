@@ -124,7 +124,7 @@
 
             &:hover p,
             &:hover label {
-              color: #2b67e3;
+              color: var(--brand);
             }
 
             input[type="checkbox"] {
@@ -156,7 +156,7 @@
               line-height: 137.5%;
 
               &.active {
-                color: #2b67e3;
+                color: var(--brand);
               }
             }
 
@@ -183,7 +183,7 @@
               line-height: 142.857%;
 
               &:hover {
-                color: #2b67e3;
+                color: var(--brand);
               }
             }
           }

@@ -40,10 +40,10 @@
       transition: 0.2s;
       padding: 12px 17px;
       border-radius: 4px;
-      border: 2px solid #2b67e3;
+      border: 2px solid var(--brand);
       background: white;
 
-      color: #2b67e3;
+      color: var(--brand);
       text-align: center;
       font-feature-settings: "liga" off, "clig" off;
       font-size: 16px;
@@ -99,10 +99,10 @@
 
       &.active {
         span {
-          background: #2b67e3;
+          background: var(--brand);
         }
         p {
-          color: #2b67e3;
+          color: var(--brand);
         }
       }
 
@@ -141,7 +141,7 @@
     align-items: flex-start;
     gap: 30px;
 
-    section {
+    #products {
       width: calc(100% - 380px);
       border-radius: 2px;
       border: 1px solid #f4f6f8;
@@ -414,7 +414,7 @@
             height: 48px;
             gap: 6px;
             border-radius: 2px;
-            background: #2b67e3;
+            background: var(--brand);
 
             color: #fff;
             text-align: center;
@@ -451,10 +451,10 @@
         transition: 0.2s;
         padding: 12px 22px;
         border-radius: 4px;
-        border: 2px solid #2b67e3;
+        border: 2px solid var(--brand);
         background: white;
 
-        color: #2b67e3;
+        color: var(--brand);
         text-align: center;
         font-feature-settings: "liga" off, "clig" off;
         font-size: 16px;
@@ -572,10 +572,10 @@
           transition: 0.2s;
           padding: 5px 0;
           border-radius: 4px;
-          border: 1px solid #2b67e3;
+          border: 1px solid var(--brand);
           background: white;
 
-          color: #2b67e3;
+          color: var(--brand);
           text-align: center;
           font-feature-settings: "liga" off, "clig" off;
           font-size: 14px;

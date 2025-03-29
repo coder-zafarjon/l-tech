@@ -815,7 +815,7 @@ body #homepage main #hit-products .products .card .wrapper .title h4 {
   margin-bottom: 10px;
 }
 body #homepage main #hit-products .products .card .wrapper .title .price p {
-  color: #2b67e3;
+  color: var(--brand);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -964,9 +964,9 @@ body #homepage main #categories .title button {
   transition: 0.2s;
   padding: 12px 22px;
   border-radius: 4px;
-  border: 2px solid #2b67e3;
+  border: 2px solid var(--brand);
   background: white;
-  color: #2b67e3;
+  color: var(--brand);
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-size: 16px;
@@ -1067,7 +1067,7 @@ body #homepage main #product-category .tab button.card .column .price {
   justify-content: space-between;
 }
 body #homepage main #product-category .tab button.card .column .price p {
-  color: #2b67e3;
+  color: var(--brand);
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -1093,7 +1093,7 @@ body #homepage main #product-category .tab button.all-products {
   margin-top: 10px;
 }
 body #homepage main #product-category .tab button.all-products span {
-  color: #2b67e3;
+  color: var(--brand);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -1133,9 +1133,9 @@ body #homepage main #blog .title button {
   transition: 0.2s;
   padding: 12px 22px;
   border-radius: 4px;
-  border: 2px solid #2b67e3;
+  border: 2px solid var(--brand);
   background: white;
-  color: #2b67e3;
+  color: var(--brand);
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-size: 16px;
@@ -1166,7 +1166,7 @@ body #homepage main #blog .wrapper .tab .content {
   gap: 12px;
 }
 body #homepage main #blog .wrapper .tab .content p.date-time {
-  color: #2b67e3;
+  color: var(--brand);
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -1474,7 +1474,7 @@ body #searchpage main #base aside .box ul li {
   cursor: pointer;
 }
 body #searchpage main #base aside .box ul li:hover p, body #searchpage main #base aside .box ul li:hover label {
-  color: #2b67e3;
+  color: var(--brand);
 }
 body #searchpage main #base aside .box ul li input[type=checkbox] {
   width: 17px;
@@ -1503,7 +1503,7 @@ body #searchpage main #base aside .box ul li label {
 }
 body #searchpage main #base aside .box ul li p.active,
 body #searchpage main #base aside .box ul li label.active {
-  color: #2b67e3;
+  color: var(--brand);
 }
 body #searchpage main #base aside .box ul li button.iconbutton {
   background: white;
@@ -1525,7 +1525,7 @@ body #searchpage main #base aside .box ul.prices li {
   line-height: 142.857%;
 }
 body #searchpage main #base aside .box ul.prices li:hover {
-  color: #2b67e3;
+  color: var(--brand);
 }
 body #searchpage main #base aside .box ul.color {
   row-gap: 16px;
@@ -2446,7 +2446,7 @@ body #productpage main #rating-reviews #reviews .reviews .review p.description {
   line-height: 175%;
 }
 body #productpage main #rating-reviews #reviews .reviews .review p.description span {
-  color: #2b67e3;
+  color: var(--brand);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2468,7 +2468,7 @@ body #productpage main #rating-reviews #reviews .get-more-reviews button {
   height: 46px;
 }
 body #productpage main #rating-reviews #reviews .get-more-reviews button span {
-  color: #2b67e3;
+  color: var(--brand);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2591,9 +2591,9 @@ body #productpage main #related .title button {
   transition: 0.2s;
   padding: 12px 22px;
   border-radius: 4px;
-  border: 2px solid #2b67e3;
+  border: 2px solid var(--brand);
   background: white;
-  color: #2b67e3;
+  color: var(--brand);
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-size: 16px;
@@ -2674,7 +2674,7 @@ body #productpage main #related .products .card .title .price {
   justify-content: space-between;
 }
 body #productpage main #related .products .card .title .price p {
-  color: #2b67e3;
+  color: var(--brand);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -2748,9 +2748,9 @@ body #basket main #title-path button {
   transition: 0.2s;
   padding: 12px 17px;
   border-radius: 4px;
-  border: 2px solid #2b67e3;
+  border: 2px solid var(--brand);
   background: white;
-  color: #2b67e3;
+  color: var(--brand);
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-size: 16px;
@@ -2800,10 +2800,10 @@ body #basket main #shopping-navigation .box.next p {
   color: #161d25;
 }
 body #basket main #shopping-navigation .box.active span {
-  background: #2b67e3;
+  background: var(--brand);
 }
 body #basket main #shopping-navigation .box.active p {
-  color: #2b67e3;
+  color: var(--brand);
 }
 body #basket main #shopping-navigation .box span {
   display: flex;
@@ -2834,24 +2834,24 @@ body #basket main #shopping {
   align-items: flex-start;
   gap: 30px;
 }
-body #basket main #shopping section {
+body #basket main #shopping #products {
   width: calc(100% - 380px);
   border-radius: 2px;
   border: 1px solid #f4f6f8;
   background: white;
   overflow: hidden;
 }
-body #basket main #shopping section ul {
+body #basket main #shopping #products ul {
   padding: 10px 0;
   gap: 20px;
 }
-body #basket main #shopping section ul li {
+body #basket main #shopping #products ul li {
   padding: 10px 24px 10px 20px;
   align-items: center;
   list-style: none;
   gap: 16px;
 }
-body #basket main #shopping section ul li img {
+body #basket main #shopping #products ul li img {
   padding: 10px 5px;
   height: 100px;
   border-radius: 8px;
@@ -2859,11 +2859,11 @@ body #basket main #shopping section ul li img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-body #basket main #shopping section ul li .name {
+body #basket main #shopping #products ul li .name {
   width: calc(60% - 110px);
   gap: 6px;
 }
-body #basket main #shopping section ul li .name h5 {
+body #basket main #shopping #products ul li .name h5 {
   color: #161d25;
   font-family: Inter;
   font-size: 18px;
@@ -2871,7 +2871,7 @@ body #basket main #shopping section ul li .name h5 {
   font-weight: 500;
   line-height: 133.333%;
 }
-body #basket main #shopping section ul li .name p {
+body #basket main #shopping #products ul li .name p {
   color: #959ead;
   font-family: Inter;
   font-size: 14px;
@@ -2879,7 +2879,7 @@ body #basket main #shopping section ul li .name p {
   font-weight: 400;
   line-height: 142.857%;
 }
-body #basket main #shopping section ul li .price {
+body #basket main #shopping #products ul li .price {
   width: calc(40% - 110px);
   color: #50b83c;
   font-family: Inter;
@@ -2888,34 +2888,34 @@ body #basket main #shopping section ul li .price {
   font-weight: 700;
   line-height: 137.5%;
 }
-body #basket main #shopping section ul li .actions {
+body #basket main #shopping #products ul li .actions {
   gap: 18px;
   align-items: center;
 }
-body #basket main #shopping section ul li .actions .counter {
+body #basket main #shopping #products ul li .actions .counter {
   width: 116px;
   align-items: center;
   justify-content: space-between;
 }
-body #basket main #shopping section ul li .actions .iconbutton {
+body #basket main #shopping #products ul li .actions .iconbutton {
   width: 38px;
   height: 38px;
   background: white;
   border-radius: 2px;
   transition: 0.2s;
 }
-body #basket main #shopping section ul li .actions .iconbutton.minus {
+body #basket main #shopping #products ul li .actions .iconbutton.minus {
   border-right: 1px solid #f4f6f8;
   border-radius: 0;
 }
-body #basket main #shopping section ul li .actions .iconbutton.plus {
+body #basket main #shopping #products ul li .actions .iconbutton.plus {
   border-left: 1px solid #f4f6f8;
   border-radius: 0;
 }
-body #basket main #shopping section ul li .actions .iconbutton.del:hover {
+body #basket main #shopping #products ul li .actions .iconbutton.del:hover {
   background: rgba(222, 54, 24, 0.1019607843);
 }
-body #basket main #shopping section ul li .actions .iconbutton.del:hover svg path {
+body #basket main #shopping #products ul li .actions .iconbutton.del:hover svg path {
   fill: #de3618;
 }
 body #basket main #shopping aside {
@@ -3088,7 +3088,7 @@ body #basket main #shopping aside #order .form button {
   height: 48px;
   gap: 6px;
   border-radius: 2px;
-  background: #2b67e3;
+  background: var(--brand);
   color: #fff;
   text-align: center;
   font-family: Inter;
@@ -3118,9 +3118,9 @@ body #basket main #related .title button {
   transition: 0.2s;
   padding: 12px 22px;
   border-radius: 4px;
-  border: 2px solid #2b67e3;
+  border: 2px solid var(--brand);
   background: white;
-  color: #2b67e3;
+  color: var(--brand);
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-size: 16px;
@@ -3223,9 +3223,9 @@ body #basket main #related .products .card button {
   transition: 0.2s;
   padding: 5px 0;
   border-radius: 4px;
-  border: 1px solid #2b67e3;
+  border: 1px solid var(--brand);
   background: white;
-  color: #2b67e3;
+  color: var(--brand);
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-size: 14px;
@@ -3237,6 +3237,1987 @@ body #basket main #related .products .card a:hover,
 body #basket main #related .products .card button:hover {
   background: var(--brand);
   color: white;
+}
+body #customer main {
+  background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 30%, transparent 30%, transparent 100%);
+}
+body #customer main #title-path {
+  padding: 60px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+body #customer main #title-path .column {
+  gap: 8px;
+}
+body #customer main #title-path .column h2 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.444%;
+  letter-spacing: 0.2px;
+}
+body #customer main #title-path .column p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #customer main #title-path a,
+body #customer main #title-path button {
+  transition: 0.2s;
+  padding: 12px 17px;
+  border-radius: 4px;
+  border: 2px solid var(--brand);
+  background: white;
+  color: var(--brand);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+body #customer main #title-path a svg,
+body #customer main #title-path button svg {
+  margin-bottom: 1px;
+}
+body #customer main #title-path a svg path,
+body #customer main #title-path button svg path {
+  transition: 0.2s;
+}
+body #customer main #title-path a:hover,
+body #customer main #title-path button:hover {
+  background: var(--brand);
+  color: white;
+}
+body #customer main #title-path a:hover svg path,
+body #customer main #title-path button:hover svg path {
+  fill: white;
+}
+body #customer main #shopping-navigation {
+  height: 56px;
+  gap: 0px;
+  align-items: center;
+  border-radius: 2px;
+  background: white;
+  margin-bottom: 36px;
+  overflow: hidden;
+}
+body #customer main #shopping-navigation .box {
+  height: 100%;
+  padding: 0 18px;
+  gap: 12px;
+  align-items: center;
+}
+body #customer main #shopping-navigation .box.next span {
+  background: #454f5b;
+}
+body #customer main #shopping-navigation .box.next p {
+  color: #161d25;
+}
+body #customer main #shopping-navigation .box.active span {
+  background: var(--brand);
+}
+body #customer main #shopping-navigation .box.active p {
+  color: var(--brand);
+}
+body #customer main #shopping-navigation .box span {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #c4cdd5;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  padding-right: 0.5px;
+  margin-left: 2px;
+}
+body #customer main #shopping-navigation .box p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #customer main #shopping {
+  padding-bottom: 60px;
+  align-items: flex-start;
+  gap: 30px;
+}
+body #customer main #shopping section {
+  width: calc(100% - 380px);
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+  padding: 24px 24px 30px;
+  gap: 30px;
+}
+body #customer main #shopping section h3 {
+  width: 100%;
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+}
+body #customer main #shopping section .box {
+  width: calc((100% - 30px) / 2);
+  gap: 8px;
+}
+body #customer main #shopping section .box.poll {
+  width: calc((50% - 45px) / 2);
+}
+body #customer main #shopping section .box.full {
+  width: 100%;
+}
+body #customer main #shopping section .box label {
+  color: #5a7184;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #customer main #shopping section .box input {
+  border: 1px solid #f4f6f8;
+  background: white;
+  border-radius: 2px;
+  padding: 12px 20px;
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #customer main #shopping section .box input::-moz-placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #customer main #shopping section .box input::placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #customer main #shopping section .box select {
+  height: 42px;
+  padding: 10px 12px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+}
+body #customer main #shopping section .box select,
+body #customer main #shopping section .box select option {
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  cursor: pointer;
+}
+body #customer main #shopping section .box select[selected],
+body #customer main #shopping section .box select option[selected] {
+  color: #959ead;
+}
+body #customer main #shopping section .box.phones .phone {
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+  padding: 5px 0;
+}
+body #customer main #shopping section .box.phones .phone .prefix {
+  width: 100px;
+  border-right: 1px solid #f4f6f8;
+  gap: 10px;
+}
+body #customer main #shopping section .box.phones .phone .prefix img {
+  width: 24px;
+  height: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #customer main #shopping section .box.phones .phone .prefix span {
+  color: #161d25;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #customer main #shopping section .box.phones .phone input {
+  width: calc(100% - 100px);
+  border-radius: 2px;
+  border: 0;
+  background: white;
+  padding: 7px 14px;
+}
+body #customer main #shopping section .box.primary {
+  gap: 12px;
+  padding-left: 2px;
+}
+body #customer main #shopping section .box.primary input {
+  cursor: pointer;
+}
+body #customer main #shopping section .box.primary label {
+  color: #161d25;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #customer main #shopping aside {
+  width: 350px;
+  position: sticky;
+  padding: 20px;
+  top: 90px;
+  gap: 20px;
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+}
+body #customer main #shopping aside h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+body #customer main #shopping aside ul.shopping {
+  padding: 5px 0;
+  gap: 20px;
+}
+body #customer main #shopping aside ul.shopping li {
+  padding: 5px 0;
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+}
+body #customer main #shopping aside ul.shopping li img {
+  padding: 5px 0;
+  height: 80px;
+  border-radius: 8px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body #customer main #shopping aside ul.shopping li .name {
+  width: calc(100% - 96px);
+  gap: 4px;
+}
+body #customer main #shopping aside ul.shopping li .name h5 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+body #customer main #shopping aside ul.shopping li .name .sub {
+  align-items: center;
+  justify-content: space-between;
+}
+body #customer main #shopping aside ul.shopping li .name .sub p {
+  width: calc(100% - 24px);
+}
+body #customer main #shopping aside ul.shopping li .name .sub p span.price {
+  display: inline-block;
+  color: #50b83c;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.5%;
+  min-width: 110px;
+}
+body #customer main #shopping aside ul.shopping li .name .sub p span.items {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #customer main #shopping aside ul.shopping li .name .sub .iconbutton {
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.2s;
+  align-self: flex-end;
+}
+body #customer main #shopping aside ul.shopping li .name .sub .iconbutton:hover {
+  background: rgba(222, 54, 24, 0.1019607843);
+}
+body #customer main #shopping aside ul.shopping li .name .sub .iconbutton:hover svg path {
+  fill: #de3618;
+}
+body #customer main #shopping aside ul.total {
+  gap: 15px;
+}
+body #customer main #shopping aside ul.total li {
+  list-style: none;
+  justify-content: space-between;
+}
+body #customer main #shopping aside ul.total li p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #customer main #shopping aside ul.total li span {
+  color: #161d25;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #customer main #shopping aside ul.total li.discount span {
+  color: #de3618;
+}
+body #customer main #shopping aside ul.total li.bold p,
+body #customer main #shopping aside ul.total li.bold span {
+  color: #161d25;
+  font-weight: 500;
+}
+body #customer main #shopping aside hr {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f4f6f8;
+}
+body #customer main #shopping aside .form {
+  gap: 15px;
+  margin-top: 10px;
+}
+body #customer main #shopping aside .form button {
+  width: 100%;
+  height: 48px;
+  gap: 6px;
+  border-radius: 2px;
+  background: #f4f6f8;
+  color: #919eab;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #customer main #shopping aside .form button.active {
+  background: #43467f;
+  color: #fff;
+}
+body #payment main {
+  background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 30%, transparent 30%, transparent 100%);
+}
+body #payment main #title-path {
+  padding: 60px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+body #payment main #title-path .column {
+  gap: 8px;
+}
+body #payment main #title-path .column h2 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.444%;
+  letter-spacing: 0.2px;
+}
+body #payment main #title-path .column p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #payment main #title-path a,
+body #payment main #title-path button {
+  transition: 0.2s;
+  padding: 12px 17px;
+  border-radius: 4px;
+  border: 2px solid var(--brand);
+  background: white;
+  color: var(--brand);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+body #payment main #title-path a svg,
+body #payment main #title-path button svg {
+  margin-bottom: 1px;
+}
+body #payment main #title-path a svg path,
+body #payment main #title-path button svg path {
+  transition: 0.2s;
+}
+body #payment main #title-path a:hover,
+body #payment main #title-path button:hover {
+  background: var(--brand);
+  color: white;
+}
+body #payment main #title-path a:hover svg path,
+body #payment main #title-path button:hover svg path {
+  fill: white;
+}
+body #payment main #shopping-navigation {
+  height: 56px;
+  gap: 0px;
+  align-items: center;
+  border-radius: 2px;
+  background: white;
+  margin-bottom: 36px;
+  overflow: hidden;
+}
+body #payment main #shopping-navigation .box {
+  height: 100%;
+  padding: 0 18px;
+  gap: 12px;
+  align-items: center;
+}
+body #payment main #shopping-navigation .box.next span {
+  background: #454f5b;
+}
+body #payment main #shopping-navigation .box.next p {
+  color: #161d25;
+}
+body #payment main #shopping-navigation .box.active span {
+  background: var(--brand);
+}
+body #payment main #shopping-navigation .box.active p {
+  color: var(--brand);
+}
+body #payment main #shopping-navigation .box span {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #c4cdd5;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  padding-right: 0.5px;
+  margin-left: 2px;
+}
+body #payment main #shopping-navigation .box p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #payment main #shopping {
+  padding-bottom: 60px;
+  align-items: flex-start;
+  gap: 30px;
+}
+body #payment main #shopping #payment-section {
+  width: calc(100% - 380px);
+  gap: 30px;
+}
+body #payment main #shopping #payment-section #delivery {
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+  padding: 24px 20px 20px;
+  gap: 10px;
+}
+body #payment main #shopping #payment-section #delivery h3 {
+  width: 100%;
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+}
+body #payment main #shopping #payment-section #delivery p.subtitle {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  margin-bottom: 16px;
+}
+body #payment main #shopping #payment-section #delivery ul {
+  gap: 10px;
+}
+body #payment main #shopping #payment-section #delivery ul li {
+  padding: 20px 16px 20px 20px;
+  list-style: none;
+  border-radius: 2px;
+  justify-content: space-between;
+  align-items: center;
+}
+body #payment main #shopping #payment-section #delivery ul li.active {
+  background: rgba(80, 184, 60, 0.1019607843);
+}
+body #payment main #shopping #payment-section #delivery ul li.active .selector .name h3 {
+  color: #50b83c;
+  font-weight: 500;
+}
+body #payment main #shopping #payment-section #delivery ul li.active .prices svg path {
+  fill: #50b83c;
+}
+body #payment main #shopping #payment-section #delivery ul li.active .prices p span {
+  color: #50b83c !important;
+}
+body #payment main #shopping #payment-section #delivery ul li .selector {
+  gap: 18px;
+}
+body #payment main #shopping #payment-section #delivery ul li .selector .radio {
+  padding: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body #payment main #shopping #payment-section #delivery ul li .selector .radio input[type=radio] {
+  width: 20px;
+  height: 20px;
+  accent-color: green;
+  cursor: pointer;
+}
+body #payment main #shopping #payment-section #delivery ul li .selector .name {
+  gap: 6px;
+}
+body #payment main #shopping #payment-section #delivery ul li .selector .name h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133.333%;
+}
+body #payment main #shopping #payment-section #delivery ul li .selector .name p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #payment main #shopping #payment-section #delivery ul li .prices {
+  gap: 8px;
+}
+body #payment main #shopping #payment-section #delivery ul li .prices p span.price {
+  color: #5a7184;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+  margin-right: 6px;
+}
+body #payment main #shopping #payment-section #delivery ul li .prices p span.sale {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  text-decoration: line-through;
+}
+body #payment main #shopping #payment-section #delivery ul li .images {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 100px;
+}
+body #payment main #shopping #payment-section #pay {
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+  padding: 24px 20px 30px;
+  gap: 10px;
+}
+body #payment main #shopping #payment-section #pay h3 {
+  width: 100%;
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+}
+body #payment main #shopping #payment-section #pay p.subtitle {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  margin-bottom: 16px;
+}
+body #payment main #shopping #payment-section #pay .types {
+  gap: 30px;
+}
+body #payment main #shopping #payment-section #pay .types .box {
+  width: calc((100% - 30px) / 2);
+  padding: 20px;
+  gap: 6px;
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+}
+body #payment main #shopping #payment-section #pay .types .box.active {
+  background: #f4f6f8;
+}
+body #payment main #shopping #payment-section #pay .types .box .radio {
+  padding: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body #payment main #shopping #payment-section #pay .types .box .radio input[type=radio] {
+  width: 20px;
+  height: 20px;
+  accent-color: black;
+  cursor: pointer;
+}
+body #payment main #shopping #payment-section #pay .types .box .name {
+  align-items: center;
+  gap: 16px;
+}
+body #payment main #shopping #payment-section #pay .types .box .name h4 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+body #payment main #shopping #payment-section #pay .types .box p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  text-wrap: balance;
+}
+body #payment main #shopping #payment-section #pay .credits {
+  display: none;
+  gap: 30px;
+  margin-top: 20px;
+}
+body #payment main #shopping #payment-section #pay .credits.active {
+  display: flex;
+}
+body #payment main #shopping #payment-section #pay .credits hr {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f4f6f8;
+}
+body #payment main #shopping #payment-section #pay .credits .box {
+  width: calc((100% - 30px) / 2);
+  gap: 8px;
+}
+body #payment main #shopping #payment-section #pay .credits .box.poll {
+  width: calc((100% - 60px) / 3);
+}
+body #payment main #shopping #payment-section #pay .credits .box label {
+  color: #5a7184;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #payment main #shopping #payment-section #pay .credits .box input {
+  border: 1px solid #f4f6f8;
+  background: white;
+  border-radius: 2px;
+  padding: 12px 20px;
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #payment main #shopping #payment-section #pay .credits .box input::-moz-placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #payment main #shopping #payment-section #pay .credits .box input::placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #payment main #shopping #payment-section #pay button {
+  width: calc((100% - 60px) / 3);
+  background: #637381;
+  height: 48px;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+  margin-top: 20px;
+}
+body #payment main #shopping aside {
+  width: 350px;
+  position: sticky;
+  padding: 20px;
+  top: 90px;
+  gap: 20px;
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+}
+body #payment main #shopping aside h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+body #payment main #shopping aside ul.shopping {
+  padding: 5px 0;
+  gap: 20px;
+}
+body #payment main #shopping aside ul.shopping li {
+  padding: 5px 0;
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+}
+body #payment main #shopping aside ul.shopping li img {
+  padding: 5px 0;
+  height: 80px;
+  border-radius: 8px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body #payment main #shopping aside ul.shopping li .name {
+  width: calc(100% - 96px);
+  gap: 4px;
+}
+body #payment main #shopping aside ul.shopping li .name h5 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+body #payment main #shopping aside ul.shopping li .name .sub {
+  align-items: center;
+  justify-content: space-between;
+}
+body #payment main #shopping aside ul.shopping li .name .sub p {
+  width: calc(100% - 24px);
+}
+body #payment main #shopping aside ul.shopping li .name .sub p span.price {
+  display: inline-block;
+  color: #50b83c;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.5%;
+  min-width: 110px;
+}
+body #payment main #shopping aside ul.shopping li .name .sub p span.items {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #payment main #shopping aside ul.shopping li .name .sub .iconbutton {
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.2s;
+  align-self: flex-end;
+}
+body #payment main #shopping aside ul.shopping li .name .sub .iconbutton:hover {
+  background: rgba(222, 54, 24, 0.1019607843);
+}
+body #payment main #shopping aside ul.shopping li .name .sub .iconbutton:hover svg path {
+  fill: #de3618;
+}
+body #payment main #shopping aside ul.total {
+  gap: 15px;
+}
+body #payment main #shopping aside ul.total li {
+  list-style: none;
+  justify-content: space-between;
+}
+body #payment main #shopping aside ul.total li p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #payment main #shopping aside ul.total li span {
+  color: #161d25;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #payment main #shopping aside ul.total li.discount span {
+  color: #de3618;
+}
+body #payment main #shopping aside ul.total li.bold p,
+body #payment main #shopping aside ul.total li.bold span {
+  color: #161d25;
+  font-weight: 500;
+}
+body #payment main #shopping aside hr {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f4f6f8;
+}
+body #payment main #shopping aside .form {
+  gap: 15px;
+  margin-top: 10px;
+}
+body #payment main #shopping aside .form button {
+  width: 100%;
+  height: 48px;
+  gap: 6px;
+  border-radius: 2px;
+  background: #f4f6f8;
+  color: #919eab;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #payment main #shopping aside .form button.active {
+  background: #43467f;
+  color: #fff;
+}
+body #review main {
+  background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 30%, transparent 30%, transparent 100%);
+}
+body #review main #title-path {
+  padding: 60px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+body #review main #title-path .column {
+  gap: 8px;
+}
+body #review main #title-path .column h2 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.444%;
+  letter-spacing: 0.2px;
+}
+body #review main #title-path .column p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #review main #title-path a,
+body #review main #title-path button {
+  transition: 0.2s;
+  padding: 12px 17px;
+  border-radius: 4px;
+  border: 2px solid var(--brand);
+  background: white;
+  color: var(--brand);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+body #review main #title-path a svg,
+body #review main #title-path button svg {
+  margin-bottom: 1px;
+}
+body #review main #title-path a svg path,
+body #review main #title-path button svg path {
+  transition: 0.2s;
+}
+body #review main #title-path a:hover,
+body #review main #title-path button:hover {
+  background: var(--brand);
+  color: white;
+}
+body #review main #title-path a:hover svg path,
+body #review main #title-path button:hover svg path {
+  fill: white;
+}
+body #review main #shopping-navigation {
+  height: 56px;
+  gap: 0px;
+  align-items: center;
+  border-radius: 2px;
+  background: white;
+  margin-bottom: 36px;
+  overflow: hidden;
+}
+body #review main #shopping-navigation .box {
+  height: 100%;
+  padding: 0 18px;
+  gap: 12px;
+  align-items: center;
+}
+body #review main #shopping-navigation .box.next span {
+  background: #454f5b;
+}
+body #review main #shopping-navigation .box.next p {
+  color: #161d25;
+}
+body #review main #shopping-navigation .box.active span {
+  background: var(--brand);
+}
+body #review main #shopping-navigation .box.active p {
+  color: var(--brand);
+}
+body #review main #shopping-navigation .box span {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #c4cdd5;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  padding-right: 0.5px;
+  margin-left: 2px;
+}
+body #review main #shopping-navigation .box p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #review main #shopping {
+  padding-bottom: 60px;
+  align-items: flex-start;
+  gap: 30px;
+}
+body #review main #shopping #payment-section {
+  width: calc(100% - 380px);
+  gap: 30px;
+}
+body #review main #shopping #payment-section #delivery {
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+  padding: 24px 30px 0 24px;
+  gap: 10px;
+}
+body #review main #shopping #payment-section #delivery h3 {
+  width: 100%;
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+}
+body #review main #shopping #payment-section #delivery p.subtitle {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  margin-bottom: 6px;
+}
+body #review main #shopping #payment-section #delivery .wrapper .user {
+  padding: 20px 0;
+  align-items: center;
+  gap: 20px;
+}
+body #review main #shopping #payment-section #delivery .wrapper .user img {
+  width: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+}
+body #review main #shopping #payment-section #delivery .wrapper .user .user-details {
+  width: calc(100% - 200px);
+  gap: 8px;
+}
+body #review main #shopping #payment-section #delivery .wrapper .user .user-details .name {
+  gap: 8px;
+  align-items: center;
+}
+body #review main #shopping #payment-section #delivery .wrapper .user .user-details .name h4 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+  margin-right: 4px;
+}
+body #review main #shopping #payment-section #delivery .wrapper .user .user-details .name p {
+  color: #5a7184;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+body #review main #shopping #payment-section #delivery .wrapper .user .user-details .address {
+  align-items: center;
+  gap: 8px;
+}
+body #review main #shopping #payment-section #delivery .wrapper .user .user-details .address span {
+  color: #959ead;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 1px;
+}
+body #review main #shopping #payment-section #delivery .wrapper .user button {
+  width: 100px;
+  height: 34px;
+  gap: 6px;
+  border-radius: 2px;
+  background: #f4f6f8;
+}
+body #review main #shopping #payment-section #delivery .wrapper .user button span {
+  color: #5a7184;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+}
+body #review main #shopping #payment-section #delivery .wrapper hr {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f4f6f8;
+}
+body #review main #shopping #payment-section #delivery .wrapper .delivery {
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+body #review main #shopping #payment-section #delivery .wrapper .delivery .selector {
+  gap: 20px;
+}
+body #review main #shopping #payment-section #delivery .wrapper .delivery .selector .radio {
+  width: 60px;
+}
+body #review main #shopping #payment-section #delivery .wrapper .delivery .selector .name {
+  gap: 6px;
+}
+body #review main #shopping #payment-section #delivery .wrapper .delivery .selector .name h3 {
+  color: #5A7184;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #review main #shopping #payment-section #delivery .wrapper .delivery .selector .name p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #review main #shopping #payment-section #delivery .wrapper .delivery .prices {
+  gap: 8px;
+}
+body #review main #shopping #payment-section #delivery .wrapper .delivery .prices p span.price {
+  color: #5a7184;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+  margin-right: 6px;
+}
+body #review main #shopping #payment-section #delivery .wrapper .delivery .prices p span.sale {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  text-decoration: line-through;
+}
+body #review main #shopping #payment-section #delivery .wrapper .delivery .images {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 100px;
+}
+body #review main #shopping #payment-section #pay {
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+  padding: 24px 20px 30px;
+  gap: 22px;
+}
+body #review main #shopping #payment-section #pay .title {
+  align-items: center;
+  justify-content: space-between;
+}
+body #review main #shopping #payment-section #pay .title h3 {
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+}
+body #review main #shopping #payment-section #pay .title button {
+  background: transparent;
+  color: #2b67e3;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #review main #shopping #payment-section #pay .box {
+  width: 100%;
+  padding: 24px;
+  gap: 20px;
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+  align-items: center;
+}
+body #review main #shopping #payment-section #pay .box .icon {
+  padding: 6px 20px;
+}
+body #review main #shopping #payment-section #pay .box .name {
+  width: calc(100% - 212px);
+  gap: 6px;
+}
+body #review main #shopping #payment-section #pay .box .name h4 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+body #review main #shopping #payment-section #pay .box .name p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #review main #shopping #payment-section #pay .box button {
+  width: 100px;
+  height: 34px;
+  gap: 6px;
+  border-radius: 2px;
+  background: #f4f6f8;
+}
+body #review main #shopping #payment-section #pay .box button span {
+  color: #5a7184;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+}
+body #review main #shopping #payment-section #products {
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+  overflow: hidden;
+  padding: 28px 24px 20px 20px;
+  gap: 10px;
+}
+body #review main #shopping #payment-section #products h3 {
+  width: 100%;
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+}
+body #review main #shopping #payment-section #products p.subtitle {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  margin-bottom: 12px;
+}
+body #review main #shopping #payment-section #products ul {
+  gap: 10px;
+}
+body #review main #shopping #payment-section #products ul li {
+  padding: 10px 0;
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+}
+body #review main #shopping #payment-section #products ul li img {
+  padding: 10px 5px;
+  height: 100px;
+  border-radius: 8px;
+  aspect-ratio: 6/5;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body #review main #shopping #payment-section #products ul li .name {
+  width: calc(50% - 111px);
+  gap: 6px;
+}
+body #review main #shopping #payment-section #products ul li .name h5 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+body #review main #shopping #payment-section #products ul li .name p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #review main #shopping #payment-section #products ul li .count {
+  width: 18%;
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #review main #shopping #payment-section #products ul li .price {
+  width: calc(32% - 111px);
+  color: #50b83c;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.5%;
+}
+body #review main #shopping #payment-section #products ul li .iconbutton {
+  width: 38px;
+  height: 38px;
+  background: transparent;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+body #review main #shopping #payment-section #products ul li .iconbutton.edit:hover {
+  background: rgba(80, 184, 60, 0.1019607843);
+}
+body #review main #shopping #payment-section #products ul li .iconbutton.edit:hover svg path {
+  fill: #50b83c;
+}
+body #review main #shopping aside {
+  width: 350px;
+  position: sticky;
+  padding: 20px;
+  top: 90px;
+  gap: 20px;
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+}
+body #review main #shopping aside h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+body #review main #shopping aside ul {
+  gap: 15px;
+}
+body #review main #shopping aside ul li {
+  list-style: none;
+  justify-content: space-between;
+}
+body #review main #shopping aside ul li p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #review main #shopping aside ul li span {
+  color: #161d25;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #review main #shopping aside ul li.discount span {
+  color: #de3618;
+}
+body #review main #shopping aside ul li.bold p,
+body #review main #shopping aside ul li.bold span {
+  color: #161d25;
+  font-weight: 500;
+}
+body #review main #shopping aside ul .box.code {
+  width: 100%;
+  background: #f9fafb;
+  border-radius: 2px;
+  overflow: hidden;
+}
+body #review main #shopping aside ul .box.code input {
+  width: calc(100% - 90px);
+  height: 44px;
+  background: white;
+  border-radius: 2px;
+  padding: 0 16px;
+  color: #454f5b;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  text-transform: uppercase;
+}
+body #review main #shopping aside ul .box.code button {
+  width: 90px;
+  height: 44px;
+  border-radius: 2px;
+  background: #50b83c;
+  opacity: 0.1;
+  cursor: default;
+  color: white;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  letter-spacing: 0.156px;
+}
+body #review main #shopping aside ul .box.note {
+  gap: 10px;
+}
+body #review main #shopping aside ul .box.note label {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+}
+body #review main #shopping aside ul .box.note textarea {
+  border-radius: 2px;
+  background: #f9fafb;
+  padding: 12px 20px;
+  resize: none;
+  height: 130px;
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #review main #shopping aside ul .box.note textarea::-moz-placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #review main #shopping aside ul .box.note textarea::placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #review main #shopping aside hr {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f4f6f8;
+}
+body #review main #shopping aside .form {
+  gap: 15px;
+  margin-top: 10px;
+}
+body #review main #shopping aside .form button {
+  width: 100%;
+  height: 48px;
+  gap: 6px;
+  border-radius: 2px;
+  background: #f4f6f8;
+  color: #919eab;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #review main #shopping aside .form button.active {
+  background: #43467f;
+  color: #fff;
+}
+body #order main {
+  background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 25%, transparent 25%, transparent 100%);
+}
+body #order main #title-path {
+  padding: 60px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+body #order main #title-path .column {
+  gap: 8px;
+}
+body #order main #title-path .column h2 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.444%;
+  letter-spacing: 0.2px;
+}
+body #order main #title-path .column p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #order main #title-path a,
+body #order main #title-path button {
+  transition: 0.2s;
+  padding: 12px 17px;
+  border-radius: 4px;
+  border: 2px solid var(--brand);
+  background: white;
+  color: var(--brand);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+body #order main #title-path a svg,
+body #order main #title-path button svg {
+  margin-bottom: 1px;
+}
+body #order main #title-path a svg path,
+body #order main #title-path button svg path {
+  transition: 0.2s;
+}
+body #order main #title-path a:hover,
+body #order main #title-path button:hover {
+  background: var(--brand);
+  color: white;
+}
+body #order main #title-path a:hover svg path,
+body #order main #title-path button:hover svg path {
+  fill: white;
+}
+body #order main #shopping {
+  padding-bottom: 60px;
+  align-items: flex-start;
+  gap: 30px;
+}
+body #order main #shopping #package {
+  width: calc(100% - 380px);
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+  padding: 24px;
+}
+body #order main #shopping #package .box-title {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+body #order main #shopping #package .box-title h3 {
+  width: 100%;
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+}
+body #order main #shopping #package .box-title p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  margin-top: 8px;
+}
+body #order main #shopping #package .box-title .order {
+  padding: 10px 15px;
+  border-radius: 2px;
+  background: #f9fafb;
+}
+body #order main #shopping #package .box-title .order h3 {
+  font-family: Inter;
+  font-size: 14px;
+}
+body #order main #shopping #package .box-title .order p {
+  color: #5a7184;
+  margin-top: 4px;
+}
+body #order main #shopping #package .progress {
+  justify-content: space-around;
+}
+body #order main #shopping #package .progress .box {
+  align-items: center;
+  gap: 12px;
+}
+body #order main #shopping #package .progress .box .icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 4px;
+  border: 1px solid #f4f6f8;
+  background: white;
+}
+body #order main #shopping #package .progress .box p {
+  color: #959ead;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #order main #shopping #package .progress .box.active .icon svg path {
+  fill: #2b67e3;
+}
+body #order main #shopping #package .progress .box.active p {
+  color: #2b67e3;
+}
+body #order main #shopping #package .progress .box.next .icon {
+  background: #2b67e3;
+  border-color: #2b67e3;
+}
+body #order main #shopping #package .progress .box.next .icon svg path {
+  fill: white;
+}
+body #order main #shopping #package .progress .box.next p {
+  color: #2b67e3;
+  font-weight: 500;
+}
+body #order main #shopping #package .box-details .title {
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+body #order main #shopping #package .box-details .title h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #order main #shopping #package .box-details .box {
+  height: 56px;
+  width: 100%;
+  border-radius: 2px;
+  padding: 18px 20px;
+  justify-content: space-between;
+}
+body #order main #shopping #package .box-details .box:nth-child(even) {
+  background: #f9fafb;
+}
+body #order main #shopping #package .box-details .box .row {
+  align-items: center;
+  gap: 18px;
+}
+body #order main #shopping #package .box-details .box .radio {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #454f5b;
+}
+body #order main #shopping #package .box-details .box p {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+body #order main #shopping #package .box-details .box span {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #order main #shopping #package .problem {
+  padding: 20px 24px;
+  border-radius: 2px;
+  background: rgba(43, 103, 227, 0.1019607843);
+  justify-content: space-between;
+  align-items: center;
+}
+body #order main #shopping #package .problem .title {
+  gap: 4px;
+}
+body #order main #shopping #package .problem .title h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #order main #shopping #package .problem .title p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #order main #shopping #package .problem button {
+  background: #2b67e3;
+  border-radius: 2px;
+  padding: 9px 15px;
+  gap: 6px;
+}
+body #order main #shopping #package .problem button span {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+}
+body #order main #shopping #package hr {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f4f6f8;
+  margin: 36px 0;
+}
+body #order main #shopping aside {
+  width: 350px;
+  position: sticky;
+  padding: 20px;
+  top: 90px;
+  gap: 20px;
+  border-radius: 2px;
+  border: 1px solid #f4f6f8;
+  background: white;
+}
+body #order main #shopping aside h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+body #order main #shopping aside ul.shopping {
+  gap: 10px;
+}
+body #order main #shopping aside ul.shopping li {
+  align-items: center;
+  list-style: none;
+  gap: 16px;
+}
+body #order main #shopping aside ul.shopping li img {
+  padding: 5px 0;
+  height: 80px;
+  border-radius: 8px;
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body #order main #shopping aside ul.shopping li .name {
+  width: 100%;
+  gap: 4px;
+}
+body #order main #shopping aside ul.shopping li .name h5 {
+  color: #5a7184;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+body #order main #shopping aside ul.shopping li .name .sub {
+  align-items: center;
+  justify-content: space-between;
+}
+body #order main #shopping aside ul.shopping li .name .sub p span.price {
+  display: inline-block;
+  color: #50b83c;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137.5%;
+  min-width: 100px;
+  margin-right: 16px;
+}
+body #order main #shopping aside ul.shopping li .name .sub p span.items {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #order main #shopping aside ul.shopping li .name .sub .iconbutton {
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.2s;
+  align-self: flex-end;
+}
+body #order main #shopping aside ul.shopping li .name .sub .iconbutton:hover {
+  background: rgba(222, 54, 24, 0.1019607843);
+}
+body #order main #shopping aside ul.shopping li .name .sub .iconbutton:hover svg path {
+  fill: #de3618;
+}
+body #order main #shopping aside ul.shopping button {
+  background: transparent;
+  gap: 4px;
+  color: #2b67e3;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 20px;
+  margin: 20px 0 10px;
+}
+body #order main #shopping aside ul.total {
+  gap: 15px;
+}
+body #order main #shopping aside ul.total li {
+  list-style: none;
+  justify-content: space-between;
+}
+body #order main #shopping aside ul.total li p {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #order main #shopping aside ul.total li span {
+  color: #161d25;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+body #order main #shopping aside ul.total li.discount span {
+  color: #de3618;
+}
+body #order main #shopping aside ul.total li.bold p,
+body #order main #shopping aside ul.total li.bold span {
+  color: #161d25;
+  font-weight: 500;
+}
+body #order main #shopping aside ul.total .box.note {
+  gap: 10px;
+}
+body #order main #shopping aside ul.total .box.note label {
+  color: #959ead;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+}
+body #order main #shopping aside ul.total .box.note .textarea {
+  border-radius: 2px;
+  background: #f9fafb;
+  padding: 12px 30px 26px 20px;
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #order main #shopping aside ul.total .box.note .textarea p {
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #order main #shopping aside hr {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f4f6f8;
+}
+body #done main {
+  min-height: calc(100svh - 140px);
+}
+body #done main section {
+  width: 800px;
+  height: 100%;
+  gap: 38px;
+  padding-bottom: 80px;
+}
+body #done main section .title {
+  gap: 12px;
+}
+body #done main section .title h1 {
+  color: #161d25;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.444%;
+  letter-spacing: 0.2px;
+}
+body #done main section .title p {
+  color: #959ead;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  text-align: center;
+}
+body #done main section .title p span {
+  color: #000;
+}
+body #done main section button {
+  gap: 6px;
+  background: transparent;
+  color: #2b67e3;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 body footer {
   overflow: hidden;
