@@ -20,6 +20,7 @@
   --grayscale-800: rgb(33, 43, 54);
   --grayscale-950: rgb(22, 29, 37);
   --brand: rgb(43, 103, 227);
+  --brand-hover: rgb(27, 82, 193);
   --brand-variant: rgb(43, 103, 227, 0.7);
   --red: rgb(222, 54, 24);
   --red-container: rgba(222, 54, 24, 0.1);
@@ -76,6 +77,9 @@ body {
   @import "../styles/lending";
   @import "../styles/homepage";
   @import "../styles/categories";
+  @import "../styles/search";
+  @import "../styles/product";
+  @import "../styles/basket";
   @import "../styles/general/footers";
 }
 

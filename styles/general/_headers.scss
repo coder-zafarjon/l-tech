@@ -2,6 +2,7 @@ header#lending {
   width: 100%;
   height: 100px;
   background-color: var(--brand);
+  overflow: hidden;
 
   .container {
     height: 100px;
@@ -53,6 +54,8 @@ header#lending {
 }
 
 header#navbar .up {
+  overflow: hidden;
+
   .container {
     align-items: center;
     justify-content: space-between;
@@ -133,6 +136,8 @@ header hr {
   position: sticky;
   top: 0;
   z-index: 10;
+  overflow: hidden;
+  border-bottom: 1px solid #f4f6f8;
 
   .container {
     height: 90px;

@@ -179,7 +179,7 @@
                   />
                 </svg>
               </button>
-              <button class="search-btn iconbutton">
+              <button onclick="navigateSearchPage()" class="search-btn iconbutton">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -198,7 +198,7 @@
             </div>
           </div>
           <div class="account row">
-            <button class="shop iconbutton active">
+            <button class="shop iconbutton active" onclick="navigateBasketPage()">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -1145,5 +1145,12 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const navigateSearchPage = () =>
+        (window.location = "http://127.0.0.1:5500/search.html");
+      const navigateBasketPage = () =>
+        (window.location = "http://127.0.0.1:5500/basket.html");
+    </script>
   </body>
 </html>
