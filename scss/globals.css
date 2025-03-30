@@ -656,16 +656,35 @@ body #homepage main #hero {
   background: #f9fafb;
   position: relative;
 }
+@media (max-width: 991px) {
+  body #homepage main #hero {
+    height: auto;
+    max-height: none;
+  }
+}
 body #homepage main #hero .container {
   height: 100%;
   align-items: center;
   padding-bottom: 20px;
   justify-content: space-between;
 }
+@media (max-width: 991px) {
+  body #homepage main #hero .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 36px 0;
+  }
+}
 body #homepage main #hero .container .content {
   width: 38%;
   justify-content: space-between;
   gap: 8px;
+}
+@media (max-width: 991px) {
+  body #homepage main #hero .container .content {
+    width: 100%;
+  }
 }
 body #homepage main #hero .container .content p {
   color: var(--brand);
@@ -675,6 +694,16 @@ body #homepage main #hero .container .content p {
   font-weight: 500;
   line-height: 142.857%;
   margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  body #homepage main #hero .container .content p {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #hero .container .content p {
+    margin-bottom: 4px;
+  }
 }
 body #homepage main #hero .container .content h1 {
   color: #161d25;
@@ -686,6 +715,19 @@ body #homepage main #hero .container .content h1 {
   letter-spacing: 0.2px;
   margin-bottom: 17px;
 }
+@media (max-width: 991px) {
+  body #homepage main #hero .container .content h1 {
+    text-wrap: balance;
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #hero .container .content h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 131.25%;
+    margin-bottom: 16px;
+  }
+}
 body #homepage main #hero .container .content h2 {
   color: #959ead;
   font-family: Inter;
@@ -695,11 +737,52 @@ body #homepage main #hero .container .content h2 {
   line-height: 175%;
   margin-bottom: 30px;
 }
-body #homepage main #hero .container .content .buy {
+@media (max-width: 991px) {
+  body #homepage main #hero .container .content h2 {
+    text-wrap: balance;
+    margin: 0;
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #hero .container .content h2 {
+    font-size: 14px;
+    line-height: 157.143%;
+  }
+}
+body #homepage main #hero .container img {
+  height: 100%;
+  padding-right: 4%;
+  padding-bottom: 1%;
+  max-height: 550px;
+}
+@media (max-width: 991px) {
+  body #homepage main #hero .container img {
+    height: 400px;
+    padding: 0;
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #hero .container img {
+    height: 300px;
+  }
+}
+body #homepage main #hero .container .buy {
   margin-bottom: 55px;
   gap: 22px;
 }
-body #homepage main #hero .container .content .buy button {
+@media (max-width: 991px) {
+  body #homepage main #hero .container .buy {
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #hero .container .buy {
+    width: 100%;
+    gap: 16px;
+  }
+}
+body #homepage main #hero .container .buy button {
   width: 160px;
   height: 48px;
   transition: 0.2s;
@@ -714,22 +797,22 @@ body #homepage main #hero .container .content .buy button {
   font-weight: 500;
   line-height: 137.5%;
 }
-body #homepage main #hero .container .content .buy button:hover {
+@media (max-width: 560px) {
+  body #homepage main #hero .container .buy button {
+    width: calc(50% - 8px);
+    height: 44px;
+  }
+}
+body #homepage main #hero .container .buy button:hover {
   background: var(--brand);
   color: #fff;
 }
-body #homepage main #hero .container .content .buy button.active {
+body #homepage main #hero .container .buy button.active {
   background: var(--brand);
   color: #fff;
 }
-body #homepage main #hero .container .content .buy button.active:hover {
+body #homepage main #hero .container .buy button.active:hover {
   background: var(--brand-hover) !important;
-}
-body #homepage main #hero .container img {
-  height: 100%;
-  padding-right: 4%;
-  padding-bottom: 1%;
-  max-height: 550px;
 }
 body #homepage main #hero .hero-right-button {
   position: absolute;
@@ -741,6 +824,14 @@ body #homepage main #hero .hero-right-button {
   background: white;
   border-radius: 2px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 560px) {
+  body #homepage main #hero .hero-right-button {
+    top: 65%;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
 }
 body #homepage main #advantages {
   height: 200px;
@@ -6407,6 +6498,30 @@ body footer .down .container .socials a svg {
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.mobile-block {
+  display: none;
+}
+@media (max-width: 991px) {
+  .mobile-block {
+    display: block;
+  }
+}
+
+.mobile-flex {
+  display: none;
+}
+@media (max-width: 991px) {
+  .mobile-flex {
+    display: flex;
+  }
+}
+
+@media (max-width: 991px) {
+  .mobile-none {
+    display: none;
+  }
 }
 
 .container {

@@ -110,6 +110,24 @@ body {
   flex-wrap: wrap;
 }
 
+.mobile-block{
+  display: none;
+  @media (max-width: 991px) {
+   display: block;
+  }
+}
+.mobile-flex{
+  display: none;
+  @media (max-width: 991px) {
+   display: flex;
+  }
+}
+.mobile-none{
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1360px;
