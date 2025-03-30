@@ -1679,7 +1679,12 @@ body #homepage main #partners .logo:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 body #categories main {
-  background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 5%, transparent 5%, transparent 100%);
+  background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 15%, transparent 15%, transparent 100%);
+}
+@media (max-width: 560px) {
+  body #categories main {
+    background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 5%, transparent 5%, transparent 100%);
+  }
 }
 body #categories main #title-path {
   padding: 60px 0;
@@ -1713,7 +1718,12 @@ body #categories main #title-path .column h2 {
   line-height: 144.444%;
   letter-spacing: 0.2px;
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
+  body #categories main #title-path .column h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 560px) {
   body #categories main #title-path .column h2 {
     font-size: 24px;
     font-weight: 600;
@@ -1728,7 +1738,12 @@ body #categories main #title-path .column p {
   font-weight: 400;
   line-height: 137.5%;
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
+  body #categories main #title-path .column p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 560px) {
   body #categories main #title-path .column p {
     font-size: 14px;
     line-height: 157.143%;
@@ -1738,7 +1753,7 @@ body #categories main #title-path .path {
   align-items: center;
   gap: 8px;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   body #categories main #title-path .path {
     gap: 0;
   }
@@ -1747,7 +1762,7 @@ body #categories main #title-path .path .pathname {
   gap: 8px;
   align-items: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   body #categories main #title-path .path .pathname {
     gap: 2px;
   }
@@ -1956,6 +1971,22 @@ body #searchpage main #title-path {
   align-items: center;
   border-bottom: 1px solid #f4f6f8;
 }
+@media (max-width: 991px) {
+  body #searchpage main #title-path {
+    padding: 24px 0 48px;
+    margin-bottom: 0;
+    border: none;
+  }
+  body #searchpage main #title-path .column {
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+  body #searchpage main #title-path {
+    padding: 24px 0;
+    margin: 0;
+  }
+}
 body #searchpage main #title-path .column {
   gap: 14px;
 }
@@ -1963,9 +1994,19 @@ body #searchpage main #title-path .column .path {
   align-items: center;
   gap: 8px;
 }
+@media (max-width: 560px) {
+  body #searchpage main #title-path .column .path {
+    gap: 0;
+  }
+}
 body #searchpage main #title-path .column .path .pathname {
   gap: 8px;
   align-items: center;
+}
+@media (max-width: 560px) {
+  body #searchpage main #title-path .column .path .pathname {
+    gap: 2px;
+  }
 }
 body #searchpage main #title-path .column .path .pathname span {
   color: #5a7184;
@@ -1979,6 +2020,11 @@ body #searchpage main #title-path .column .path .pathname.active span {
   color: var(--brand);
   font-weight: 500;
 }
+@media (max-width: 480px) {
+  body #searchpage main #title-path .column .path .pathname.active span {
+    letter-spacing: -0.1px;
+  }
+}
 body #searchpage main #title-path .column .path .right-icon {
   padding-top: 2px;
 }
@@ -1991,11 +2037,28 @@ body #searchpage main #title-path .column h2 {
   line-height: 144.444%;
   letter-spacing: 0.2px;
 }
+@media (max-width: 991px) {
+  body #searchpage main #title-path .column h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 560px) {
+  body #searchpage main #title-path .column h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+}
 body #searchpage main #title-path .actions {
   padding: 6px;
   border: 1px solid #f4f6f8;
   border-radius: 2px;
   gap: 6px;
+}
+@media (max-width: 991px) {
+  body #searchpage main #title-path .actions {
+    display: none;
+  }
 }
 body #searchpage main #title-path .actions .iconbutton {
   padding: 13px;
@@ -2015,6 +2078,12 @@ body #searchpage main #base {
   align-items: flex-start;
   padding-bottom: 100px;
   gap: 30px;
+}
+@media (max-width: 991px) {
+  body #searchpage main #base {
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
 }
 body #searchpage main #base aside {
   width: 280px;
@@ -2206,9 +2275,22 @@ body #searchpage main #base section {
   width: calc(100% - 280px);
   gap: 40px;
 }
+@media (max-width: 991px) {
+  body #searchpage main #base section {
+    width: 100%;
+    gap: 30px;
+  }
+}
 body #searchpage main #base section .title {
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  body #searchpage main #base section .title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }
 body #searchpage main #base section .title p.subtitle {
   color: #5a7184;
@@ -2221,6 +2303,12 @@ body #searchpage main #base section .title p.subtitle {
 body #searchpage main #base section .title .types {
   align-items: center;
   gap: 8px;
+}
+@media (max-width: 560px) {
+  body #searchpage main #base section .title .types {
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 body #searchpage main #base section .title .types p {
   color: #959ead;
@@ -2242,8 +2330,22 @@ body #searchpage main #base section .title .types button {
   font-weight: 500;
   line-height: 137.5%;
 }
+body #searchpage main #base section .title .types button.iconbutton {
+  width: 54px;
+  height: 54px;
+}
 body #searchpage main #base section .shops {
   gap: 30px;
+}
+@media (max-width: 991px) {
+  body #searchpage main #base section .shops {
+    gap: 10px;
+  }
+}
+@media (max-width: 560px) {
+  body #searchpage main #base section .shops {
+    gap: 20px;
+  }
 }
 body #searchpage main #base section .shops .card {
   width: calc((100% - 60px) / 3);
@@ -2252,6 +2354,21 @@ body #searchpage main #base section .shops .card {
   padding: 20px;
   background: var(--brand-container);
   gap: 16px;
+}
+@media (max-width: 991px) {
+  body #searchpage main #base section .shops .card {
+    width: calc((100% - 20px) / 3);
+  }
+}
+@media (max-width: 768px) {
+  body #searchpage main #base section .shops .card {
+    width: calc(50% - 5px);
+  }
+}
+@media (max-width: 560px) {
+  body #searchpage main #base section .shops .card {
+    width: 100%;
+  }
 }
 body #searchpage main #base section .shops .card img {
   width: 100%;
@@ -2320,6 +2437,16 @@ body #searchpage main #base section .shops .card .details .companies .rate span 
 body #searchpage main #base section .products {
   gap: 30px;
 }
+@media (max-width: 991px) {
+  body #searchpage main #base section .products {
+    gap: 10px;
+  }
+}
+@media (max-width: 560px) {
+  body #searchpage main #base section .products {
+    gap: 20px;
+  }
+}
 body #searchpage main #base section .products .card {
   width: calc((100% - 60px) / 3);
   transition: 0.15s;
@@ -2327,6 +2454,21 @@ body #searchpage main #base section .products .card {
   padding: 20px;
   gap: 16px;
   position: relative;
+}
+@media (max-width: 991px) {
+  body #searchpage main #base section .products .card {
+    width: calc((100% - 20px) / 3);
+  }
+}
+@media (max-width: 768px) {
+  body #searchpage main #base section .products .card {
+    width: calc(50% - 5px);
+  }
+}
+@media (max-width: 560px) {
+  body #searchpage main #base section .products .card {
+    width: 100%;
+  }
 }
 body #searchpage main #base section .products .card:hover {
   box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.04);
