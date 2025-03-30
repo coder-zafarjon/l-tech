@@ -840,9 +840,31 @@ body #homepage main #advantages {
   justify-content: space-between;
   border-bottom: 1px solid #f4f6f8;
 }
+@media (max-width: 991px) {
+  body #homepage main #advantages {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 36px;
+  }
+}
+@media (max-width: 480px) {
+  body #homepage main #advantages {
+    padding: 36px 0 24px;
+  }
+}
 body #homepage main #advantages .tab {
   gap: 20px;
   align-items: center;
+}
+@media (max-width: 991px) {
+  body #homepage main #advantages .tab {
+    width: calc(50% - 18px);
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #advantages .tab {
+    width: 100%;
+  }
 }
 body #homepage main #advantages .tab .column {
   gap: 4px;
@@ -868,6 +890,12 @@ body #homepage main #hit-products {
   padding: 80px 0;
   gap: 14px;
 }
+@media (max-width: 480px) {
+  body #homepage main #hit-products {
+    padding: 36px 0;
+    gap: 10px;
+  }
+}
 body #homepage main #hit-products h2 {
   color: #161d25;
   text-align: center;
@@ -878,6 +906,24 @@ body #homepage main #hit-products h2 {
   line-height: 144.444%;
   letter-spacing: 0.2px;
 }
+@media (max-width: 991px) {
+  body #homepage main #hit-products h2 {
+    text-align: start;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+}
+@media (max-width: 7680px) {
+  body #homepage main #hit-products h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 660px) {
+  body #homepage main #hit-products h2 {
+    font-size: 24px;
+  }
+}
 body #homepage main #hit-products p.subtitle {
   color: #959ead;
   text-align: center;
@@ -887,6 +933,22 @@ body #homepage main #hit-products p.subtitle {
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 28px;
+}
+@media (max-width: 991px) {
+  body #homepage main #hit-products p.subtitle {
+    text-align: start;
+    font-size: 15px;
+  }
+}
+@media (max-width: 660px) {
+  body #homepage main #hit-products p.subtitle {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  body #homepage main #hit-products p.subtitle {
+    margin-bottom: 10px;
+  }
 }
 body #homepage main #hit-products .products {
   gap: 30px;
@@ -899,6 +961,41 @@ body #homepage main #hit-products .products .card {
   padding: 20px;
   z-index: 9;
   gap: 12px;
+}
+@media (max-width: 991px) {
+  body #homepage main #hit-products .products .card {
+    width: calc((100% - 60px) / 3);
+  }
+  body #homepage main #hit-products .products .card:nth-child(7) {
+    display: none;
+  }
+  body #homepage main #hit-products .products .card:nth-child(8) {
+    display: none;
+  }
+}
+@media (max-width: 660px) {
+  body #homepage main #hit-products .products .card {
+    width: calc((100% - 30px) / 2);
+  }
+  body #homepage main #hit-products .products .card:nth-child(5) {
+    display: none;
+  }
+  body #homepage main #hit-products .products .card:nth-child(6) {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  body #homepage main #hit-products .products .card {
+    width: 100%;
+    border: 1px solid #c4cdd5;
+    border-radius: 6px;
+  }
+  body #homepage main #hit-products .products .card:nth-child(3) {
+    display: none;
+  }
+  body #homepage main #hit-products .products .card:nth-child(4) {
+    display: none;
+  }
 }
 body #homepage main #hit-products .products .card:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -961,6 +1058,9 @@ body #homepage main #hit-products .products .card .wrapper .title p {
   font-weight: 400;
   line-height: 150%;
   margin-bottom: 7px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: nowrap;
 }
 body #homepage main #hit-products .products .card .wrapper .title h4 {
   color: #161d25;
@@ -970,6 +1070,9 @@ body #homepage main #hit-products .products .card .wrapper .title h4 {
   font-weight: 500;
   line-height: 137.5%;
   margin-bottom: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: nowrap;
 }
 body #homepage main #hit-products .products .card .wrapper .title .price p {
   color: var(--brand);
@@ -978,9 +1081,18 @@ body #homepage main #hit-products .products .card .wrapper .title .price p {
   font-style: normal;
   font-weight: 500;
   line-height: 142.857%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: nowrap;
 }
 body #homepage main #hit-products .products .card .wrapper .title .price .rate {
   gap: 4px;
+}
+@media (max-width: 1280px) {
+  body #homepage main #hit-products .products .card .wrapper .title .price .rate {
+    height: 22px;
+    overflow: hidden;
+  }
 }
 body #homepage main #hit-products .products .card .wrapper .actions {
   transition: 0.1s;
@@ -1029,6 +1141,23 @@ body #homepage main #news {
   height: 440px;
   padding: 40px 0 60px;
 }
+@media (max-width: 991px) {
+  body #homepage main #news {
+    height: auto;
+    padding-top: 160px;
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #news {
+    padding-top: 120px;
+    padding-bottom: 24px;
+  }
+}
+@media (max-width: 440px) {
+  body #homepage main #news {
+    padding-top: 60px;
+  }
+}
 body #homepage main #news .wrapper {
   height: 100%;
   align-items: center;
@@ -1036,13 +1165,41 @@ body #homepage main #news .wrapper {
   background: rgba(71, 194, 192, 0.1019607843);
   border-radius: 2px;
 }
+@media (max-width: 991px) {
+  body #homepage main #news .wrapper {
+    flex-direction: column;
+  }
+}
 body #homepage main #news .wrapper img {
   height: 102%;
   margin-top: 2%;
 }
+@media (max-width: 991px) {
+  body #homepage main #news .wrapper img {
+    width: 60%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: visible;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #news .wrapper img {
+    width: 80%;
+    height: 200px;
+  }
+}
 body #homepage main #news .wrapper .content {
   width: 29%;
   gap: 10px;
+}
+@media (max-width: 991px) {
+  body #homepage main #news .wrapper .content {
+    width: 100%;
+    padding: 36px 14px 24px 14px;
+  }
 }
 body #homepage main #news .wrapper .content .class {
   color: var(--green);
@@ -1062,6 +1219,13 @@ body #homepage main #news .wrapper .content h3 {
   line-height: 144.444%;
   letter-spacing: 0.2px;
 }
+@media (max-width: 560px) {
+  body #homepage main #news .wrapper .content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+}
 body #homepage main #news .wrapper .content .subtitle {
   color: #959ead;
   font-family: Inter;
@@ -1071,9 +1235,21 @@ body #homepage main #news .wrapper .content .subtitle {
   line-height: 162.5%;
   margin-bottom: 19px;
 }
+@media (max-width: 560px) {
+  body #homepage main #news .wrapper .content .subtitle {
+    font-size: 14px;
+    line-height: 157.143%;
+  }
+}
 body #homepage main #news .wrapper .content .price {
   align-items: center;
   gap: 26px;
+}
+@media (max-width: 560px) {
+  body #homepage main #news .wrapper .content .price {
+    justify-content: space-between;
+    gap: 24px;
+  }
 }
 body #homepage main #news .wrapper .content .price button {
   padding: 13px 28px;
@@ -1088,24 +1264,43 @@ body #homepage main #news .wrapper .content .price button {
   font-weight: 500;
   line-height: 137.5%;
 }
+@media (max-width: 560px) {
+  body #homepage main #news .wrapper .content .price button {
+    padding: 12px 18px;
+  }
+}
 body #homepage main #news .wrapper .content .price button:hover {
   background: #39acaa;
 }
 body #homepage main #news .wrapper .content .price p {
   color: #959ead;
   font-family: Inter;
+  text-align: right;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
   text-decoration: line-through;
 }
+@media (max-width: 560px) {
+  body #homepage main #news .wrapper .content .price p {
+    font-size: 16px;
+    line-height: 175%;
+  }
+}
 body #homepage main #categories {
   padding: 50px 0;
   gap: 30px;
 }
+@media (max-width: 560px) {
+  body #homepage main #categories {
+    padding: 24px 0;
+    gap: 14px;
+  }
+}
 body #homepage main #categories .title {
   justify-content: space-between;
+  align-items: center;
 }
 body #homepage main #categories .title h2 {
   color: #161d25;
@@ -1116,28 +1311,19 @@ body #homepage main #categories .title h2 {
   line-height: 157.143%;
   letter-spacing: 0.2px;
 }
-body #homepage main #categories .title a,
-body #homepage main #categories .title button {
-  transition: 0.2s;
-  padding: 12px 22px;
-  border-radius: 4px;
-  border: 2px solid var(--brand);
-  background: white;
-  color: var(--brand);
-  text-align: center;
-  font-feature-settings: "liga" off, "clig" off;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 137.5%;
-}
-body #homepage main #categories .title a:hover,
-body #homepage main #categories .title button:hover {
-  background: var(--brand);
-  color: white;
+@media (max-width: 560px) {
+  body #homepage main #categories .title h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
 }
 body #homepage main #categories .categories {
   gap: 30px;
+}
+@media (max-width: 560px) {
+  body #homepage main #categories .categories {
+    gap: 12px;
+  }
 }
 body #homepage main #categories .categories .card {
   width: calc((100% - 150px) / 6);
@@ -1145,6 +1331,16 @@ body #homepage main #categories .categories .card {
   align-items: center;
   border-radius: 2px;
   background: white;
+}
+@media (max-width: 991px) {
+  body #homepage main #categories .categories .card {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #categories .categories .card {
+    width: calc(50% - 6px);
+  }
 }
 body #homepage main #categories .categories .card:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -1170,14 +1366,72 @@ body #homepage main #categories .categories .card p {
   line-height: 142.857%;
   margin-bottom: 24px;
 }
+body #homepage main #categories a.link,
+body #homepage main #categories button.link {
+  transition: 0.2s;
+  padding: 12px 22px;
+  border-radius: 4px;
+  border: 2px solid var(--brand);
+  background: white;
+  color: var(--brand);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+  text-wrap: nowrap;
+}
+body #homepage main #categories a.link:hover,
+body #homepage main #categories button.link:hover {
+  background: var(--brand);
+  color: white;
+}
+@media (max-width: 560px) {
+  body #homepage main #categories a.link.mobile-none-ind,
+  body #homepage main #categories button.link.mobile-none-ind {
+    display: none;
+  }
+}
+body #homepage main #categories a.link.mobile-block-ind,
+body #homepage main #categories button.link.mobile-block-ind {
+  display: none;
+}
+@media (max-width: 560px) {
+  body #homepage main #categories a.link.mobile-block-ind,
+  body #homepage main #categories button.link.mobile-block-ind {
+    display: block;
+  }
+}
 body #homepage main #product-category {
   padding: 90px 0;
   gap: 30px;
   border-bottom: 1px solid #f4f6f8;
 }
+@media (max-width: 560px) {
+  body #homepage main #product-category {
+    padding: 24px 0;
+  }
+}
 body #homepage main #product-category .tab {
   width: calc((100% - 60px) / 3);
   gap: 20px;
+}
+@media (max-width: 991px) {
+  body #homepage main #product-category .tab {
+    width: calc(50% - 15px);
+  }
+  body #homepage main #product-category .tab:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #product-category .tab {
+    width: 100%;
+  }
+  body #homepage main #product-category .tab:nth-child(2) {
+    display: none;
+  }
 }
 body #homepage main #product-category .tab h3 {
   color: #161d25;
@@ -1218,6 +1472,7 @@ body #homepage main #product-category .tab button.card .column h4 {
   font-style: normal;
   font-weight: 500;
   line-height: 137.5%;
+  text-align: start;
 }
 body #homepage main #product-category .tab button.card .column .price {
   width: 100%;
@@ -1261,6 +1516,11 @@ body #homepage main #blog {
   padding: 90px 0 60px;
   gap: 34px;
 }
+@media (max-width: 560px) {
+  body #homepage main #blog {
+    padding: 36px 0 24px;
+  }
+}
 body #homepage main #blog .title {
   justify-content: space-between;
   align-items: center;
@@ -1285,25 +1545,10 @@ body #homepage main #blog .title .column p {
   font-weight: 400;
   line-height: 137.5%;
 }
-body #homepage main #blog .title a,
-body #homepage main #blog .title button {
-  transition: 0.2s;
-  padding: 12px 22px;
-  border-radius: 4px;
-  border: 2px solid var(--brand);
-  background: white;
-  color: var(--brand);
-  text-align: center;
-  font-feature-settings: "liga" off, "clig" off;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 137.5%;
-}
-body #homepage main #blog .title a:hover,
-body #homepage main #blog .title button:hover {
-  background: var(--brand);
-  color: white;
+@media (max-width: 991px) {
+  body #homepage main #blog .title .column p {
+    text-wrap: balance;
+  }
 }
 body #homepage main #blog .wrapper {
   gap: 30px;
@@ -1314,6 +1559,22 @@ body #homepage main #blog .wrapper .tab {
   border-radius: 2px;
   background: white;
   gap: 18px;
+}
+@media (max-width: 991px) {
+  body #homepage main #blog .wrapper .tab {
+    width: calc(50% - 15px);
+  }
+  body #homepage main #blog .wrapper .tab:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #blog .wrapper .tab {
+    width: 100%;
+  }
+  body #homepage main #blog .wrapper .tab:nth-child(2) {
+    display: none;
+  }
 }
 body #homepage main #blog .wrapper .tab img {
   width: 100%;
@@ -1348,11 +1609,64 @@ body #homepage main #blog .wrapper .tab .content p {
   font-weight: 400;
   line-height: 142.857%;
 }
+body #homepage main #blog a.link,
+body #homepage main #blog button.link {
+  transition: 0.2s;
+  padding: 12px 22px;
+  border-radius: 4px;
+  border: 2px solid var(--brand);
+  background: white;
+  color: var(--brand);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+  text-wrap: nowrap;
+}
+body #homepage main #blog a.link:hover,
+body #homepage main #blog button.link:hover {
+  background: var(--brand);
+  color: white;
+}
+@media (max-width: 560px) {
+  body #homepage main #blog a.link.mobile-none-ind,
+  body #homepage main #blog button.link.mobile-none-ind {
+    display: none;
+  }
+}
+body #homepage main #blog a.link.mobile-block-ind,
+body #homepage main #blog button.link.mobile-block-ind {
+  display: none;
+}
+@media (max-width: 560px) {
+  body #homepage main #blog a.link.mobile-block-ind,
+  body #homepage main #blog button.link.mobile-block-ind {
+    display: block;
+  }
+}
 body #homepage main #partners {
   padding: 40px 0 60px;
   gap: 60px;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 1280px) {
+  body #homepage main #partners {
+    gap: 30px;
+  }
+}
+@media (max-width: 991px) {
+  body #homepage main #partners {
+    -moz-column-gap: 120px;
+         column-gap: 120px;
+  }
+}
+@media (max-width: 560px) {
+  body #homepage main #partners {
+    gap: 0;
+  }
 }
 body #homepage main #partners .logo {
   width: 120px;
