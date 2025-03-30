@@ -287,7 +287,7 @@ body .main header#navbar.down .container .account .iconbutton.shop {
   position: relative;
 }
 body .main header#navbar.down .container .account .iconbutton.shop.active::before {
-  content: "3";
+  content: "5";
   color: white;
   padding-top: 2px;
   position: absolute;
@@ -5438,6 +5438,197 @@ body #login main section .slider .shadow p {
   font-weight: 400;
   line-height: 142.857%;
 }
+body #login-alt main #hero {
+  padding: 60px 0;
+  gap: 30px;
+}
+body #login-alt main #hero .content {
+  width: calc(50% - 30px);
+  gap: 20px;
+}
+body #login-alt main #hero .content h3 {
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  text-wrap: balance;
+}
+body #login-alt main #hero .content p.subtitle {
+  color: #5a7184;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  margin-bottom: 30px;
+}
+body #login-alt main #hero .content .box {
+  gap: 16px;
+  margin-bottom: 5px;
+}
+body #login-alt main #hero .content .box h4 {
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 111.111%;
+  letter-spacing: 0.2px;
+}
+body #login-alt main #hero .content .box p {
+  color: #959ead;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 171.429%;
+  margin-top: 9px;
+  text-wrap: balance;
+}
+body #login-alt main #hero .form {
+  width: 50%;
+  padding: 30px;
+}
+body #login-alt main #hero .form h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 157.143%;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+body #login-alt main #hero .form p {
+  color: #5a7184;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 171.429%;
+  margin-bottom: 40px;
+  text-wrap: balance;
+}
+body #login-alt main #hero .form .box {
+  width: calc((100% - 30px) / 2);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+body #login-alt main #hero .form .box.poll {
+  width: calc((50% - 45px) / 2);
+}
+body #login-alt main #hero .form .box.full {
+  width: 100%;
+}
+body #login-alt main #hero .form .box label {
+  color: #5a7184;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #login-alt main #hero .form .box input {
+  border: 1px solid #f4f6f8;
+  background: #f4f6f8;
+  border-radius: 2px;
+  padding: 12px 20px;
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #login-alt main #hero .form .box input::-moz-placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #login-alt main #hero .form .box input::placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #login-alt main #hero .form .actions {
+  width: 100%;
+}
+body #login-alt main #hero .form .actions .first {
+  width: calc(100% - 220px);
+  height: 48px;
+  border-radius: 2px;
+  background: #2b67e3;
+  line-height: 48px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #login-alt main #hero .form .actions p {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  line-height: 48px;
+}
+body #login-alt main #hero .form .actions .second {
+  width: 140px;
+  height: 48px;
+  border-radius: 2px;
+  background: #f4f6f8;
+  line-height: 48px;
+  display: block;
+  color: #5a7184;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #login-alt main #partners {
+  padding: 40px 0;
+  align-items: center;
+  gap: 30px;
+}
+body #login-alt main #partners h2 {
+  color: #161d25;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 157.143%;
+  letter-spacing: 0.2px;
+}
+body #login-alt main #partners .row {
+  width: 100%;
+  gap: 60px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body #login-alt main #partners .logo {
+  width: 120px;
+  height: 120px;
+  transition: 0.15s;
+  border-radius: 4px;
+  background: white;
+}
+body #login-alt main #partners .logo:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
 body #register main {
   height: calc(100svh - 140px);
   max-height: 800px;
@@ -5686,6 +5877,206 @@ body #register main section .slider .shadow p {
   font-style: normal;
   font-weight: 400;
   line-height: 142.857%;
+}
+body #register-alt main #hero {
+  padding: 40px 0;
+  gap: 30px;
+}
+body #register-alt main #hero .content {
+  width: calc(50% - 30px);
+  gap: 20px;
+}
+body #register-alt main #hero .content h3 {
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  text-wrap: balance;
+}
+body #register-alt main #hero .content p.subtitle {
+  color: #5a7184;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  margin-bottom: 30px;
+}
+body #register-alt main #hero .content .box {
+  gap: 16px;
+  margin-bottom: 5px;
+}
+body #register-alt main #hero .content .box h4 {
+  color: #161d25;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 111.111%;
+  letter-spacing: 0.2px;
+}
+body #register-alt main #hero .content .box p {
+  color: #959ead;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 171.429%;
+  margin-top: 9px;
+  text-wrap: balance;
+}
+body #register-alt main #hero .form {
+  width: 50%;
+  padding: 30px;
+  gap: 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+body #register-alt main #hero .form .title {
+  gap: 10px;
+}
+body #register-alt main #hero .form h3 {
+  width: 100%;
+  color: #161d25;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 157.143%;
+  letter-spacing: 0.2px;
+}
+body #register-alt main #hero .form p.subtitle {
+  width: 100%;
+  color: #5a7184;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 171.429%;
+  text-wrap: balance;
+  margin-bottom: 10px;
+}
+body #register-alt main #hero .form .box {
+  width: calc((100% - 20px) / 2);
+  gap: 8px;
+}
+body #register-alt main #hero .form .box.poll {
+  width: calc(40% - 10px);
+}
+body #register-alt main #hero .form .box.longer {
+  width: calc(60% - 10px);
+}
+body #register-alt main #hero .form .box.full {
+  width: 100%;
+}
+body #register-alt main #hero .form .box label {
+  color: #5a7184;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #register-alt main #hero .form .box input {
+  border: 1px solid #f4f6f8;
+  background: #f4f6f8;
+  border-radius: 2px;
+  padding: 12px 20px;
+  color: #161d25;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #register-alt main #hero .form .box input::-moz-placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #register-alt main #hero .form .box input::placeholder {
+  color: #959ead;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+}
+body #register-alt main #hero .form .actions {
+  width: 100%;
+}
+body #register-alt main #hero .form .actions .first {
+  width: calc(100% - 220px);
+  height: 48px;
+  border-radius: 2px;
+  background: #2b67e3;
+  line-height: 48px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #register-alt main #hero .form .actions p {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  line-height: 48px;
+}
+body #register-alt main #hero .form .actions .second {
+  width: 140px;
+  height: 48px;
+  border-radius: 2px;
+  background: #f4f6f8;
+  line-height: 48px;
+  display: block;
+  color: #5a7184;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #register-alt main #partners {
+  padding: 40px 0;
+  align-items: center;
+  gap: 30px;
+}
+body #register-alt main #partners h2 {
+  color: #161d25;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 157.143%;
+  letter-spacing: 0.2px;
+}
+body #register-alt main #partners .row {
+  width: 100%;
+  gap: 60px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body #register-alt main #partners .logo {
+  width: 120px;
+  height: 120px;
+  transition: 0.15s;
+  border-radius: 4px;
+  background: white;
+}
+body #register-alt main #partners .logo:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 body footer {
   overflow: hidden;
