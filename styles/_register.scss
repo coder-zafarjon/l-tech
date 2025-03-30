@@ -42,7 +42,7 @@
         }
 
         a,button {
-          color: #2b67e3;
+          color: var(--brand);;
           text-align: right;
           font-size: 16px;
           font-style: normal;
@@ -430,7 +430,7 @@
           width: calc(100% - 220px);
           height: 48px;
           border-radius: 2px;
-          background: #2b67e3;
+          background: var(--brand);;
           line-height: 48px;
           display: block;
 

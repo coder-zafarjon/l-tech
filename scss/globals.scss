@@ -14,20 +14,20 @@
 }
 
 :root {
-  --grayscale-50: rgb(249, 250, 251);
-  --grayscale-100: rgb(244, 246, 248);
-  --grayscale-400: rgb(99, 115, 129);
-  --grayscale-800: rgb(33, 43, 54);
-  --grayscale-950: rgb(22, 29, 37);
-  --brand: rgb(43, 103, 227);
-  --brand-hover: rgb(27, 82, 193);
-  --brand-variant: rgb(43, 103, 227, 0.7);
-  --red: rgb(222, 54, 24);
-  --red-container: rgba(222, 54, 24, 0.1);
-  --yellow: rgb(238, 194, 0);
-  --yellow-container: rgba(238, 194, 0, 0.1);
-  --green: rgb(71, 193, 191);
-  --green-container: rgba(71, 193, 191, 0.1);
+  --grayscale-50: #f9fafb;
+  --grayscale-100: #f4f6f8;
+  --grayscale-400: #637381;
+  --grayscale-800: #212b36;
+  --grayscale-950: #161d25;
+  --brand: #2b67e3;
+  --brand-hover: #1b52c1;
+  --brand-container: #2b67e31a;
+  --red: #de3618;
+  --red-container: #de36181a;
+  --yellow: #eec200;
+  --yellow-container: #eec2001a;
+  --green: #47c1bf;
+  --green-container: #47c1bf1a;
 }
 
 * {
@@ -100,13 +100,13 @@ body {
   flex-direction: column;
 }
 
-.flex-center{
+.flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.wrap{
+.wrap {
   flex-wrap: wrap;
 }
 
@@ -114,4 +114,53 @@ body {
   width: 100%;
   max-width: 1360px;
   margin: 0 auto;
+
+  // Medium Laptop
+  @media (max-width: 1400px) {
+    max-width: 1200px;
+  }
+
+  // Mini Monitors
+  @media (max-width: 1280px) {
+    max-width: 1000px;
+  }
+
+  @media (max-width: 1140px) {
+    max-width: 900px;
+  }
+
+  // Mini Laptop
+  @media (max-width: 991px) {
+    max-width: 800px;
+  }
+
+  @media (max-width: 860px) {
+    max-width: 700px;
+  }
+
+  // Table
+  @media (max-width: 768px) {
+    max-width: 600px;
+  }
+
+  @media (max-width: 660px) {
+    max-width: 500px;
+  }
+
+  @media (max-width: 560px) {
+    max-width: 440px;
+  }
+
+  // Phone
+  @media (max-width: 480px) {
+    max-width: 400px;
+  }
+
+  @media (max-width: 440px) {
+    max-width: 360px;
+  }
+
+  @media (max-width: 380px) {
+    max-width: 320px;
+  }
 }

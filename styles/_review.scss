@@ -345,7 +345,7 @@
 
           button {
             background: transparent;
-            color: #2b67e3;
+            color: var(--brand);;
             text-align: right;
             font-family: Inter;
             font-size: 16px;
@@ -565,7 +565,7 @@
           }
 
           &.discount span {
-            color: #de3618;
+            color: var(--red);;
           }
 
           &.bold {

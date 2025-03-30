@@ -155,18 +155,18 @@
 
           &.active {
             .icon svg path{
-              fill: #2b67e3;
+              fill: var(--brand);;
             }
 
             p {
-              color: #2b67e3;
+              color: var(--brand);;
             }
           }
 
           &.next {
             .icon {
-              background: #2b67e3;
-              border-color: #2b67e3;
+              background: var(--brand);;
+              border-color: var(--brand);;
 
               svg path {
                 fill: white;
@@ -174,7 +174,7 @@
             }
 
             p {
-              color: #2b67e3;
+              color: var(--brand);;
               font-weight: 500;
             }
           }
@@ -242,7 +242,7 @@
       .problem {
         padding: 20px 24px;
         border-radius: 2px;
-        background: #2b67e31a;
+        background: var(--brand-container);
         justify-content: space-between;
         align-items: center;
 
@@ -269,7 +269,7 @@
         }
 
         button {
-          background: #2b67e3;
+          background: var(--brand);;
           border-radius: 2px;
           padding: 9px 15px;
           gap: 6px;
@@ -380,10 +380,10 @@
                 align-self: flex-end;
 
                 &:hover {
-                  background: #de36181a;
+                  background: var(--red-container);
 
                   svg path {
-                    fill: #de3618;
+                    fill: var(--red);;
                   }
                 }
               }
@@ -395,7 +395,7 @@
           background: transparent;
           gap: 4px;
 
-          color: #2b67e3;
+          color: var(--brand);;
           font-family: Inter;
           font-size: 16px;
           font-style: normal;
@@ -432,7 +432,7 @@
           }
 
           &.discount span {
-            color: #de3618;
+            color: var(--red);;
           }
 
           &.bold {

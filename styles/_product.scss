@@ -648,7 +648,7 @@
                   fill: #50b83c;
                 }
                 &.active.diss svg path {
-                  fill: #de3618;
+                  fill: var(--red);;
                 }
               }
             }
@@ -878,7 +878,7 @@
             }
 
             span {
-              color: #de3618;
+              color: var(--red);;
               text-align: center;
               font-family: Inter;
               font-size: 12px;

@@ -201,28 +201,28 @@
               transition: 0.2s;
 
               &:nth-child(1) {
-                &.active { border-color: #2B67E3 }
-                span { background: #2B67E3 }
+                &.active { border-color: var(--brand); }
+                span { background: var(--brand); }
               }
               &:nth-child(2) {
                 &.active { border-color: #50B83C }
                 span { background: #50B83C }
               }
               &:nth-child(3) {
-                &.active { border-color: #2B67E3 }
-                span { background: #2B67E3 }
+                &.active { border-color: var(--brand); }
+                span { background: var(--brand); }
               }
               &:nth-child(4) {
-                &.active { border-color: #47C1BF }
-                span { background: #47C1BF }
+                &.active { border-color: var(--green); }
+                span { background: var(--green); }
               }
               &:nth-child(5) {
-                &.active { border-color: #2B67E3 }
-                span { background: #2B67E3 }
+                &.active { border-color: var(--brand); }
+                span { background: var(--brand); }
               }
               &:nth-child(6) {
-                &.active { border-color: #EEC200 }
-                span { background: #EEC200 }
+                &.active { border-color: var(--yellow); }
+                span { background: var(--yellow); }
               }
               &:nth-child(7) {
                 &.active { border-color: #F49342 }
@@ -331,7 +331,7 @@
           transition: 0.15s;
           border-radius: 2px;
           padding: 20px;
-          background: #2b67e31a;
+          background: var(--brand-container);
           gap: 16px;
 
           // &:hover {
@@ -369,7 +369,7 @@
 
                 &.active {
                   svg path {
-                    fill: #de3618;
+                    fill: var(--red);;
                   }
                 }
               }
@@ -454,12 +454,12 @@
               }
 
               .sale {
-                background: #de36181a;
+                background: var(--red-container);
                 border-radius: 2px;
                 padding: 3px 11px;
 
                 P {
-                  color: #de3618;
+                  color: var(--red);;
                   text-align: center;
                   font-size: 13px;
                   font-weight: 500;
@@ -517,7 +517,7 @@
 
               &.active {
                 svg path {
-                  fill: #de3618;
+                  fill: var(--red);;
                 }
               }
             }

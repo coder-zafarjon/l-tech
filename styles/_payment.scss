@@ -520,10 +520,10 @@
                 align-self: flex-end;
 
                 &:hover {
-                  background: #de36181a;
+                  background: var(--red-container);
 
                   svg path {
-                    fill: #de3618;
+                    fill: var(--red);;
                   }
                 }
               }
@@ -559,7 +559,7 @@
           }
 
           &.discount span {
-            color: #de3618;
+            color: var(--red);;
           }
 
           &.bold {

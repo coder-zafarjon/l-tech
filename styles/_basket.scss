@@ -227,10 +227,10 @@
               }
 
               &.del:hover {
-                background: #de36181a;
+                background: var(--red-container);
 
                 svg path {
-                  fill: #de3618;
+                  fill: var(--red);;
                 }
               }
             }
@@ -358,7 +358,7 @@
             }
 
             &.discount span {
-              color: #de3618;
+              color: var(--red);;
             }
           }
         }
@@ -502,7 +502,7 @@
             }
 
             span {
-              color: #de3618;
+              color: var(--red);;
               text-align: center;
               font-family: Inter;
               font-size: 11px;

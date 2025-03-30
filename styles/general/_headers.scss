@@ -17,6 +17,10 @@ header#lending {
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 991px) {
+     display: none;
+    }
+
     ul {
       display: flex;
       align-items: center;
@@ -58,6 +62,10 @@ header#navbar .up {
   background: white;
   position: relative;
   z-index: 15;
+
+  @media (max-width: 991px) {
+    display: none;
+   }
 
   .container {
     align-items: center;
@@ -133,6 +141,10 @@ header hr {
   background: #f4f6f8;
   position: relative;
   z-index: 20;
+
+  @media (max-width: 991px) {
+    display: none;
+   }
 }
 
 .main header#navbar.down {
@@ -159,6 +171,10 @@ header hr {
         border-radius: 2px;
         overflow: hidden;
 
+        @media (max-width: 991px) {
+          display: none;
+         }
+
         input {
           width: 245px;
           background: #f9fafb;
@@ -172,6 +188,10 @@ header hr {
           font-style: normal;
           font-weight: 400;
           line-height: 142.857%;
+ 
+          @media (max-width: 1140px) {
+            width: 180px;
+           }
 
           &::placeholder {
             color: #959ead;
@@ -186,12 +206,18 @@ header hr {
 
         button {
           &.types {
-            transition: 0.15s;
+            transition: 0.15s background-color;
             width: 163px;
             background: #f9fafb;
             align-items: center;
             justify-content: center;
             gap: 9px;
+
+            
+          @media (max-width: 1140px) {
+           width: 140px;
+           gap: 4px;
+           }
 
             span {
               color: #161d25;
@@ -224,6 +250,7 @@ header hr {
     .account {
       align-items: center;
       gap: 15px;
+      
 
       .iconbutton {
         width: 48px;
@@ -231,6 +258,10 @@ header hr {
         border-radius: 50%;
         border: 1px solid #f4f6f8;
         background: transparent;
+
+        @media (max-width: 991px) {
+          display: none;
+         }
 
         svg {
           margin-top: 1px;
@@ -247,7 +278,7 @@ header hr {
             position: absolute;
             width: 19px;
             height: 17px;
-            background: #de3618;
+            background: var(--red);;
             border-radius: 4px;
             top: -4px;
             right: -8px;
@@ -261,11 +292,15 @@ header hr {
         align-items: center;
         gap: 16px;
 
+        @media (max-width: 991px) {
+          display: none;
+         }
+
         .content {
           gap: 4px;
 
           p {
-            color: var(--Dark-Fill-Lighter, #637381);
+            color: #637381;
             font-family: Inter;
             font-size: 16px;
             font-style: normal;
@@ -289,6 +324,28 @@ header hr {
           }
         }
       }
+    }
+
+    .mobile-menu{
+      display: none;
+
+      @media (max-width: 991px) {
+        display: flex;
+        gap: 12px;
+
+        .iconbutton {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          border: 1px solid #f4f6f8;
+          background: transparent;
+  
+          svg {
+            margin-top: 1px;
+          }
+        }
+  
+       }
     }
   }
 }
