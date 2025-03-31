@@ -4276,6 +4276,13 @@ body #customer main #title-path {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 991px) {
+  body #customer main #title-path {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
 body #customer main #title-path .column {
   gap: 8px;
 }
@@ -4340,6 +4347,14 @@ body #customer main #shopping-navigation {
   margin-bottom: 36px;
   overflow: hidden;
 }
+@media (max-width: 991px) {
+  body #customer main #shopping-navigation {
+    flex-wrap: wrap;
+    height: auto;
+    row-gap: 24px;
+    padding: 16px 0;
+  }
+}
 body #customer main #shopping-navigation .box {
   height: 100%;
   padding: 0 18px;
@@ -4387,6 +4402,15 @@ body #customer main #shopping {
   align-items: flex-start;
   gap: 30px;
 }
+@media (max-width: 991px) {
+  body #customer main #shopping {
+    flex-direction: column;
+  }
+  body #customer main #shopping section,
+  body #customer main #shopping aside {
+    width: 100% !important;
+  }
+}
 body #customer main #shopping section {
   width: calc(100% - 380px);
   border-radius: 2px;
@@ -4409,8 +4433,18 @@ body #customer main #shopping section .box {
   width: calc((100% - 30px) / 2);
   gap: 8px;
 }
+@media (max-width: 768px) {
+  body #customer main #shopping section .box {
+    width: 100%;
+  }
+}
 body #customer main #shopping section .box.poll {
   width: calc((50% - 45px) / 2);
+}
+@media (max-width: 768px) {
+  body #customer main #shopping section .box.poll {
+    width: calc((100% - 30px) / 2);
+  }
 }
 body #customer main #shopping section .box.full {
   width: 100%;
