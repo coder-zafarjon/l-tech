@@ -3,8 +3,30 @@
     background: #f9fafb;
     padding: 100px 0 48px;
 
+    @media (max-width: 991px) {
+      padding: 64px 0 48px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 48px 0 32px;
+    }
+
+    @media (max-width: 560px) {
+      padding: 24px 0;
+    }
+
     .container {
       gap: 50px;
+
+      @media (max-width: 991px) {
+        flex-direction: column;
+
+        .image,
+        .details {
+          width: 100%;
+          max-width: none;
+        }
+      }
     }
 
     .image {
@@ -42,6 +64,11 @@
         letter-spacing: 0.2px;
         text-wrap: pretty;
         margin-bottom: 4px;
+
+        @media (max-width: 560px) {
+          font-size: 22px;
+          line-height: 136.364%;
+        }
       }
 
       .rate-product-purchase {
@@ -76,6 +103,12 @@
           font-style: normal;
           font-weight: 500;
           line-height: 142.857%;
+
+          @media (max-width: 991px) {
+            text-overflow: ellipsis;
+            text-wrap: nowrap;
+            overflow: hidden;
+          }
         }
       }
 
@@ -108,6 +141,10 @@
       .control {
         gap: 30px;
         margin-bottom: 40px;
+
+        @media (max-width: 991px) {
+          flex-wrap: wrap;
+        }
 
         .box {
           gap: 10px;
@@ -191,6 +228,19 @@
         align-items: center;
         gap: 18px;
 
+        @media (max-width: 560px) {
+          justify-content: space-between;
+        }
+
+        @media (max-width: 480px) {
+          gap: 10px;
+        }
+
+        @media (max-width: 440px) {
+          gap: 0;
+          row-gap: 10px;
+        }
+
         h2 {
           color: #161d25;
           font-family: Rubik;
@@ -200,6 +250,28 @@
           line-height: 157.143%;
           letter-spacing: 0.2px;
           margin-right: 8px;
+
+          @media (max-width: 560px) {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 169.231%;
+            letter-spacing: 0.2px;
+
+            span {
+              color: #161d2580;
+              font-size: 20px;
+              font-weight: 400;
+            }
+          }
+
+          @media (max-width: 480px) {
+            margin: 0;
+          }
+
+          @media (max-width: 440px) {
+            font-size: 24px;
+            letter-spacing: 0;
+          }
         }
 
         button {
@@ -227,11 +299,48 @@
             &:hover {
               background: var(--brand-hover);
             }
+
+            @media (max-width: 560px) {
+              width: 200px;
+
+              span {
+                text-overflow: ellipsis;
+                text-wrap: nowrap;
+                overflow: hidden;
+                max-width: calc(100% - 32px);
+              }
+            }
+
+            @media (max-width: 480px) {
+              width: 140px;
+            }
           }
 
           &:hover {
             background: var(--brand);
             color: white;
+
+            &.iconbutton {
+              svg path {
+                fill: white;
+              }
+            }
+          }
+
+          &.iconbutton {
+            width: 48px;
+            padding: 0;
+            border-color: #f4f6f8;
+          }
+
+          &.buy {
+            @media (max-width: 768px) {
+              width: 280px;
+            }
+
+            @media (max-width: 560px) {
+              width: calc(100% - 66px);
+            }
           }
         }
       }
@@ -243,6 +352,15 @@
       height: 56px;
       align-items: center;
       justify-content: space-between;
+      overflow: hidden;
+
+      @media (max-width: 991px) {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 24px;
+        height: auto;
+        padding: 16px 0;
+      }
 
       .links {
         height: 100%;
@@ -254,12 +372,17 @@
           gap: 10px;
           align-items: center;
 
+          @media (max-width: 768px) {
+            padding: 0 16px;
+          }
+
           color: #959ead;
           text-align: center;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: 137.5%;
+          text-wrap: nowrap;
 
           &.active {
             color: #161d25;
@@ -277,6 +400,26 @@
       row-gap: 40px;
       column-gap: 30px;
       padding: 30px 0 50px;
+
+      @media (max-width: 991px) {
+        gap: 30px;
+
+        .description,
+        .specification,
+        .complect {
+          width: 100% !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+
+        .sku,
+        .code,
+        .ean {
+          width: 100% !important;
+        }
+      }
 
       .description {
         width: 100%;
@@ -329,6 +472,11 @@
             font-style: normal;
             font-weight: 400;
             line-height: 142.857%;
+            width: calc(100% - 150px);
+
+            text-wrap: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
           }
 
           &.stripe:nth-child(even) {
@@ -338,6 +486,10 @@
 
           &.half {
             width: 50%;
+
+            @media (max-width: 560px) {
+              width: 100%;
+            }
 
             .icon {
               padding: 0 12px 0 14px;
@@ -384,6 +536,16 @@
       width: 100%;
       align-items: flex-end;
       gap: 50px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .title,
+        .lines {
+          width: 100% !important;
+        }
+      }
 
       .title {
         width: 28%;
@@ -535,9 +697,19 @@
       width: calc(100% - 400px);
       gap: 36px;
 
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+
       .title {
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 560px) {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 14px;
+        }
 
         h3.subtitle {
           color: #161d25;
@@ -588,10 +760,18 @@
           .user-actions {
             align-items: center;
 
+            @media (max-width: 768px) {
+              justify-content: space-between;
+            }
+
             .user {
               min-width: 300px;
               align-items: center;
               gap: 16px;
+
+              @media (max-width: 768px) {
+                min-width: auto;
+              }
 
               img {
                 width: 48px;
@@ -625,6 +805,10 @@
             .stars {
               width: calc(100% - 400px);
 
+              @media (max-width: 768px) {
+                display: none;
+              }
+
               p {
                 color: #959ead;
                 font-size: 14px;
@@ -648,7 +832,7 @@
                   fill: #50b83c;
                 }
                 &.active.diss svg path {
-                  fill: var(--red);;
+                  fill: var(--red);
                 }
               }
             }
@@ -705,6 +889,12 @@
       border-radius: 2px;
       padding: 25px 20px 22px;
       background: #f9fafb;
+
+      @media (max-width: 991px) {
+        width: 100%;
+        position: static;
+        top: auto;
+      }
 
       h3 {
         color: #161d25;
@@ -815,28 +1005,6 @@
         line-height: 133.333%;
         letter-spacing: 0.2px;
       }
-
-      a,
-      button {
-        transition: 0.2s;
-        padding: 12px 22px;
-        border-radius: 4px;
-        border: 2px solid var(--brand);
-        background: white;
-
-        color: var(--brand);
-        text-align: center;
-        font-feature-settings: "liga" off, "clig" off;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 137.5%;
-
-        &:hover {
-          background: var(--brand);
-          color: white;
-        }
-      }
     }
 
     .products {
@@ -852,6 +1020,22 @@
         gap: 12px;
         position: relative;
         overflow: hidden;
+
+        @media (max-width: 991px) {
+          width: calc((100% - (2 * 30px)) / 3);
+
+          &:last-child {
+            display: none;
+          }
+        }
+
+        @media (max-width: 560px) {
+          width: 100%;
+
+          &:last-child {
+            display: none;
+          }
+        }
 
         &:hover {
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -878,7 +1062,7 @@
             }
 
             span {
-              color: var(--red);;
+              color: var(--red);
               text-align: center;
               font-family: Inter;
               font-size: 12px;
@@ -967,6 +1151,28 @@
             }
           }
         }
+      }
+    }
+
+    a.link,
+    button.link {
+      transition: 0.2s;
+      padding: 12px 22px;
+      border-radius: 4px;
+      border: 2px solid var(--brand);
+      background: white;
+
+      color: var(--brand);
+      text-align: center;
+      font-feature-settings: "liga" off, "clig" off;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 137.5%;
+
+      &:hover {
+        background: var(--brand);
+        color: white;
       }
     }
   }
