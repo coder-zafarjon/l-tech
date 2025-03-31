@@ -12,13 +12,23 @@ header#lending {
     border-bottom: 1px solid white;
   }
 
+  .logo {
+    @media (max-width: 991px) {
+      width: 160px;
+
+      svg {
+        width: 100%;
+      }
+    }
+  }
+
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     @media (max-width: 991px) {
-     display: none;
+      display: none;
     }
 
     ul {
@@ -65,7 +75,7 @@ header#navbar .up {
 
   @media (max-width: 991px) {
     display: none;
-   }
+  }
 
   .container {
     align-items: center;
@@ -144,7 +154,7 @@ header hr {
 
   @media (max-width: 991px) {
     display: none;
-   }
+  }
 }
 
 .main header#navbar.down {
@@ -173,7 +183,7 @@ header hr {
 
         @media (max-width: 991px) {
           display: none;
-         }
+        }
 
         input {
           width: 245px;
@@ -188,10 +198,10 @@ header hr {
           font-style: normal;
           font-weight: 400;
           line-height: 142.857%;
- 
+
           @media (max-width: 1140px) {
             width: 180px;
-           }
+          }
 
           &::placeholder {
             color: #959ead;
@@ -213,11 +223,10 @@ header hr {
             justify-content: center;
             gap: 9px;
 
-            
-          @media (max-width: 1140px) {
-           width: 140px;
-           gap: 4px;
-           }
+            @media (max-width: 1140px) {
+              width: 140px;
+              gap: 4px;
+            }
 
             span {
               color: #161d25;
@@ -227,7 +236,7 @@ header hr {
               line-height: 142.857%;
             }
 
-            &:hover{
+            &:hover {
               background: #f4f6f8;
             }
           }
@@ -250,7 +259,6 @@ header hr {
     .account {
       align-items: center;
       gap: 15px;
-      
 
       .iconbutton {
         width: 48px;
@@ -261,7 +269,7 @@ header hr {
 
         @media (max-width: 991px) {
           display: none;
-         }
+        }
 
         svg {
           margin-top: 1px;
@@ -278,7 +286,7 @@ header hr {
             position: absolute;
             width: 19px;
             height: 17px;
-            background: var(--red);;
+            background: var(--red);
             border-radius: 4px;
             top: -4px;
             right: -8px;
@@ -294,7 +302,7 @@ header hr {
 
         @media (max-width: 991px) {
           display: none;
-         }
+        }
 
         .content {
           gap: 4px;
@@ -326,7 +334,7 @@ header hr {
       }
     }
 
-    .mobile-menu{
+    .mobile-menu {
       display: none;
 
       @media (max-width: 991px) {
@@ -339,13 +347,12 @@ header hr {
           border-radius: 50%;
           border: 1px solid #f4f6f8;
           background: transparent;
-  
+
           svg {
             margin-top: 1px;
           }
         }
-  
-       }
+      }
     }
   }
 }

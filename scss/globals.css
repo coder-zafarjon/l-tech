@@ -65,6 +65,10 @@ textarea {
 ::-webkit-scrollbar-thumb {
   background: var(--brand);
   border-radius: 1em;
+  border-top: 1px solid white;
+  border-right: 2px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
 }
 
 body {
@@ -83,6 +87,14 @@ body header#lending .container {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid white;
+}
+@media (max-width: 991px) {
+  body header#lending .logo {
+    width: 160px;
+  }
+  body header#lending .logo svg {
+    width: 100%;
+  }
 }
 body header#lending nav {
   display: flex;
@@ -397,9 +409,35 @@ body #lending #hero .container {
   height: calc(100svh - 100px);
   max-height: 1000px;
 }
+@media (max-width: 991px) {
+  body #lending #hero .container {
+    max-height: none;
+    height: auto;
+  }
+}
 body #lending #hero .wrapper {
   height: 100%;
   justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  body #lending #hero .wrapper .lh1 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 991px) {
+  body #lending #hero .wrapper .lh1 {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #hero .wrapper .lh1 {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #hero .wrapper .lh1 {
+    padding-bottom: 20px;
+  }
 }
 body #lending #hero .wrapper .lh1 h1 {
   color: #fff;
@@ -410,10 +448,45 @@ body #lending #hero .wrapper .lh1 h1 {
   line-height: 120%;
   letter-spacing: -4.64px;
 }
+@media (max-width: 1400px) {
+  body #lending #hero .wrapper .lh1 h1 {
+    font-size: 80px;
+    letter-spacing: -2.5px;
+  }
+}
+@media (max-width: 1280px) {
+  body #lending #hero .wrapper .lh1 h1 {
+    font-size: 72px;
+    letter-spacing: -2px;
+  }
+}
+@media (max-width: 991px) {
+  body #lending #hero .wrapper .lh1 h1 {
+    font-size: 64px;
+    letter-spacing: -1.5px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #hero .wrapper .lh1 h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #hero .wrapper .lh1 h1 {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+  }
+}
 body #lending #hero .wrapper .lh1 .lh2 {
   width: 50%;
   gap: 16px;
   padding-top: 16px;
+}
+@media (max-width: 1280px) {
+  body #lending #hero .wrapper .lh1 .lh2 {
+    width: 100%;
+  }
 }
 body #lending #hero .wrapper .lh1 .lh2 h2 {
   color: #fff;
@@ -422,6 +495,21 @@ body #lending #hero .wrapper .lh1 .lh2 h2 {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+@media (max-width: 991px) {
+  body #lending #hero .wrapper .lh1 .lh2 h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #hero .wrapper .lh1 .lh2 h2 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #hero .wrapper .lh1 .lh2 h2 {
+    font-size: 16px;
+  }
 }
 body #lending #hero .wrapper .lh1 .lh2 .lh3 {
   gap: 40px;
@@ -434,6 +522,21 @@ body #lending #hero .wrapper .lh1 .lh2 .lh3 .lh4 h3 {
   font-weight: 600;
   line-height: 120%;
 }
+@media (max-width: 991px) {
+  body #lending #hero .wrapper .lh1 .lh2 .lh3 .lh4 h3 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #hero .wrapper .lh1 .lh2 .lh3 .lh4 h3 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #hero .wrapper .lh1 .lh2 .lh3 .lh4 h3 {
+    font-size: 24px;
+  }
+}
 body #lending #hero .wrapper .lh1 .lh2 .lh3 .lh4 p {
   color: #fff;
   font-family: Epilogue;
@@ -442,8 +545,35 @@ body #lending #hero .wrapper .lh1 .lh2 .lh3 .lh4 p {
   font-weight: 400;
   line-height: 150%;
 }
+@media (max-width: 991px) {
+  body #lending #hero .wrapper .lh1 .lh2 .lh3 .lh4 p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #hero .wrapper .lh1 .lh2 .lh3 .lh4 p {
+    font-size: 14px;
+  }
+}
 body #lending #hero .wrapper img.hero-image {
   width: 100%;
+}
+@media (max-width: 991px) {
+  body #lending #hero .wrapper img.hero-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 4/3;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #hero .wrapper img.hero-image {
+    aspect-ratio: 1;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #hero .wrapper img.hero-image {
+    aspect-ratio: 3/4;
+  }
 }
 body #lending #about .container {
   padding-top: 100px;
@@ -451,6 +581,15 @@ body #lending #about .container {
 }
 body #lending #about .container .wrapper {
   justify-content: space-between;
+}
+@media (max-width: 991px) {
+  body #lending #about .container .wrapper {
+    flex-direction: column;
+  }
+  body #lending #about .container .wrapper h1,
+  body #lending #about .container .wrapper .content {
+    width: 100% !important;
+  }
 }
 body #lending #about .container .wrapper h1 {
   color: #000;
@@ -461,6 +600,36 @@ body #lending #about .container .wrapper h1 {
   line-height: 120%;
   letter-spacing: -2.32px;
   width: 55%;
+}
+@media (max-width: 1400px) {
+  body #lending #about .container .wrapper h1 {
+    font-size: 80px;
+    letter-spacing: -2px;
+  }
+}
+@media (max-width: 1280px) {
+  body #lending #about .container .wrapper h1 {
+    font-size: 72px;
+    letter-spacing: -1.75px;
+  }
+}
+@media (max-width: 991px) {
+  body #lending #about .container .wrapper h1 {
+    font-size: 64px;
+    letter-spacing: -1.5px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #about .container .wrapper h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #about .container .wrapper h1 {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+  }
 }
 body #lending #about .container .wrapper .content {
   width: 32%;
@@ -476,6 +645,21 @@ body #lending #about .container .wrapper .content h2 {
   line-height: 120%;
   letter-spacing: -0.6px;
 }
+@media (max-width: 991px) {
+  body #lending #about .container .wrapper .content h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #about .container .wrapper .content h2 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #about .container .wrapper .content h2 {
+    font-size: 20px;
+  }
+}
 body #lending #about .container .wrapper .content p {
   color: #000;
   font-family: Epilogue;
@@ -484,6 +668,21 @@ body #lending #about .container .wrapper .content p {
   font-weight: 400;
   line-height: 160%;
 }
+@media (max-width: 991px) {
+  body #lending #about .container .wrapper .content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #about .container .wrapper .content p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #about .container .wrapper .content p {
+    font-size: 16px;
+  }
+}
 body #lending #about .container .image-box {
   width: 100%;
   background: #151515;
@@ -491,8 +690,18 @@ body #lending #about .container .image-box {
   gap: 40px;
   align-items: center;
 }
+@media (max-width: 991px) {
+  body #lending #about .container .image-box {
+    flex-direction: column;
+  }
+}
 body #lending #about .container .image-box img {
   width: 50%;
+}
+@media (max-width: 991px) {
+  body #lending #about .container .image-box img {
+    width: 100%;
+  }
 }
 body #lending #about .container .image-box .content {
   gap: 16px;
@@ -506,6 +715,30 @@ body #lending #about .container .image-box .content h3 {
   line-height: 120%;
   margin-bottom: 24px;
 }
+@media (max-width: 1280px) {
+  body #lending #about .container .image-box .content h3 {
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 991px) {
+  body #lending #about .container .image-box .content h3 {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #about .container .image-box .content h3 {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #about .container .image-box .content h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
 body #lending #about .container .image-box .content p.description {
   color: #fff;
   font-family: Epilogue;
@@ -514,6 +747,21 @@ body #lending #about .container .image-box .content p.description {
   font-weight: 400;
   line-height: 160%;
   width: 80%;
+}
+@media (max-width: 991px) {
+  body #lending #about .container .image-box .content p.description {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #about .container .image-box .content p.description {
+    font-size: 17px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #about .container .image-box .content p.description {
+    font-size: 16px;
+  }
 }
 body #lending #about .container .image-box .content a {
   align-items: center;
@@ -535,6 +783,15 @@ body #lending #products .container {
 body #lending #products .container .wrapper {
   justify-content: space-between;
 }
+@media (max-width: 991px) {
+  body #lending #products .container .wrapper {
+    flex-direction: column;
+  }
+  body #lending #products .container .wrapper h1,
+  body #lending #products .container .wrapper .content {
+    width: 100% !important;
+  }
+}
 body #lending #products .container .wrapper h1 {
   color: #000;
   font-family: Epilogue;
@@ -544,6 +801,36 @@ body #lending #products .container .wrapper h1 {
   line-height: 120%;
   letter-spacing: -2.32px;
   width: 55%;
+}
+@media (max-width: 1400px) {
+  body #lending #products .container .wrapper h1 {
+    font-size: 80px;
+    letter-spacing: -2px;
+  }
+}
+@media (max-width: 1280px) {
+  body #lending #products .container .wrapper h1 {
+    font-size: 72px;
+    letter-spacing: -1.75px;
+  }
+}
+@media (max-width: 991px) {
+  body #lending #products .container .wrapper h1 {
+    font-size: 64px;
+    letter-spacing: -1.5px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #products .container .wrapper h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #products .container .wrapper h1 {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+  }
 }
 body #lending #products .container .wrapper .content {
   width: 32%;
@@ -559,6 +846,21 @@ body #lending #products .container .wrapper .content h2 {
   line-height: 120%;
   letter-spacing: -0.6px;
 }
+@media (max-width: 991px) {
+  body #lending #products .container .wrapper .content h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #products .container .wrapper .content h2 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #products .container .wrapper .content h2 {
+    font-size: 20px;
+  }
+}
 body #lending #products .container .wrapper .content p {
   color: #000;
   font-family: Epilogue;
@@ -567,14 +869,39 @@ body #lending #products .container .wrapper .content p {
   font-weight: 400;
   line-height: 160%;
 }
+@media (max-width: 991px) {
+  body #lending #products .container .wrapper .content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #products .container .wrapper .content p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #products .container .wrapper .content p {
+    font-size: 16px;
+  }
+}
 body #lending #products .container .products-box {
   width: 100%;
   gap: 20px;
   justify-content: space-between;
 }
+@media (max-width: 991px) {
+  body #lending #products .container .products-box {
+    flex-direction: column;
+  }
+}
 body #lending #products .container .products-box .product {
   width: 32%;
   gap: 20px;
+}
+@media (max-width: 991px) {
+  body #lending #products .container .products-box .product {
+    width: 100%;
+  }
 }
 body #lending #products .container .products-box .product img {
   width: 100%;
@@ -610,6 +937,15 @@ body #lending #questions .container {
   padding: 100px 0;
   gap: 100px;
 }
+@media (max-width: 991px) {
+  body #lending #questions .container {
+    flex-direction: column;
+  }
+  body #lending #questions .container .wrapper,
+  body #lending #questions .container .questions {
+    width: 100% !important;
+  }
+}
 body #lending #questions .wrapper {
   width: 40%;
   gap: 40px;
@@ -622,6 +958,36 @@ body #lending #questions .wrapper h3 {
   font-weight: 600;
   line-height: 120%;
 }
+@media (max-width: 1400px) {
+  body #lending #questions .wrapper h3 {
+    font-size: 80px;
+    letter-spacing: -2px;
+  }
+}
+@media (max-width: 1280px) {
+  body #lending #questions .wrapper h3 {
+    font-size: 72px;
+    letter-spacing: -1.75px;
+  }
+}
+@media (max-width: 991px) {
+  body #lending #questions .wrapper h3 {
+    font-size: 64px;
+    letter-spacing: -1.5px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #questions .wrapper h3 {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #questions .wrapper h3 {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+  }
+}
 body #lending #questions .wrapper p {
   color: #fff;
   font-family: Epilogue;
@@ -629,6 +995,21 @@ body #lending #questions .wrapper p {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+@media (max-width: 991px) {
+  body #lending #questions .wrapper p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #questions .wrapper p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #questions .wrapper p {
+    font-size: 16px;
+  }
 }
 body #lending #questions .questions {
   width: 50%;
@@ -646,6 +1027,21 @@ body #lending #questions .questions a.child p {
   font-style: normal;
   font-weight: 600;
   line-height: 105%;
+}
+@media (max-width: 991px) {
+  body #lending #questions .questions a.child p {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  body #lending #questions .questions a.child p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  body #lending #questions .questions a.child p {
+    font-size: 20px;
+  }
 }
 body #lending #questions .questions a.child svg {
   width: 32px;
