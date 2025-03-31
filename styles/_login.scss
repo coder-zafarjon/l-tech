@@ -2,6 +2,12 @@
   height: calc(100svh - 140px);
   max-height: 800px;
 
+  @media (max-width: 991px) {
+    height: auto;
+    max-height: none;
+    padding: 24px 0;
+  }
+
   background: linear-gradient(
     180deg,
     #f9fafb 0%,
@@ -12,12 +18,28 @@
 
   .container {
     height: 100%;
-    max-width: 1024px;
+
+    @media (min-width: 991px) {
+      max-width: 1024px;
+    }
   }
 
   section {
     height: 100%;
     gap: 30px;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+      height: auto;
+
+      .register, .slider{
+        width: 100%!important;
+      }
+
+      .slider{
+        height: 400px!important;
+      }
+    }
 
     .register {
       width: 64%;
@@ -26,6 +48,10 @@
       border-radius: 2px;
       padding: 30px;
       gap: 30px;
+
+      @media (max-width: 991px) {
+        padding: 0;
+      }
 
       .title {
         align-items: center;
@@ -62,6 +88,10 @@
           border-radius: 2px;
           background: #637381;
 
+          @media (max-width: 991px) {
+            width: 100%;
+           }
+
           color: #fff;
           text-align: center;
           font-family: Inter;
@@ -76,6 +106,10 @@
           height: 48px;
           border-radius: 2px;
           background: #f4f6f8;
+
+          @media (max-width: 991px) {
+            display: none;
+          }
         }
       }
 
@@ -187,6 +221,10 @@
         height: 1px;
         background: #f4f6f8;
         margin: 8px 0;
+
+        @media (max-width: 991px) {
+          display: none;
+        }
       }
     }
 
@@ -254,6 +292,10 @@
       width: calc(50% - 30px);
       gap: 20px;
 
+      @media (max-width: 991px) {
+        display: none;
+      }
+
       h3 {
         color: #161d25;
         font-family: Rubik;
@@ -304,6 +346,11 @@
       width: 50%;
       padding: 30px;
 
+      @media (max-width: 991px) {
+        width: 100%;
+        padding: 0;
+      }
+
       h3 {
         color: #161d25;
         font-family: Inter;
@@ -330,8 +377,16 @@
         gap: 8px;
         margin-bottom: 20px;
 
+        @media (max-width: 560px) {
+          width: 100%;
+        }
+
         &.poll {
           width: calc((50% - (1 * 45px)) / 2);
+
+          @media (max-width: 560px) {
+            width: 100%;
+          }
         }
 
         &.full {
@@ -373,6 +428,11 @@
       .actions {
         width: 100%;
 
+        @media (max-width: 560px) {
+          flex-direction: column;
+          gap: 20px;
+        }
+
         .first {
           width: calc(100% - 220px);
           height: 48px;
@@ -380,6 +440,10 @@
           background: var(--brand);;
           line-height: 48px;
           display: block;
+
+          @media (max-width: 560px) {
+            width: 100%;
+          }
 
           color: #fff;
           text-align: center;
@@ -398,6 +462,10 @@
           width: 80px;
           text-align: center;
           line-height: 48px;
+
+          @media (max-width: 560px) {
+            display: none;
+          }
         }
 
         .second {
@@ -407,6 +475,10 @@
           background: #f4f6f8;
           line-height: 48px;
           display: block;
+
+          @media (max-width: 560px) {
+            width: 100%;
+          }
 
           color: #5a7184;
           text-align: center;

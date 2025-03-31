@@ -6562,13 +6562,36 @@ body #login main {
   max-height: 800px;
   background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 45%, transparent 45%, transparent 100%);
 }
+@media (max-width: 991px) {
+  body #login main {
+    height: auto;
+    max-height: none;
+    padding: 24px 0;
+  }
+}
 body #login main .container {
   height: 100%;
-  max-width: 1024px;
+}
+@media (min-width: 991px) {
+  body #login main .container {
+    max-width: 1024px;
+  }
 }
 body #login main section {
   height: 100%;
   gap: 30px;
+}
+@media (max-width: 991px) {
+  body #login main section {
+    flex-direction: column;
+    height: auto;
+  }
+  body #login main section .register, body #login main section .slider {
+    width: 100% !important;
+  }
+  body #login main section .slider {
+    height: 400px !important;
+  }
 }
 body #login main section .register {
   width: 64%;
@@ -6578,6 +6601,11 @@ body #login main section .register {
   border-radius: 2px;
   padding: 30px;
   gap: 30px;
+}
+@media (max-width: 991px) {
+  body #login main section .register {
+    padding: 0;
+  }
 }
 body #login main section .register .title {
   align-items: center;
@@ -6618,11 +6646,21 @@ body #login main section .register .providers .e-imzo {
   font-weight: 500;
   line-height: 137.5%;
 }
+@media (max-width: 991px) {
+  body #login main section .register .providers .e-imzo {
+    width: 100%;
+  }
+}
 body #login main section .register .providers .iconbutton {
   width: 48px;
   height: 48px;
   border-radius: 2px;
   background: #f4f6f8;
+}
+@media (max-width: 991px) {
+  body #login main section .register .providers .iconbutton {
+    display: none;
+  }
 }
 body #login main section .register .form {
   gap: 20px;
@@ -6727,6 +6765,11 @@ body #login main section .register hr {
   background: #f4f6f8;
   margin: 8px 0;
 }
+@media (max-width: 991px) {
+  body #login main section .register hr {
+    display: none;
+  }
+}
 body #login main section .slider {
   width: calc(36% - 30px);
   height: -moz-fit-content;
@@ -6779,6 +6822,11 @@ body #login-alt main #hero .content {
   width: calc(50% - 30px);
   gap: 20px;
 }
+@media (max-width: 991px) {
+  body #login-alt main #hero .content {
+    display: none;
+  }
+}
 body #login-alt main #hero .content h3 {
   color: #161d25;
   font-family: Rubik;
@@ -6823,6 +6871,12 @@ body #login-alt main #hero .form {
   width: 50%;
   padding: 30px;
 }
+@media (max-width: 991px) {
+  body #login-alt main #hero .form {
+    width: 100%;
+    padding: 0;
+  }
+}
 body #login-alt main #hero .form h3 {
   color: #161d25;
   font-family: Inter;
@@ -6847,8 +6901,18 @@ body #login-alt main #hero .form .box {
   gap: 8px;
   margin-bottom: 20px;
 }
+@media (max-width: 560px) {
+  body #login-alt main #hero .form .box {
+    width: 100%;
+  }
+}
 body #login-alt main #hero .form .box.poll {
   width: calc((50% - 45px) / 2);
+}
+@media (max-width: 560px) {
+  body #login-alt main #hero .form .box.poll {
+    width: 100%;
+  }
 }
 body #login-alt main #hero .form .box.full {
   width: 100%;
@@ -6891,6 +6955,12 @@ body #login-alt main #hero .form .box input::placeholder {
 body #login-alt main #hero .form .actions {
   width: 100%;
 }
+@media (max-width: 560px) {
+  body #login-alt main #hero .form .actions {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 body #login-alt main #hero .form .actions .first {
   width: calc(100% - 220px);
   height: 48px;
@@ -6908,11 +6978,21 @@ body #login-alt main #hero .form .actions .first {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 560px) {
+  body #login-alt main #hero .form .actions .first {
+    width: 100%;
+  }
+}
 body #login-alt main #hero .form .actions p {
   display: inline-block;
   width: 80px;
   text-align: center;
   line-height: 48px;
+}
+@media (max-width: 560px) {
+  body #login-alt main #hero .form .actions p {
+    display: none;
+  }
 }
 body #login-alt main #hero .form .actions .second {
   width: 140px;
@@ -6930,6 +7010,11 @@ body #login-alt main #hero .form .actions .second {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 560px) {
+  body #login-alt main #hero .form .actions .second {
+    width: 100%;
+  }
 }
 body #login-alt main #partners {
   padding: 40px 0;
@@ -6967,13 +7052,36 @@ body #register main {
   max-height: 800px;
   background: linear-gradient(180deg, #f9fafb 0%, #f9fafb 45%, transparent 45%, transparent 100%);
 }
+@media (max-width: 991px) {
+  body #register main {
+    height: auto;
+    max-height: none;
+    padding: 24px 0;
+  }
+}
 body #register main .container {
   height: 100%;
-  max-width: 1024px;
+}
+@media (min-width: 991px) {
+  body #register main .container {
+    max-width: 1024px;
+  }
 }
 body #register main section {
   height: 100%;
   gap: 30px;
+}
+@media (max-width: 991px) {
+  body #register main section {
+    flex-direction: column;
+    height: auto;
+  }
+  body #register main section .register, body #register main section .slider {
+    width: 100% !important;
+  }
+  body #register main section .slider {
+    height: 400px !important;
+  }
 }
 body #register main section .register {
   width: 64%;
@@ -6983,6 +7091,11 @@ body #register main section .register {
   border-radius: 2px;
   padding: 30px;
   gap: 30px;
+}
+@media (max-width: 991px) {
+  body #register main section .register {
+    padding: 0;
+  }
 }
 body #register main section .register .title {
   align-items: center;
@@ -6997,7 +7110,8 @@ body #register main section .register .title h2 {
   line-height: 157.143%;
   letter-spacing: 0.2px;
 }
-body #register main section .register .title a, body #register main section .register .title button {
+body #register main section .register .title a,
+body #register main section .register .title button {
   color: var(--brand);
   text-align: right;
   font-size: 16px;
@@ -7022,11 +7136,21 @@ body #register main section .register .providers .e-imzo {
   font-weight: 500;
   line-height: 137.5%;
 }
+@media (max-width: 991px) {
+  body #register main section .register .providers .e-imzo {
+    width: 100%;
+  }
+}
 body #register main section .register .providers .iconbutton {
   width: 48px;
   height: 48px;
   border-radius: 2px;
   background: #f4f6f8;
+}
+@media (max-width: 991px) {
+  body #register main section .register .providers .iconbutton {
+    display: none;
+  }
 }
 body #register main section .register .form {
   gap: 20px;
@@ -7035,8 +7159,18 @@ body #register main section .register .form .box {
   width: calc((100% - 30px) / 2);
   gap: 8px;
 }
+@media (max-width: 991px) {
+  body #register main section .register .form .box {
+    width: 100%;
+  }
+}
 body #register main section .register .form .box.poll {
   width: calc((50% - 45px) / 2);
+}
+@media (max-width: 991px) {
+  body #register main section .register .form .box.poll {
+    width: 100%;
+  }
 }
 body #register main section .register .form .box.full {
   width: 100%;
@@ -7167,6 +7301,11 @@ body #register main section .register hr {
   background: #f4f6f8;
   margin: 8px 0;
 }
+@media (max-width: 991px) {
+  body #register main section .register hr {
+    display: none;
+  }
+}
 body #register main section .slider {
   width: calc(36% - 30px);
   height: -moz-fit-content;
@@ -7219,6 +7358,11 @@ body #register-alt main #hero .content {
   width: calc(50% - 30px);
   gap: 20px;
 }
+@media (max-width: 991px) {
+  body #register-alt main #hero .content {
+    display: none;
+  }
+}
 body #register-alt main #hero .content h3 {
   color: #161d25;
   font-family: Rubik;
@@ -7266,6 +7410,12 @@ body #register-alt main #hero .form {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+@media (max-width: 991px) {
+  body #register-alt main #hero .form {
+    width: 100%;
+    padding: 0;
+  }
+}
 body #register-alt main #hero .form .title {
   gap: 10px;
 }
@@ -7293,11 +7443,26 @@ body #register-alt main #hero .form .box {
   width: calc((100% - 20px) / 2);
   gap: 8px;
 }
+@media (max-width: 560px) {
+  body #register-alt main #hero .form .box {
+    width: 100%;
+  }
+}
 body #register-alt main #hero .form .box.poll {
   width: calc(40% - 10px);
 }
+@media (max-width: 560px) {
+  body #register-alt main #hero .form .box.poll {
+    width: 100%;
+  }
+}
 body #register-alt main #hero .form .box.longer {
   width: calc(60% - 10px);
+}
+@media (max-width: 560px) {
+  body #register-alt main #hero .form .box.longer {
+    width: 100%;
+  }
 }
 body #register-alt main #hero .form .box.full {
   width: 100%;
@@ -7340,6 +7505,12 @@ body #register-alt main #hero .form .box input::placeholder {
 body #register-alt main #hero .form .actions {
   width: 100%;
 }
+@media (max-width: 560px) {
+  body #register-alt main #hero .form .actions {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 body #register-alt main #hero .form .actions .first {
   width: calc(100% - 220px);
   height: 48px;
@@ -7357,11 +7528,21 @@ body #register-alt main #hero .form .actions .first {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 560px) {
+  body #register-alt main #hero .form .actions .first {
+    width: 100%;
+  }
+}
 body #register-alt main #hero .form .actions p {
   display: inline-block;
   width: 80px;
   text-align: center;
   line-height: 48px;
+}
+@media (max-width: 560px) {
+  body #register-alt main #hero .form .actions p {
+    display: none;
+  }
 }
 body #register-alt main #hero .form .actions .second {
   width: 140px;
@@ -7379,6 +7560,11 @@ body #register-alt main #hero .form .actions .second {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 560px) {
+  body #register-alt main #hero .form .actions .second {
+    width: 100%;
+  }
 }
 body #register-alt main #partners {
   padding: 40px 0;
