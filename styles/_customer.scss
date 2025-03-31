@@ -324,6 +324,11 @@
       border: 1px solid #f4f6f8;
       background: white;
 
+      @media (max-width: 991px) {
+        position: static;
+        top: auto;
+      }
+
       h3 {
         color: #161d25;
         font-family: Inter;

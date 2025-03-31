@@ -4561,6 +4561,12 @@ body #customer main #shopping aside {
   border: 1px solid #f4f6f8;
   background: white;
 }
+@media (max-width: 991px) {
+  body #customer main #shopping aside {
+    position: static;
+    top: auto;
+  }
+}
 body #customer main #shopping aside h3 {
   color: #161d25;
   font-family: Inter;
@@ -4707,6 +4713,13 @@ body #payment main #title-path {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 991px) {
+  body #payment main #title-path {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
 body #payment main #title-path .column {
   gap: 8px;
 }
@@ -4771,6 +4784,14 @@ body #payment main #shopping-navigation {
   margin-bottom: 36px;
   overflow: hidden;
 }
+@media (max-width: 991px) {
+  body #payment main #shopping-navigation {
+    flex-wrap: wrap;
+    height: auto;
+    row-gap: 24px;
+    padding: 16px 0;
+  }
+}
 body #payment main #shopping-navigation .box {
   height: 100%;
   padding: 0 18px;
@@ -4818,6 +4839,15 @@ body #payment main #shopping {
   align-items: flex-start;
   gap: 30px;
 }
+@media (max-width: 991px) {
+  body #payment main #shopping {
+    flex-direction: column;
+  }
+  body #payment main #shopping #payment-section,
+  body #payment main #shopping aside {
+    width: 100% !important;
+  }
+}
 body #payment main #shopping #payment-section {
   width: calc(100% - 380px);
   gap: 30px;
@@ -4857,6 +4887,23 @@ body #payment main #shopping #payment-section #delivery ul li {
   border-radius: 2px;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 660px) {
+  body #payment main #shopping #payment-section #delivery ul li {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+}
+@media (max-width: 991px) {
+  body #payment main #shopping #payment-section #delivery ul li {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 660px) {
+  body #payment main #shopping #payment-section #delivery ul li {
+    justify-content: start;
+  }
 }
 body #payment main #shopping #payment-section #delivery ul li.active {
   background: rgba(80, 184, 60, 0.1019607843);
@@ -4927,10 +4974,25 @@ body #payment main #shopping #payment-section #delivery ul li .prices p span.sal
   line-height: 142.857%;
   text-decoration: line-through;
 }
+@media (max-width: 660px) {
+  body #payment main #shopping #payment-section #delivery ul li .prices {
+    padding-left: 44px;
+  }
+}
+@media (max-width: 480px) {
+  body #payment main #shopping #payment-section #delivery ul li .prices {
+    padding-left: 4px;
+  }
+}
 body #payment main #shopping #payment-section #delivery ul li .images {
   display: flex;
   justify-content: flex-end;
   min-width: 100px;
+}
+@media (max-width: 660px) {
+  body #payment main #shopping #payment-section #delivery ul li .images {
+    min-width: auto;
+  }
 }
 body #payment main #shopping #payment-section #pay {
   border-radius: 2px;
@@ -4968,6 +5030,11 @@ body #payment main #shopping #payment-section #pay .types .box {
   border-radius: 2px;
   border: 1px solid #f4f6f8;
   background: white;
+}
+@media (max-width: 768px) {
+  body #payment main #shopping #payment-section #pay .types .box {
+    width: 100%;
+  }
 }
 body #payment main #shopping #payment-section #pay .types .box.active {
   background: #f4f6f8;
@@ -5025,8 +5092,23 @@ body #payment main #shopping #payment-section #pay .credits .box {
   width: calc((100% - 30px) / 2);
   gap: 8px;
 }
+@media (max-width: 768px) {
+  body #payment main #shopping #payment-section #pay .credits .box {
+    width: 100%;
+  }
+}
 body #payment main #shopping #payment-section #pay .credits .box.poll {
   width: calc((100% - 60px) / 3);
+}
+@media (max-width: 768px) {
+  body #payment main #shopping #payment-section #pay .credits .box.poll {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media (max-width: 560px) {
+  body #payment main #shopping #payment-section #pay .credits .box.poll {
+    width: 100%;
+  }
 }
 body #payment main #shopping #payment-section #pay .credits .box label {
   color: #5a7184;
@@ -5077,6 +5159,11 @@ body #payment main #shopping #payment-section #pay button {
   line-height: 137.5%;
   margin-top: 20px;
 }
+@media (max-width: 768px) {
+  body #payment main #shopping #payment-section #pay button {
+    width: 100%;
+  }
+}
 body #payment main #shopping aside {
   width: 350px;
   position: sticky;
@@ -5086,6 +5173,12 @@ body #payment main #shopping aside {
   border-radius: 2px;
   border: 1px solid #f4f6f8;
   background: white;
+}
+@media (max-width: 991px) {
+  body #payment main #shopping aside {
+    position: static;
+    top: auto;
+  }
 }
 body #payment main #shopping aside h3 {
   color: #161d25;
