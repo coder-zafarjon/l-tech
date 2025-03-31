@@ -3672,6 +3672,13 @@ body #basket main #title-path {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 991px) {
+  body #basket main #title-path {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
 body #basket main #title-path .column {
   gap: 8px;
 }
@@ -3736,6 +3743,14 @@ body #basket main #shopping-navigation {
   margin-bottom: 36px;
   overflow: hidden;
 }
+@media (max-width: 991px) {
+  body #basket main #shopping-navigation {
+    flex-wrap: wrap;
+    height: auto;
+    row-gap: 24px;
+    padding: 16px 0;
+  }
+}
 body #basket main #shopping-navigation .box {
   height: 100%;
   padding: 0 18px;
@@ -3783,6 +3798,15 @@ body #basket main #shopping {
   align-items: flex-start;
   gap: 30px;
 }
+@media (max-width: 991px) {
+  body #basket main #shopping {
+    flex-direction: column;
+  }
+  body #basket main #shopping #products,
+  body #basket main #shopping aside {
+    width: 100% !important;
+  }
+}
 body #basket main #shopping #products {
   width: calc(100% - 380px);
   border-radius: 2px;
@@ -3800,6 +3824,16 @@ body #basket main #shopping #products ul li {
   list-style: none;
   gap: 16px;
 }
+@media (max-width: 768px) {
+  body #basket main #shopping #products ul li {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 560px) {
+  body #basket main #shopping #products ul li {
+    padding: 10px 14px 10px 12px;
+  }
+}
 body #basket main #shopping #products ul li img {
   padding: 10px 5px;
   height: 100px;
@@ -3811,6 +3845,11 @@ body #basket main #shopping #products ul li img {
 body #basket main #shopping #products ul li .name {
   width: calc(60% - 110px);
   gap: 6px;
+}
+@media (max-width: 768px) {
+  body #basket main #shopping #products ul li .name {
+    width: calc(100% - 136px);
+  }
 }
 body #basket main #shopping #products ul li .name h5 {
   color: #161d25;
@@ -3836,6 +3875,17 @@ body #basket main #shopping #products ul li .price {
   font-style: normal;
   font-weight: 700;
   line-height: 137.5%;
+}
+@media (max-width: 768px) {
+  body #basket main #shopping #products ul li .price {
+    width: calc(100% - 188px);
+    padding-left: 16px;
+  }
+}
+@media (max-width: 560px) {
+  body #basket main #shopping #products ul li .price {
+    padding: 8px;
+  }
 }
 body #basket main #shopping #products ul li .actions {
   gap: 18px;
@@ -3872,6 +3922,12 @@ body #basket main #shopping aside {
   position: sticky;
   top: 90px;
   gap: 30px;
+}
+@media (max-width: 991px) {
+  body #basket main #shopping aside {
+    position: static;
+    top: auto;
+  }
 }
 body #basket main #shopping aside #vaucher {
   width: 100%;
@@ -4062,26 +4118,6 @@ body #basket main #related .title h2 {
   line-height: 133.333%;
   letter-spacing: 0.2px;
 }
-body #basket main #related .title a,
-body #basket main #related .title button {
-  transition: 0.2s;
-  padding: 12px 22px;
-  border-radius: 4px;
-  border: 2px solid var(--brand);
-  background: white;
-  color: var(--brand);
-  text-align: center;
-  font-feature-settings: "liga" off, "clig" off;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 137.5%;
-}
-body #basket main #related .title a:hover,
-body #basket main #related .title button:hover {
-  background: var(--brand);
-  color: white;
-}
 body #basket main #related .products {
   gap: 20px;
 }
@@ -4095,6 +4131,31 @@ body #basket main #related .products .card {
   gap: 12px;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 1400px) {
+  body #basket main #related .products .card {
+    width: calc((100% - 80px) / 5);
+  }
+}
+@media (max-width: 1280px) {
+  body #basket main #related .products .card {
+    width: calc((100% - 60px) / 4);
+  }
+}
+@media (max-width: 991px) {
+  body #basket main #related .products .card {
+    width: calc((100% - 40px) / 3);
+  }
+}
+@media (max-width: 660px) {
+  body #basket main #related .products .card {
+    width: calc((100% - 20px) / 2);
+  }
+}
+@media (max-width: 480px) {
+  body #basket main #related .products .card {
+    width: 100%;
+  }
 }
 body #basket main #related .products .card:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -4184,6 +4245,26 @@ body #basket main #related .products .card button {
 }
 body #basket main #related .products .card a:hover,
 body #basket main #related .products .card button:hover {
+  background: var(--brand);
+  color: white;
+}
+body #basket main #related a.link,
+body #basket main #related button.link {
+  transition: 0.2s;
+  padding: 12px 22px;
+  border-radius: 4px;
+  border: 2px solid var(--brand);
+  background: white;
+  color: var(--brand);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 137.5%;
+}
+body #basket main #related a.link:hover,
+body #basket main #related button.link:hover {
   background: var(--brand);
   color: white;
 }
