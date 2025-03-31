@@ -12,6 +12,12 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
     .column {
       gap: 8px;
 
@@ -82,6 +88,13 @@
     margin-bottom: 36px;
     overflow: hidden;
 
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+      height: auto;
+      row-gap: 24px;
+      padding: 16px 0;
+    }
+
     .box {
       height: 100%;
       padding: 0 18px;
@@ -141,6 +154,15 @@
     align-items: flex-start;
     gap: 30px;
 
+    @media (max-width: 991px) {
+      flex-direction: column;
+
+      #payment-section,
+      aside {
+        width: 100% !important;
+      }
+    }
+
     #payment-section {
       width: calc(100% - 380px);
       gap: 30px;
@@ -151,6 +173,11 @@
         background: white;
         padding: 24px 30px 0 24px;
         gap: 10px;
+
+        @media (max-width: 560px) {
+          padding: 0 12px;
+          border-color: transparent;
+        }
 
         h3 {
           width: 100%;
@@ -179,6 +206,10 @@
             align-items: center;
             gap: 20px;
 
+            @media (max-width: 768px) {
+              flex-wrap: wrap;
+            }
+
             img {
               width: 60px;
               border-radius: 50%;
@@ -190,9 +221,17 @@
               width: calc(100% - 200px);
               gap: 8px;
 
+              @media (max-width: 660px) {
+                width: calc(100% - 100px);
+              }
+
               .name {
                 gap: 8px;
                 align-items: center;
+
+                @media (max-width: 660px) {
+                  flex-wrap: wrap;
+                }
 
                 h4 {
                   color: #161d25;
@@ -211,17 +250,30 @@
                   font-weight: 400;
                 }
               }
+            }
 
-              .address {
-                align-items: center;
-                gap: 8px;
+            .address {
+              align-items: center;
+              gap: 8px;
 
-                span {
-                  color: #959ead;
-                  font-size: 14px;
-                  font-style: normal;
-                  font-weight: 400;
-                  margin-top: 1px;
+              span {
+                color: #959ead;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                margin-top: 1px;
+              }
+
+              &.mobile-none-ind{
+                @media (max-width: 660px) {
+                  display: none;
+                }
+              }
+
+              &.mobile-flex-ind{
+                display: none;
+                @media (max-width: 660px) {
+                  display: flex;
                 }
               }
             }
@@ -257,11 +309,25 @@
             justify-content: space-between;
             align-items: center;
 
+            @media (max-width: 991px) {
+              flex-wrap: wrap;
+              row-gap: 20px;
+            }
+
+            @media (max-width: 660px) {
+              justify-content: start;
+              column-gap: 16px;
+            }
+
             .selector {
               gap: 20px;
 
               .radio {
                 width: 60px;
+
+                @media (max-width: 991px) {
+                  display: none;
+                }
               }
 
               .name {
@@ -283,6 +349,10 @@
                   font-style: normal;
                   font-weight: 400;
                   line-height: 142.857%;
+
+                  @media (max-width: 560px) {
+                    font-size: 13px;
+                  }
                 }
               }
             }
@@ -329,6 +399,12 @@
         padding: 24px 20px 30px;
         gap: 22px;
 
+        
+        @media (max-width: 560px) {
+          padding: 0;
+          border-color: transparent;
+        }
+
         .title {
           align-items: center;
           justify-content: space-between;
@@ -364,6 +440,10 @@
           background: white;
           align-items: center;
 
+          @media (max-width: 560px) {
+            flex-wrap: wrap;
+          }
+
           .icon {
             padding: 6px 20px;
           }
@@ -371,6 +451,10 @@
           .name {
             width: calc(100% - 212px);
             gap: 6px;
+
+            @media (max-width: 560px) {
+              width: calc(100% - 100px);
+            }
 
             h4 {
               color: #161d25;
@@ -418,6 +502,11 @@
         padding: 28px 24px 20px 20px;
         gap: 10px;
 
+        @media (max-width: 560px) {
+          padding: 12px 8px;
+          border-color: transparent;
+        }
+
         h3 {
           width: 100%;
           color: #161d25;
@@ -448,6 +537,11 @@
             list-style: none;
             gap: 16px;
 
+            @media (max-width: 768px) {
+              flex-wrap: wrap;
+              justify-content: space-between;
+            }
+  
             img {
               padding: 10px 5px;
               height: 100px;
@@ -459,6 +553,10 @@
             .name {
               width: calc(50% - 111px);
               gap: 6px;
+
+              @media (max-width: 768px) {
+                width: calc(100% - 136px);
+              }
 
               h5 {
                 color: #161d25;
@@ -487,6 +585,12 @@
               font-style: normal;
               font-weight: 400;
               line-height: 137.5%;
+
+              text-wrap: nowrap;
+
+              @media (max-width: 440px) {
+                width: 36%;
+              }
             }
 
             .price {
@@ -497,6 +601,15 @@
               font-style: normal;
               font-weight: 700;
               line-height: 137.5%;
+
+              @media (max-width: 768px) {
+                width: calc(100% - 188px);
+                padding-left: 16px;
+              }
+  
+              @media (max-width: 560px) {
+                padding: 8px;
+              }
             }
 
             .iconbutton {
@@ -528,6 +641,11 @@
       border-radius: 2px;
       border: 1px solid #f4f6f8;
       background: white;
+
+      @media (max-width: 991px) {
+        position: static;
+        top: auto;
+      }
 
       h3 {
         color: #161d25;

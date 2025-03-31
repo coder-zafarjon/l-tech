@@ -4888,12 +4888,6 @@ body #payment main #shopping #payment-section #delivery ul li {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 660px) {
-  body #payment main #shopping #payment-section #delivery ul li {
-    -moz-column-gap: 16px;
-         column-gap: 16px;
-  }
-}
 @media (max-width: 991px) {
   body #payment main #shopping #payment-section #delivery ul li {
     flex-wrap: wrap;
@@ -4903,6 +4897,8 @@ body #payment main #shopping #payment-section #delivery ul li {
 @media (max-width: 660px) {
   body #payment main #shopping #payment-section #delivery ul li {
     justify-content: start;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
   }
 }
 body #payment main #shopping #payment-section #delivery ul li.active {
@@ -5326,6 +5322,13 @@ body #review main #title-path {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 991px) {
+  body #review main #title-path {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+}
 body #review main #title-path .column {
   gap: 8px;
 }
@@ -5390,6 +5393,14 @@ body #review main #shopping-navigation {
   margin-bottom: 36px;
   overflow: hidden;
 }
+@media (max-width: 991px) {
+  body #review main #shopping-navigation {
+    flex-wrap: wrap;
+    height: auto;
+    row-gap: 24px;
+    padding: 16px 0;
+  }
+}
 body #review main #shopping-navigation .box {
   height: 100%;
   padding: 0 18px;
@@ -5437,6 +5448,15 @@ body #review main #shopping {
   align-items: flex-start;
   gap: 30px;
 }
+@media (max-width: 991px) {
+  body #review main #shopping {
+    flex-direction: column;
+  }
+  body #review main #shopping #payment-section,
+  body #review main #shopping aside {
+    width: 100% !important;
+  }
+}
 body #review main #shopping #payment-section {
   width: calc(100% - 380px);
   gap: 30px;
@@ -5447,6 +5467,12 @@ body #review main #shopping #payment-section #delivery {
   background: white;
   padding: 24px 30px 0 24px;
   gap: 10px;
+}
+@media (max-width: 560px) {
+  body #review main #shopping #payment-section #delivery {
+    padding: 0 12px;
+    border-color: transparent;
+  }
 }
 body #review main #shopping #payment-section #delivery h3 {
   width: 100%;
@@ -5472,6 +5498,11 @@ body #review main #shopping #payment-section #delivery .wrapper .user {
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  body #review main #shopping #payment-section #delivery .wrapper .user {
+    flex-wrap: wrap;
+  }
+}
 body #review main #shopping #payment-section #delivery .wrapper .user img {
   width: 60px;
   border-radius: 50%;
@@ -5483,9 +5514,19 @@ body #review main #shopping #payment-section #delivery .wrapper .user .user-deta
   width: calc(100% - 200px);
   gap: 8px;
 }
+@media (max-width: 660px) {
+  body #review main #shopping #payment-section #delivery .wrapper .user .user-details {
+    width: calc(100% - 100px);
+  }
+}
 body #review main #shopping #payment-section #delivery .wrapper .user .user-details .name {
   gap: 8px;
   align-items: center;
+}
+@media (max-width: 660px) {
+  body #review main #shopping #payment-section #delivery .wrapper .user .user-details .name {
+    flex-wrap: wrap;
+  }
 }
 body #review main #shopping #payment-section #delivery .wrapper .user .user-details .name h4 {
   color: #161d25;
@@ -5502,16 +5543,29 @@ body #review main #shopping #payment-section #delivery .wrapper .user .user-deta
   font-style: normal;
   font-weight: 400;
 }
-body #review main #shopping #payment-section #delivery .wrapper .user .user-details .address {
+body #review main #shopping #payment-section #delivery .wrapper .user .address {
   align-items: center;
   gap: 8px;
 }
-body #review main #shopping #payment-section #delivery .wrapper .user .user-details .address span {
+body #review main #shopping #payment-section #delivery .wrapper .user .address span {
   color: #959ead;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   margin-top: 1px;
+}
+@media (max-width: 660px) {
+  body #review main #shopping #payment-section #delivery .wrapper .user .address.mobile-none-ind {
+    display: none;
+  }
+}
+body #review main #shopping #payment-section #delivery .wrapper .user .address.mobile-flex-ind {
+  display: none;
+}
+@media (max-width: 660px) {
+  body #review main #shopping #payment-section #delivery .wrapper .user .address.mobile-flex-ind {
+    display: flex;
+  }
 }
 body #review main #shopping #payment-section #delivery .wrapper .user button {
   width: 100px;
@@ -5540,11 +5594,29 @@ body #review main #shopping #payment-section #delivery .wrapper .delivery {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 991px) {
+  body #review main #shopping #payment-section #delivery .wrapper .delivery {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 660px) {
+  body #review main #shopping #payment-section #delivery .wrapper .delivery {
+    justify-content: start;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+}
 body #review main #shopping #payment-section #delivery .wrapper .delivery .selector {
   gap: 20px;
 }
 body #review main #shopping #payment-section #delivery .wrapper .delivery .selector .radio {
   width: 60px;
+}
+@media (max-width: 991px) {
+  body #review main #shopping #payment-section #delivery .wrapper .delivery .selector .radio {
+    display: none;
+  }
 }
 body #review main #shopping #payment-section #delivery .wrapper .delivery .selector .name {
   gap: 6px;
@@ -5564,6 +5636,11 @@ body #review main #shopping #payment-section #delivery .wrapper .delivery .selec
   font-style: normal;
   font-weight: 400;
   line-height: 142.857%;
+}
+@media (max-width: 560px) {
+  body #review main #shopping #payment-section #delivery .wrapper .delivery .selector .name p {
+    font-size: 13px;
+  }
 }
 body #review main #shopping #payment-section #delivery .wrapper .delivery .prices {
   gap: 8px;
@@ -5598,6 +5675,12 @@ body #review main #shopping #payment-section #pay {
   padding: 24px 20px 30px;
   gap: 22px;
 }
+@media (max-width: 560px) {
+  body #review main #shopping #payment-section #pay {
+    padding: 0;
+    border-color: transparent;
+  }
+}
 body #review main #shopping #payment-section #pay .title {
   align-items: center;
   justify-content: space-between;
@@ -5630,12 +5713,22 @@ body #review main #shopping #payment-section #pay .box {
   background: white;
   align-items: center;
 }
+@media (max-width: 560px) {
+  body #review main #shopping #payment-section #pay .box {
+    flex-wrap: wrap;
+  }
+}
 body #review main #shopping #payment-section #pay .box .icon {
   padding: 6px 20px;
 }
 body #review main #shopping #payment-section #pay .box .name {
   width: calc(100% - 212px);
   gap: 6px;
+}
+@media (max-width: 560px) {
+  body #review main #shopping #payment-section #pay .box .name {
+    width: calc(100% - 100px);
+  }
 }
 body #review main #shopping #payment-section #pay .box .name h4 {
   color: #161d25;
@@ -5676,6 +5769,12 @@ body #review main #shopping #payment-section #products {
   padding: 28px 24px 20px 20px;
   gap: 10px;
 }
+@media (max-width: 560px) {
+  body #review main #shopping #payment-section #products {
+    padding: 12px 8px;
+    border-color: transparent;
+  }
+}
 body #review main #shopping #payment-section #products h3 {
   width: 100%;
   color: #161d25;
@@ -5704,6 +5803,12 @@ body #review main #shopping #payment-section #products ul li {
   list-style: none;
   gap: 16px;
 }
+@media (max-width: 768px) {
+  body #review main #shopping #payment-section #products ul li {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 body #review main #shopping #payment-section #products ul li img {
   padding: 10px 5px;
   height: 100px;
@@ -5715,6 +5820,11 @@ body #review main #shopping #payment-section #products ul li img {
 body #review main #shopping #payment-section #products ul li .name {
   width: calc(50% - 111px);
   gap: 6px;
+}
+@media (max-width: 768px) {
+  body #review main #shopping #payment-section #products ul li .name {
+    width: calc(100% - 136px);
+  }
 }
 body #review main #shopping #payment-section #products ul li .name h5 {
   color: #161d25;
@@ -5740,6 +5850,12 @@ body #review main #shopping #payment-section #products ul li .count {
   font-style: normal;
   font-weight: 400;
   line-height: 137.5%;
+  text-wrap: nowrap;
+}
+@media (max-width: 440px) {
+  body #review main #shopping #payment-section #products ul li .count {
+    width: 36%;
+  }
 }
 body #review main #shopping #payment-section #products ul li .price {
   width: calc(32% - 111px);
@@ -5749,6 +5865,17 @@ body #review main #shopping #payment-section #products ul li .price {
   font-style: normal;
   font-weight: 700;
   line-height: 137.5%;
+}
+@media (max-width: 768px) {
+  body #review main #shopping #payment-section #products ul li .price {
+    width: calc(100% - 188px);
+    padding-left: 16px;
+  }
+}
+@media (max-width: 560px) {
+  body #review main #shopping #payment-section #products ul li .price {
+    padding: 8px;
+  }
 }
 body #review main #shopping #payment-section #products ul li .iconbutton {
   width: 38px;
@@ -5772,6 +5899,12 @@ body #review main #shopping aside {
   border-radius: 2px;
   border: 1px solid #f4f6f8;
   background: white;
+}
+@media (max-width: 991px) {
+  body #review main #shopping aside {
+    position: static;
+    top: auto;
+  }
 }
 body #review main #shopping aside h3 {
   color: #161d25;

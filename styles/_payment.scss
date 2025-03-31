@@ -205,10 +205,6 @@
             justify-content: space-between;
             align-items: center;
 
-            @media (max-width: 660px) {
-              column-gap: 16px;
-            }
-
             @media (max-width: 991px) {
               flex-wrap: wrap;
               row-gap: 20px;
@@ -216,6 +212,7 @@
 
             @media (max-width: 660px) {
               justify-content: start;
+              column-gap: 16px;
             }
 
             &.active {
