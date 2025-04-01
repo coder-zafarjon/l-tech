@@ -250,6 +250,27 @@
               width: 116px;
               align-items: center;
               justify-content: space-between;
+
+              input {
+                width: 40px;
+                height: 38px;
+                text-align: center;
+
+                color: #161d25;
+                text-align: center;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 142.857%;
+
+                &[type="number"]::-webkit-inner-spin-button,
+                &[type="number"]::-webkit-outer-spin-button {
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  appearance: none;
+                  margin: 0;
+                }
+              }
             }
 
             .iconbutton {
@@ -262,11 +283,19 @@
               &.minus {
                 border-right: 1px solid #f4f6f8;
                 border-radius: 0;
+
+                &:hover {
+                  background: #f4f6f8;
+                }
               }
 
               &.plus {
                 border-left: 1px solid #f4f6f8;
                 border-radius: 0;
+
+                &:hover {
+                  background: #f4f6f8;
+                }
               }
 
               &.del:hover {
@@ -456,6 +485,7 @@
             }
           }
 
+          a,
           button {
             margin-top: 14px;
             width: 100%;
@@ -495,13 +525,80 @@
       }
     }
 
-    .products {
-      gap: 20px;
+    .swiper {
+      width: 100%;
+      height: 100%;
+      padding: 0 40px 40px !important;
+      max-width: 1440px;
+
+      // Medium Laptop
+      @media (max-width: 1400px) {
+        max-width: 1280px;
+      }
+
+      // Mini Monitors
+      @media (max-width: 1280px) {
+        max-width: 1080px;
+      }
+
+      @media (max-width: 1140px) {
+        max-width: 980px;
+      }
+
+      // Mini Laptop
+      @media (max-width: 991px) {
+        max-width: 880px;
+      }
+
+      @media (max-width: 860px) {
+        max-width: 780px;
+      }
+
+      // Table
+      @media (max-width: 768px) {
+        max-width: 680px;
+      }
+
+      @media (max-width: 660px) {
+        max-width: 580px;
+      }
+
+      @media (max-width: 560px) {
+        max-width: 520px;
+      }
+
+      // Phone
+      @media (max-width: 480px) {
+        max-width: 480px;
+      }
+
+      @media (max-width: 440px) {
+        max-width: 440px;
+      }
+
+      @media (max-width: 380px) {
+        max-width: 400px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
 
       .card {
-        width: calc((100% - (5 * 20px)) / 6);
         transition: 0.15s;
-        height: auto;
         border-radius: 2px;
         padding: 20px;
         z-index: 9;
@@ -509,33 +606,19 @@
         position: relative;
         overflow: hidden;
 
-        @media (max-width: 1400px) {
-          width: calc((100% - (4 * 20px)) / 5);
-        }
-
-        @media (max-width: 1280px) {
-          width: calc((100% - (3 * 20px)) / 4);
-        }
-
-        @media (max-width: 991px) {
-          width: calc((100% - (2 * 20px)) / 3);
-        }
-
-        @media (max-width: 660px) {
-          width: calc((100% - 20px) / 2);
-        }
-
-        @media (max-width: 480px) {
-          width: 100%;
-        }
-
         &:hover {
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+          img, .sales, .title, a, button{
+            transform: scale(1.1);
+          }
         }
 
         .sales {
+          width: 100%;
           align-items: center;
           justify-content: space-between;
+          transition: .2s;
 
           .sale {
             display: none;
@@ -564,9 +647,13 @@
           aspect-ratio: 10/9;
           object-fit: cover;
           border-radius: 2px;
+          transition: .2s;
         }
 
         .title {
+          width: 100%;
+          transition: .2s;
+
           h4 {
             color: #161d25;
             font-family: Inter;
@@ -615,6 +702,7 @@
 
         a,
         button {
+          width: 100%;
           transition: 0.2s;
           padding: 5px 0;
           border-radius: 4px;

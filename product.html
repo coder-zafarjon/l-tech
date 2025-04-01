@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/scss/globals.css" />
+    <link rel="stylesheet" href="/scss/swipper.css" />
     <title>Product • L-TECH</title>
   </head>
   <body>
@@ -179,10 +180,7 @@
                   />
                 </svg>
               </button>
-              <button
-                onclick="navigateSearchPage()"
-                class="search-btn iconbutton"
-              >
+              <a href="search.html" class="search-btn iconbutton">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -197,11 +195,11 @@
                     fill="white"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
           <div class="account row">
-            <button class="shop iconbutton active" onclick="navigateBasketPage()">
+            <a href="basket.html" class="shop iconbutton active">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -216,7 +214,13 @@
                   fill="#919EAB"
                 />
               </svg>
-            </button>
+            </a>
+            <!-- change count basket, this only works in the active class -->
+            <style>
+              a.shop.active:before {
+                content: "5" !important;
+              }
+            </style>
             <button class="favorite iconbutton">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -273,16 +277,48 @@
             </div>
           </div>
           <div class="mobile-menu">
-            <button class="favorite iconbutton">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0252 16.0077L19.4689 18.4507C20.1478 19.1294 19.1297 20.1478 18.4508 19.469L16.0069 17.0258C13.0712 19.4471 8.74031 19.2621 6.01897 16.5407C3.11347 13.6352 3.11347 8.92447 6.01897 6.01897C8.92447 3.11347 13.6352 3.11347 16.5407 6.01897C19.2623 8.74058 19.4471 13.072 17.0252 16.0077ZM15.5225 7.0372C13.1793 4.69406 9.38035 4.69406 7.0372 7.0372C4.69406 9.38035 4.69406 13.1793 7.0372 15.5225C9.38035 17.8656 13.1793 17.8656 15.5225 15.5225C17.8656 13.1793 17.8656 9.38035 15.5225 7.0372Z" fill="#919EAB"/>
+            <button class="search iconbutton">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.0252 16.0077L19.4689 18.4507C20.1478 19.1294 19.1297 20.1478 18.4508 19.469L16.0069 17.0258C13.0712 19.4471 8.74031 19.2621 6.01897 16.5407C3.11347 13.6352 3.11347 8.92447 6.01897 6.01897C8.92447 3.11347 13.6352 3.11347 16.5407 6.01897C19.2623 8.74058 19.4471 13.072 17.0252 16.0077ZM15.5225 7.0372C13.1793 4.69406 9.38035 4.69406 7.0372 7.0372C4.69406 9.38035 4.69406 13.1793 7.0372 15.5225C9.38035 17.8656 13.1793 17.8656 15.5225 15.5225C17.8656 13.1793 17.8656 9.38035 15.5225 7.0372Z"
+                  fill="#919EAB"
+                />
               </svg>
             </button>
-            <button class="shop iconbutton active" onclick="navigateBasketPage()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M3 7H21" stroke="#919EAB" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M3 12H21" stroke="#919EAB" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M3 17H21" stroke="#919EAB" stroke-width="1.5" stroke-linecap="round"/>
+            <button class="menu iconbutton">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M3 7H21"
+                  stroke="#919EAB"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M3 12H21"
+                  stroke="#919EAB"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M3 17H21"
+                  stroke="#919EAB"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
               </svg>
             </button>
           </div>
@@ -346,9 +382,19 @@
                 <div class="box column product-color">
                   <p>Rang</p>
                   <div class="colors row">
-                    <button>Original</button>
-                    <button class="active">Black</button>
-                    <button>Gray</button>
+                    <button onclick="colorPicker(1)" id="colorBox1">
+                      Original
+                    </button>
+                    <button
+                      onclick="colorPicker(2)"
+                      id="colorBox2"
+                      class="active"
+                    >
+                      Black
+                    </button>
+                    <button onclick="colorPicker(3)" id="colorBox3">
+                      Gray
+                    </button>
                   </div>
                 </div>
               </div>
@@ -374,8 +420,19 @@
                 </button>
                 <button class="mobile-block buy">Xarid Qilish</button>
                 <button class="mobile-flex iconbutton flex-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3496 5.62281C12.9808 3.99227 15.6254 3.99227 17.2566 5.62281C18.8878 7.25346 18.8878 9.89732 17.2566 11.528L11.3111 17.4711C11.1393 17.6428 10.8608 17.6428 10.689 17.4711L4.74348 11.528C3.1122 9.89732 3.1122 7.25346 4.74348 5.62281C6.37468 3.99227 9.01929 3.99227 10.6505 5.62281L11 5.97222L11.3496 5.62281Z" fill="#C4CDD5"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.3496 5.62281C12.9808 3.99227 15.6254 3.99227 17.2566 5.62281C18.8878 7.25346 18.8878 9.89732 17.2566 11.528L11.3111 17.4711C11.1393 17.6428 10.8608 17.6428 10.689 17.4711L4.74348 11.528C3.1122 9.89732 3.1122 7.25346 4.74348 5.62281C6.37468 3.99227 9.01929 3.99227 10.6505 5.62281L11 5.97222L11.3496 5.62281Z"
+                      fill="#C4CDD5"
+                    />
                   </svg>
                 </button>
               </div>
@@ -933,12 +990,20 @@
                       </button>
                     </div>
                   </div>
-                  <p class="description">
-                    Sony α, is a camera system introduced on 5 June 2006. It
-                    uses and expands upon Konica Minolta camera technologies,
-                    including the Minolta AF SLR lens mount…
-                    <span> Ko'proq o'qish</span>
-                  </p>
+                  <div id="description1" class="description non-active">
+                    <p>
+                      Sony α, is a camera system introduced on 5 June 2006. It
+                      uses and expands upon Konica Minolta camera technologies,
+                      including the Minolta AF SLR lens mount… Sony α, is a
+                      camera system introduced on 5 June 2006. It uses and
+                      expands upon Konica Minolta camera technologies, including
+                      the Minolta AF SLR lens mount… Sony α, is a camera system
+                      introduced on 5 June 2006. It uses and expands upon Konica
+                      Minolta camera technologies, including the Minolta AF SLR
+                      lens mount…
+                    </p>
+                    <button onclick="showDescription(1)">Ko'proq o'qish</button>
+                  </div>
 
                   <hr />
                 </div>
@@ -1061,12 +1126,14 @@
                       </button>
                     </div>
                   </div>
-                  <p class="description">
-                    Sony α, is a camera system introduced on 5 June 2006. It
-                    uses and expands upon Konica Minolta camera technologies,
-                    including the Minolta AF SLR lens mount…
-                    <span> Ko'proq o'qish</span>
-                  </p>
+                  <div id="description2" class="description non-active">
+                    <p>
+                      Sony α, is a camera system introduced on 5 June 2006. It
+                      uses and expands upon Konica Minolta camera technologies,
+                      including the Minolta AF SLR lens mount…
+                    </p>
+                    <button onclick="showDescription(2)">Ko'proq o'qish</button>
+                  </div>
 
                   <hr />
                 </div>
@@ -1189,12 +1256,14 @@
                       </button>
                     </div>
                   </div>
-                  <p class="description">
-                    Sony α, is a camera system introduced on 5 June 2006. It
-                    uses and expands upon Konica Minolta camera technologies,
-                    including the Minolta AF SLR lens mount…
-                    <span> Ko'proq o'qish</span>
-                  </p>
+                  <div id="description3" class="description non-active">
+                    <p>
+                      Sony α, is a camera system introduced on 5 June 2006. It
+                      uses and expands upon Konica Minolta camera technologies,
+                      including the Minolta AF SLR lens mount…
+                    </p>
+                    <button onclick="showDescription(3)">Ko'proq o'qish</button>
+                  </div>
 
                   <hr />
                 </div>
@@ -1255,13 +1324,15 @@
               </form>
             </aside>
           </div>
-          <section id="related" class="column">
-            <div class="title row">
-              <h2>O’xshash mahsulotlar</h2>
-              <a class="link mobile-none">Hammasini ko’rish</a>
-            </div>
-            <div class="products row wrap" id="products">
-              <div class="card column">
+        </div>
+        <section id="related" class="column">
+          <div class="title row container">
+            <h2>O’xshash mahsulotlar</h2>
+            <a class="link mobile-none">Hammasini ko’rish</a>
+          </div>
+          <div class="products swiper">
+            <div class="swiper-wrapper">
+              <div class="card swiper-slide">
                 <div class="sales row">
                   <button class="sale active">
                     <span>-48%</span>
@@ -1398,7 +1469,7 @@
                   </button>
                 </div>
               </div>
-              <div class="card column">
+              <div class="card swiper-slide">
                 <div class="sales row">
                   <button class="sale active">
                     <span>-48%</span>
@@ -1535,7 +1606,7 @@
                   </button>
                 </div>
               </div>
-              <div class="card column">
+              <div class="card swiper-slide">
                 <div class="sales row">
                   <button class="sale">
                     <span>-48%</span>
@@ -1672,7 +1743,7 @@
                   </button>
                 </div>
               </div>
-              <div class="card column">
+              <div class="card swiper-slide">
                 <div class="sales row">
                   <button class="sale active">
                     <span>-48%</span>
@@ -1810,9 +1881,13 @@
                 </div>
               </div>
             </div>
-            <a class="link mobile-block">Hammasini ko’rish</a>
-          </section>
-        </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <a class="link mobile-block container">Hammasini ko’rish</a>
+        </section>
       </main>
     </div>
     <footer>
@@ -1884,15 +1959,15 @@
             </p>
           </div>
           <nav class="nav row">
-            <div class="tab column">
-              <h3>First Menu</h3>
+            <div class="tab column" id="footerTab1">
+              <h3 onclick="footerMenu(1)">First Menu</h3>
               <a href="">Features</a>
               <a href="">Enterpise</a>
               <a href="">Security</a>
               <a href="">Customer Stories</a>
             </div>
-            <div class="tab column">
-              <h3>Second Menu</h3>
+            <div class="tab column" id="footerTab2">
+              <h3 onclick="footerMenu(2)">Second Menu</h3>
               <a href="">Engineering</a>
               <a href="">Financial Services</a>
               <a href="">Sales</a>
@@ -1900,16 +1975,16 @@
               <a href="">Human Resources</a>
               <a href="">Media</a>
             </div>
-            <div class="tab column">
-              <h3>Third Menu</h3>
+            <div class="tab column" id="footerTab3">
+              <h3 onclick="footerMenu(3)">Third Menu</h3>
               <a href="">Tips</a>
               <a href="">Blog</a>
               <a href="">Event</a>
               <a href="">Certified Program</a>
               <a href="">Help Center</a>
             </div>
-            <div class="tab column">
-              <h3>Fourth Menu</h3>
+            <div class="tab column" id="footerTab4">
+              <h3 onclick="footerMenu(4)">Fourth Menu</h3>
               <a href="">About Us</a>
               <a href="">Leadership</a>
               <a href="">News</a>
@@ -2009,11 +2084,74 @@
       </div>
     </footer>
 
+    <script src="/js/swipper.js"></script>
     <script>
-      const navigateSearchPage = () =>
-        (window.location = "http://127.0.0.1:5500/search.html");
-      const navigateBasketPage = () =>
-        (window.location = "http://127.0.0.1:5500/basket.html");
+      new Swiper(".swiper", {
+        // Optional parameters
+        loop: true,
+        spaceBetween: 30,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // Responsive Breakpoints
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          560: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          660: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          991: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          }
+        },
+      });
+    </script>
+    <script>
+      const footerMenu = (num) => {
+        const footerTab = document.getElementById(`footerTab${num}`);
+        if (
+          footerTab.classList.length > 2 &&
+          footerTab.classList[2] == "active"
+        ) {
+          footerTab.classList.remove("active");
+          footerTab.style.height = "20px";
+        } else {
+          footerTab.classList.add("active");
+          footerTab.style.height = `${footerTab.scrollHeight}px`;
+        }
+      };
+      const colorPicker = (num) => {
+        const colorBox = document.getElementById(`colorBox${num}`);
+        for (let i = 1; i <= 3; i++) {
+          document.getElementById(`colorBox${i}`).classList.remove("active");
+        }
+        if (colorBox.classList[0] != "active") {
+          colorBox.classList.add("active");
+        }
+      };
+      const showDescription = (num) => {
+        document
+          .getElementById(`description${num}`)
+          .classList.remove("non-active");
+      };
     </script>
   </body>
 </html>

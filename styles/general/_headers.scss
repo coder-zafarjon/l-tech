@@ -92,9 +92,16 @@ header#navbar .up {
         font-weight: 400;
         font-family: Inter;
 
+        &:hover{
+          svg path{
+            fill: var(--brand);
+          }
+        }
+
         svg {
           width: 24px;
           height: 24px;
+          transition: .2s;
         }
       }
     }
@@ -116,6 +123,10 @@ header#navbar .up {
             font-weight: 400;
             line-height: 125%;
             letter-spacing: 0.178px;
+
+            &:hover{
+                color: var(--brand);
+            }
           }
 
           &.lng {
@@ -214,7 +225,11 @@ header hr {
           }
         }
 
-        button {
+        a, button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
           &.types {
             transition: 0.15s background-color;
             width: 163px;
@@ -246,10 +261,17 @@ header hr {
             width: 44px;
             border-radius: 2px;
 
+            &:hover{
+              svg{
+                transform: scale(1.1);
+              }
+            }
+
             svg {
               width: 28px;
               height: 28px;
               margin-top: 1px;
+              transition: .2s;
             }
           }
         }
@@ -266,21 +288,29 @@ header hr {
         border-radius: 50%;
         border: 1px solid #f4f6f8;
         background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover{
+          svg{
+            transform: scale(1.1);
+          }
+        }
 
         @media (max-width: 991px) {
           display: none;
         }
 
         svg {
-          margin-top: 1px;
+          transition: .2s;
         }
 
         &.shop {
           position: relative;
 
-          // shop change count with js
           &.active::before {
-            content: "5";
+            content: "";
             color: white;
             padding-top: 2px;
             position: absolute;
@@ -292,6 +322,7 @@ header hr {
             right: -8px;
             font-size: 12px;
             font-weight: 500;
+            text-align: center;
           }
         }
       }

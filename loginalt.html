@@ -179,10 +179,7 @@
                   />
                 </svg>
               </button>
-              <button
-                onclick="navigateSearchPage()"
-                class="search-btn iconbutton"
-              >
+              <a href="search.html" class="search-btn iconbutton">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -197,14 +194,11 @@
                     fill="white"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
           <div class="account row">
-            <button
-              class="shop iconbutton active"
-              onclick="navigateBasketPage()"
-            >
+            <a href="basket.html" class="shop iconbutton active">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -219,7 +213,13 @@
                   fill="#919EAB"
                 />
               </svg>
-            </button>
+            </a>
+            <!-- change count basket, this only works in the active class -->
+            <style>
+              a.shop.active:before {
+                content: "5" !important;
+              }
+            </style>
             <button class="favorite iconbutton">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -276,16 +276,50 @@
             </div>
           </div>
           <div class="mobile-menu">
-            <button class="favorite iconbutton">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0252 16.0077L19.4689 18.4507C20.1478 19.1294 19.1297 20.1478 18.4508 19.469L16.0069 17.0258C13.0712 19.4471 8.74031 19.2621 6.01897 16.5407C3.11347 13.6352 3.11347 8.92447 6.01897 6.01897C8.92447 3.11347 13.6352 3.11347 16.5407 6.01897C19.2623 8.74058 19.4471 13.072 17.0252 16.0077ZM15.5225 7.0372C13.1793 4.69406 9.38035 4.69406 7.0372 7.0372C4.69406 9.38035 4.69406 13.1793 7.0372 15.5225C9.38035 17.8656 13.1793 17.8656 15.5225 15.5225C17.8656 13.1793 17.8656 9.38035 15.5225 7.0372Z" fill="#919EAB"/>
+            <button class="search iconbutton">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.0252 16.0077L19.4689 18.4507C20.1478 19.1294 19.1297 20.1478 18.4508 19.469L16.0069 17.0258C13.0712 19.4471 8.74031 19.2621 6.01897 16.5407C3.11347 13.6352 3.11347 8.92447 6.01897 6.01897C8.92447 3.11347 13.6352 3.11347 16.5407 6.01897C19.2623 8.74058 19.4471 13.072 17.0252 16.0077ZM15.5225 7.0372C13.1793 4.69406 9.38035 4.69406 7.0372 7.0372C4.69406 9.38035 4.69406 13.1793 7.0372 15.5225C9.38035 17.8656 13.1793 17.8656 15.5225 15.5225C17.8656 13.1793 17.8656 9.38035 15.5225 7.0372Z"
+                  fill="#919EAB"
+                />
               </svg>
             </button>
-            <button class="shop iconbutton active" onclick="navigateBasketPage()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M3 7H21" stroke="#919EAB" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M3 12H21" stroke="#919EAB" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M3 17H21" stroke="#919EAB" stroke-width="1.5" stroke-linecap="round"/>
+            <button
+              class="menu iconbutton"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M3 7H21"
+                  stroke="#919EAB"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M3 12H21"
+                  stroke="#919EAB"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M3 17H21"
+                  stroke="#919EAB"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
               </svg>
             </button>
           </div>
@@ -295,48 +329,97 @@
         <div class="container">
           <section id="hero" class="row">
             <div class="content column">
-                <h3>Butun mamlakat bo'ylab eng yaxshi mahsulotni taklif qilamiz, L-Tech siz bilan !</h3>
-                <p class="subtitle">Hozir roʻyxatdan oʻting va L-Tech elektron tijoratidan katta foyda oling:</p>
-                <div class="box row">
-                  <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.71973 17.6799H17.6797V8.83994C17.6797 7.51904 18.433 6.37407 19.5334 5.81114C19.2014 5.57728 18.7966 5.43994 18.3597 5.43994H4.75973C3.63307 5.43994 2.71973 6.35328 2.71973 7.47994V17.6799ZM31.2797 21.0799C31.2797 20.5574 31.0833 20.0807 30.7602 19.7198C31.0833 19.3589 31.2797 18.8822 31.2797 18.3597V16.3199H26.5197C25.3931 16.3199 24.4797 15.4066 24.4797 14.2799V11.5599C24.4797 10.4333 25.3931 9.51994 26.5197 9.51994H30.1534L30.1187 9.37881C29.9205 8.5722 29.253 7.96631 28.431 7.84686L21.3731 6.82115C21.276 6.80703 21.1779 6.79994 21.0797 6.79994C19.9531 6.79994 19.0397 7.71328 19.0397 8.83994V18.3597C19.0397 18.5982 19.0807 18.8272 19.1559 19.0399H4.75973C3.63307 19.0399 2.71973 19.9533 2.71973 21.0799V22.4399C2.71973 23.5666 3.63307 24.4799 4.75973 24.4799H5.48793C5.81789 22.1732 7.80173 20.3999 10.1997 20.3999C12.5977 20.3999 14.5816 22.1732 14.9115 24.4799H20.4479C20.7779 22.1732 22.7617 20.3999 25.1597 20.3999C27.5247 20.3999 29.4868 22.1247 29.8569 24.3849C30.6819 24.1233 31.2797 23.3515 31.2797 22.4399V21.0799ZM31.2208 13.8634L30.4876 10.8799H26.5197C26.1442 10.8799 25.8397 11.1844 25.8397 11.5599V14.2799C25.8397 14.6555 26.1442 14.9599 26.5197 14.9599H31.2797V14.3503C31.2797 14.1862 31.2599 14.0228 31.2208 13.8634ZM13.5997 25.1599C13.5997 27.0377 12.0775 28.5599 10.1997 28.5599C8.32196 28.5599 6.79973 27.0377 6.79973 25.1599C6.79973 23.2822 8.32196 21.7599 10.1997 21.7599C12.0775 21.7599 13.5997 23.2822 13.5997 25.1599ZM28.5597 25.1599C28.5597 27.0377 27.0375 28.5599 25.1597 28.5599C23.282 28.5599 21.7597 27.0377 21.7597 25.1599C21.7597 23.2822 23.282 21.7599 25.1597 21.7599C27.0375 21.7599 28.5597 23.2822 28.5597 25.1599Z" fill="#454F5B"/>
-                    </svg>
-                  </div>
-                  <div class="column">
-                    <h4>Bepul Yetkazib berish</h4>
-                    <p>Siz barcha tranzaktsiyalaringizdan bepul yuk olasiz.
-                      Shartlar yo'q, tranzaksiya chegarasi yo'q.</p>
-                  </div>
+              <h3>
+                Butun mamlakat bo'ylab eng yaxshi mahsulotni taklif qilamiz,
+                L-Tech siz bilan !
+              </h3>
+              <p class="subtitle">
+                Hozir roʻyxatdan oʻting va L-Tech elektron tijoratidan katta
+                foyda oling:
+              </p>
+              <div class="box row">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.71973 17.6799H17.6797V8.83994C17.6797 7.51904 18.433 6.37407 19.5334 5.81114C19.2014 5.57728 18.7966 5.43994 18.3597 5.43994H4.75973C3.63307 5.43994 2.71973 6.35328 2.71973 7.47994V17.6799ZM31.2797 21.0799C31.2797 20.5574 31.0833 20.0807 30.7602 19.7198C31.0833 19.3589 31.2797 18.8822 31.2797 18.3597V16.3199H26.5197C25.3931 16.3199 24.4797 15.4066 24.4797 14.2799V11.5599C24.4797 10.4333 25.3931 9.51994 26.5197 9.51994H30.1534L30.1187 9.37881C29.9205 8.5722 29.253 7.96631 28.431 7.84686L21.3731 6.82115C21.276 6.80703 21.1779 6.79994 21.0797 6.79994C19.9531 6.79994 19.0397 7.71328 19.0397 8.83994V18.3597C19.0397 18.5982 19.0807 18.8272 19.1559 19.0399H4.75973C3.63307 19.0399 2.71973 19.9533 2.71973 21.0799V22.4399C2.71973 23.5666 3.63307 24.4799 4.75973 24.4799H5.48793C5.81789 22.1732 7.80173 20.3999 10.1997 20.3999C12.5977 20.3999 14.5816 22.1732 14.9115 24.4799H20.4479C20.7779 22.1732 22.7617 20.3999 25.1597 20.3999C27.5247 20.3999 29.4868 22.1247 29.8569 24.3849C30.6819 24.1233 31.2797 23.3515 31.2797 22.4399V21.0799ZM31.2208 13.8634L30.4876 10.8799H26.5197C26.1442 10.8799 25.8397 11.1844 25.8397 11.5599V14.2799C25.8397 14.6555 26.1442 14.9599 26.5197 14.9599H31.2797V14.3503C31.2797 14.1862 31.2599 14.0228 31.2208 13.8634ZM13.5997 25.1599C13.5997 27.0377 12.0775 28.5599 10.1997 28.5599C8.32196 28.5599 6.79973 27.0377 6.79973 25.1599C6.79973 23.2822 8.32196 21.7599 10.1997 21.7599C12.0775 21.7599 13.5997 23.2822 13.5997 25.1599ZM28.5597 25.1599C28.5597 27.0377 27.0375 28.5599 25.1597 28.5599C23.282 28.5599 21.7597 27.0377 21.7597 25.1599C21.7597 23.2822 23.282 21.7599 25.1597 21.7599C27.0375 21.7599 28.5597 23.2822 28.5597 25.1599Z"
+                      fill="#454F5B"
+                    />
+                  </svg>
                 </div>
-                <div class="box row">
-                  <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.47973 2.72021H26.5197C29.1486 2.72021 31.2797 4.85134 31.2797 7.48022V17.0002C31.2797 19.6291 29.1486 21.7602 26.5197 21.7602H7.47973C4.85085 21.7602 2.71973 19.6291 2.71973 17.0002V7.48022C2.71973 4.85134 4.85085 2.72021 7.47973 2.72021ZM31.2797 21.0802V20.4002C31.2797 20.4002 30.2522 22.8896 26.5197 23.1202H7.47973C3.6674 22.8387 2.71973 20.4002 2.71973 20.4002V21.0802C2.71973 23.7091 4.85085 25.8402 7.47973 25.8402H26.5197C29.1486 25.8402 31.2797 23.7091 31.2797 21.0802ZM31.2797 25.1602V24.4802C31.2797 24.4802 30.2522 26.9696 26.5197 27.2002H7.47973C3.6674 26.9187 2.71973 24.4802 2.71973 24.4802V25.1602C2.71973 27.7891 4.85085 29.9202 7.47973 29.9202H26.5197C29.1486 29.9202 31.2797 27.7891 31.2797 25.1602ZM19.7197 8.16022H17.6797V7.48022C17.6797 7.10466 17.3753 6.80022 16.9997 6.80022C16.6242 6.80022 16.3197 7.10466 16.3197 7.48022V8.16022H15.6587C14.532 8.16022 13.6187 9.07355 13.6187 10.2002V10.8812C13.6187 12.0079 14.532 12.9212 15.6587 12.9212H18.3597C18.7353 12.9212 19.0397 13.2257 19.0397 13.6012V14.2802C19.0397 14.6558 18.7353 14.9602 18.3597 14.9602H14.9764C14.9484 14.62 14.6687 14.3478 14.3194 14.3371C13.944 14.3257 13.6304 14.6208 13.619 14.9962L13.6 15.6195C13.5884 16.003 13.8961 16.3202 14.2797 16.3202H16.3197V16.9883C16.3197 17.3639 16.6242 17.6683 16.9997 17.6683C17.3753 17.6683 17.6797 17.3639 17.6797 16.9883V16.3202H18.3597C19.4864 16.3202 20.3997 15.4069 20.3997 14.2802V13.6012C20.3997 12.4746 19.4864 11.5612 18.3597 11.5612H15.6587C15.2831 11.5612 14.9787 11.2568 14.9787 10.8812V10.2002C14.9787 9.82466 15.2831 9.52022 15.6587 9.52022H19.0599C19.1337 9.81594 19.4011 10.035 19.7197 10.035C20.0953 10.035 20.3997 9.73058 20.3997 9.35503V8.84022C20.3997 8.46466 20.0953 8.16022 19.7197 8.16022Z" fill="#454F5B"/>
-                    </svg>
-                  </div>
-                  <div class="column">
-                    <h4>Pulni qaytarish kafolati</h4>
-                    <p>Siz barcha tranzaktsiyalaringizdan bepul yuk olasiz.
-                      Shartlar yo'q, tranzaksiya chegarasi yo'q.</p>
-                  </div>
+                <div class="column">
+                  <h4>Bepul Yetkazib berish</h4>
+                  <p>
+                    Siz barcha tranzaktsiyalaringizdan bepul yuk olasiz.
+                    Shartlar yo'q, tranzaksiya chegarasi yo'q.
+                  </p>
                 </div>
-                <div class="box row">
-                  <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M31.2797 21.3131C30.728 20.6312 30.0326 20.0703 29.2397 19.6762V17.0001C29.2397 10.0523 23.9475 4.80123 16.9997 4.80123C10.052 4.80123 4.75973 10.0523 4.75973 17.0001V19.6762C3.96682 20.0703 3.2715 20.6312 2.71973 21.3131V17.0001C2.71973 8.92566 8.92532 2.76123 16.9997 2.76123C25.0741 2.76123 31.2797 8.92566 31.2797 17.0001V21.3131ZM6.85987 20.4401C6.82039 20.6473 6.79973 20.8613 6.79973 21.0801V29.2401C6.79973 29.4588 6.82039 29.6728 6.85987 29.8801C4.52386 29.5763 2.71973 27.5789 2.71973 25.1601C2.71973 22.7413 4.52386 20.7438 6.85987 20.4401ZM27.1997 29.2401C27.1997 29.4588 27.1791 29.6728 27.1396 29.8801C29.4756 29.5763 31.2797 27.5789 31.2797 25.1601C31.2797 22.7413 29.4756 20.7438 27.1396 20.4401C27.1791 20.6473 27.1997 20.8613 27.1997 21.0801V29.2401ZM10.1997 19.0401H11.5597C12.6864 19.0401 13.5997 19.9534 13.5997 21.0801V29.2401C13.5997 30.3667 12.6864 31.2801 11.5597 31.2801H10.1997C9.07307 31.2801 8.15973 30.3667 8.15973 29.2401V21.0801C8.15973 19.9534 9.07307 19.0401 10.1997 19.0401ZM23.7997 19.0401H22.4397C21.3131 19.0401 20.3997 19.9534 20.3997 21.0801V29.2401C20.3997 30.3667 21.3131 31.2801 22.4397 31.2801H23.7997C24.9264 31.2801 25.8397 30.3667 25.8397 29.2401V21.0801C25.8397 19.9534 24.9264 19.0401 23.7997 19.0401Z" fill="#454F5B"/>
-                    </svg>
-                  </div>
-                  <div class="column">
-                    <h4>24/7 mijozlarni qo‘llab-quvvatlash</h4>
-                    <p>Siz barcha tranzaktsiyalaringizdan bepul yuk olasiz.
-                      Shartlar yo'q, tranzaksiya chegarasi yo'q.</p>
-                  </div>
+              </div>
+              <div class="box row">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.47973 2.72021H26.5197C29.1486 2.72021 31.2797 4.85134 31.2797 7.48022V17.0002C31.2797 19.6291 29.1486 21.7602 26.5197 21.7602H7.47973C4.85085 21.7602 2.71973 19.6291 2.71973 17.0002V7.48022C2.71973 4.85134 4.85085 2.72021 7.47973 2.72021ZM31.2797 21.0802V20.4002C31.2797 20.4002 30.2522 22.8896 26.5197 23.1202H7.47973C3.6674 22.8387 2.71973 20.4002 2.71973 20.4002V21.0802C2.71973 23.7091 4.85085 25.8402 7.47973 25.8402H26.5197C29.1486 25.8402 31.2797 23.7091 31.2797 21.0802ZM31.2797 25.1602V24.4802C31.2797 24.4802 30.2522 26.9696 26.5197 27.2002H7.47973C3.6674 26.9187 2.71973 24.4802 2.71973 24.4802V25.1602C2.71973 27.7891 4.85085 29.9202 7.47973 29.9202H26.5197C29.1486 29.9202 31.2797 27.7891 31.2797 25.1602ZM19.7197 8.16022H17.6797V7.48022C17.6797 7.10466 17.3753 6.80022 16.9997 6.80022C16.6242 6.80022 16.3197 7.10466 16.3197 7.48022V8.16022H15.6587C14.532 8.16022 13.6187 9.07355 13.6187 10.2002V10.8812C13.6187 12.0079 14.532 12.9212 15.6587 12.9212H18.3597C18.7353 12.9212 19.0397 13.2257 19.0397 13.6012V14.2802C19.0397 14.6558 18.7353 14.9602 18.3597 14.9602H14.9764C14.9484 14.62 14.6687 14.3478 14.3194 14.3371C13.944 14.3257 13.6304 14.6208 13.619 14.9962L13.6 15.6195C13.5884 16.003 13.8961 16.3202 14.2797 16.3202H16.3197V16.9883C16.3197 17.3639 16.6242 17.6683 16.9997 17.6683C17.3753 17.6683 17.6797 17.3639 17.6797 16.9883V16.3202H18.3597C19.4864 16.3202 20.3997 15.4069 20.3997 14.2802V13.6012C20.3997 12.4746 19.4864 11.5612 18.3597 11.5612H15.6587C15.2831 11.5612 14.9787 11.2568 14.9787 10.8812V10.2002C14.9787 9.82466 15.2831 9.52022 15.6587 9.52022H19.0599C19.1337 9.81594 19.4011 10.035 19.7197 10.035C20.0953 10.035 20.3997 9.73058 20.3997 9.35503V8.84022C20.3997 8.46466 20.0953 8.16022 19.7197 8.16022Z"
+                      fill="#454F5B"
+                    />
+                  </svg>
                 </div>
+                <div class="column">
+                  <h4>Pulni qaytarish kafolati</h4>
+                  <p>
+                    Siz barcha tranzaktsiyalaringizdan bepul yuk olasiz.
+                    Shartlar yo'q, tranzaksiya chegarasi yo'q.
+                  </p>
+                </div>
+              </div>
+              <div class="box row">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="34"
+                    height="34"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M31.2797 21.3131C30.728 20.6312 30.0326 20.0703 29.2397 19.6762V17.0001C29.2397 10.0523 23.9475 4.80123 16.9997 4.80123C10.052 4.80123 4.75973 10.0523 4.75973 17.0001V19.6762C3.96682 20.0703 3.2715 20.6312 2.71973 21.3131V17.0001C2.71973 8.92566 8.92532 2.76123 16.9997 2.76123C25.0741 2.76123 31.2797 8.92566 31.2797 17.0001V21.3131ZM6.85987 20.4401C6.82039 20.6473 6.79973 20.8613 6.79973 21.0801V29.2401C6.79973 29.4588 6.82039 29.6728 6.85987 29.8801C4.52386 29.5763 2.71973 27.5789 2.71973 25.1601C2.71973 22.7413 4.52386 20.7438 6.85987 20.4401ZM27.1997 29.2401C27.1997 29.4588 27.1791 29.6728 27.1396 29.8801C29.4756 29.5763 31.2797 27.5789 31.2797 25.1601C31.2797 22.7413 29.4756 20.7438 27.1396 20.4401C27.1791 20.6473 27.1997 20.8613 27.1997 21.0801V29.2401ZM10.1997 19.0401H11.5597C12.6864 19.0401 13.5997 19.9534 13.5997 21.0801V29.2401C13.5997 30.3667 12.6864 31.2801 11.5597 31.2801H10.1997C9.07307 31.2801 8.15973 30.3667 8.15973 29.2401V21.0801C8.15973 19.9534 9.07307 19.0401 10.1997 19.0401ZM23.7997 19.0401H22.4397C21.3131 19.0401 20.3997 19.9534 20.3997 21.0801V29.2401C20.3997 30.3667 21.3131 31.2801 22.4397 31.2801H23.7997C24.9264 31.2801 25.8397 30.3667 25.8397 29.2401V21.0801C25.8397 19.9534 24.9264 19.0401 23.7997 19.0401Z"
+                      fill="#454F5B"
+                    />
+                  </svg>
+                </div>
+                <div class="column">
+                  <h4>24/7 mijozlarni qo‘llab-quvvatlash</h4>
+                  <p>
+                    Siz barcha tranzaktsiyalaringizdan bepul yuk olasiz.
+                    Shartlar yo'q, tranzaksiya chegarasi yo'q.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="form">
               <h3>Sizni yana ko’rishdan mamnunmiz</h3>
-              <p>Hurmatli foydalanuvchimizga xush kelibsiz. Xavotir olmang, xaridni qayta boshlash uchun foydalanuvchi nomi va elektron pochtangizni kiritish kifoya.</p>
+              <p>
+                Hurmatli foydalanuvchimizga xush kelibsiz. Xavotir olmang,
+                xaridni qayta boshlash uchun foydalanuvchi nomi va elektron
+                pochtangizni kiritish kifoya.
+              </p>
               <div class="box full column">
                 <label for="email">Elektron manzil</label>
                 <input
@@ -347,20 +430,20 @@
               </div>
               <div class="box full column">
                 <label for="password">Parol</label>
-                <input
-                  type="password"
-                  id="password"
-                  placeholder="********"
-                />
+                <input type="password" id="password" placeholder="********" />
               </div>
               <div class="box full primary row">
                 <input type="checkbox" id="primary" />
                 <label for="primary">Stay signed for a week</label>
               </div>
               <div class="actions row">
-                <a href="loginalt.html" class="first flex-center"><span>Login now</span></a>
+                <a href="loginalt.html" class="first flex-center"
+                  ><span>Login now</span></a
+                >
                 <p>or</p>
-                <a href="registeralt.html" class="second flex-center"><span>Register</span></a>
+                <a href="registeralt.html" class="second flex-center"
+                  ><span>Register</span></a
+                >
               </div>
             </div>
           </section>
@@ -537,15 +620,15 @@
             </p>
           </div>
           <nav class="nav row">
-            <div class="tab column">
-              <h3>First Menu</h3>
+            <div class="tab column" id="footerTab1">
+              <h3 onclick="footerMenu(1)">First Menu</h3>
               <a href="">Features</a>
               <a href="">Enterpise</a>
               <a href="">Security</a>
               <a href="">Customer Stories</a>
             </div>
-            <div class="tab column">
-              <h3>Second Menu</h3>
+            <div class="tab column" id="footerTab2">
+              <h3 onclick="footerMenu(2)">Second Menu</h3>
               <a href="">Engineering</a>
               <a href="">Financial Services</a>
               <a href="">Sales</a>
@@ -553,16 +636,16 @@
               <a href="">Human Resources</a>
               <a href="">Media</a>
             </div>
-            <div class="tab column">
-              <h3>Third Menu</h3>
+            <div class="tab column" id="footerTab3">
+              <h3 onclick="footerMenu(3)">Third Menu</h3>
               <a href="">Tips</a>
               <a href="">Blog</a>
               <a href="">Event</a>
               <a href="">Certified Program</a>
               <a href="">Help Center</a>
             </div>
-            <div class="tab column">
-              <h3>Fourth Menu</h3>
+            <div class="tab column" id="footerTab4">
+              <h3 onclick="footerMenu(4)">Fourth Menu</h3>
               <a href="">About Us</a>
               <a href="">Leadership</a>
               <a href="">News</a>
@@ -662,11 +745,20 @@
       </div>
     </footer>
 
-    <script>
-      const navigateSearchPage = () =>
-        (window.location = "http://127.0.0.1:5500/search.html");
-      const navigateBasketPage = () =>
-        (window.location = "http://127.0.0.1:5500/basket.html");
+     <script>
+      const footerMenu = (num) => {
+        const footerTab = document.getElementById(`footerTab${num}`);
+        if (
+          footerTab.classList.length > 2 &&
+          footerTab.classList[2] == "active"
+        ) {
+          footerTab.classList.remove("active");
+          footerTab.style.height = "20px";
+        } else {
+          footerTab.classList.add("active");
+          footerTab.style.height = `${footerTab.scrollHeight}px`;
+        }
+      };
     </script>
   </body>
 </html>

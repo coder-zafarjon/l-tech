@@ -98,6 +98,7 @@
         padding-right: 4%;
         padding-bottom: 1%;
         max-height: 550px;
+        transition: .2s;
 
         @media (max-width: 991px) {
           height: 400px;
@@ -106,6 +107,10 @@
 
         @media (max-width: 560px) {
           height: 300px;
+        }
+
+        &:hover {
+          transform: scale(1.02);
         }
       }
 
@@ -123,6 +128,7 @@
           gap: 16px;
         }
 
+        a,
         button {
           width: 160px;
           height: 48px;
@@ -143,7 +149,7 @@
           font-size: 16px;
           font-style: normal;
           font-weight: 500;
-          line-height: 137.5%;
+          line-height: 47px;
 
           &:hover {
             background: var(--brand);
@@ -209,6 +215,16 @@
 
       @media (max-width: 560px) {
         width: 100%;
+      }
+
+      &:hover {
+        svg {
+          transform: scale(1.1);
+        }
+      }
+
+      svg {
+        transition: 0.2s;
       }
 
       .column {
@@ -345,17 +361,27 @@
         &:hover {
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 
+          .row {
+            transform: scale(1.05);
+          }
+
           .wrapper {
             .actions {
+              transform: scale(1.05);
               visibility: visible;
               opacity: 1;
             }
+          }
+
+          img {
+            transform: scale(1.05);
           }
         }
 
         .row {
           align-items: center;
           justify-content: space-between;
+          transition: 0.2s;
 
           .empty {
             .sale {
@@ -403,6 +429,7 @@
           aspect-ratio: 1/1;
           object-fit: cover;
           border-radius: 2px;
+          transition: 0.2s;
         }
 
         .wrapper {
@@ -460,7 +487,6 @@
           }
 
           .actions {
-            transition: 0.1s;
             background: white;
             width: 100%;
             position: absolute;
@@ -469,6 +495,7 @@
             opacity: 0;
             margin-top: 2.5px;
             gap: 10px;
+            transition: 0.2s;
 
             button {
               transition: 0.2s;
@@ -532,6 +559,10 @@
       padding-top: 60px;
     }
 
+    &:hover .wrapper img {
+      transform: scale(1.05);
+    }
+
     .wrapper {
       height: 100%;
       align-items: center;
@@ -546,6 +577,7 @@
       img {
         height: 102%;
         margin-top: 2%;
+        transition: 0.2s;
 
         @media (max-width: 991px) {
           width: 60%;
@@ -716,10 +748,15 @@
 
         &:hover {
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+          .icon {
+            transform: scale(1.1);
+          }
         }
 
         .icon {
           padding: 46px 0;
+          transition: 0.2s;
         }
 
         h5 {
@@ -745,41 +782,41 @@
     }
 
     a.link,
-      button.link {
-        transition: 0.2s;
-        padding: 12px 22px;
-        border-radius: 4px;
-        border: 2px solid var(--brand);
-        background: white;
+    button.link {
+      transition: 0.2s;
+      padding: 12px 22px;
+      border-radius: 4px;
+      border: 2px solid var(--brand);
+      background: white;
 
-        color: var(--brand);
-        text-align: center;
-        font-feature-settings: "liga" off, "clig" off;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 137.5%;
+      color: var(--brand);
+      text-align: center;
+      font-feature-settings: "liga" off, "clig" off;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 137.5%;
 
-        text-wrap: nowrap;
+      text-wrap: nowrap;
 
-        &:hover {
-          background: var(--brand);
-          color: white;
-        }
+      &:hover {
+        background: var(--brand);
+        color: white;
+      }
 
-        &.mobile-none-ind{
-          @media (max-width: 560px) {
-            display: none;
-          }
-        }
-
-        &.mobile-block-ind{
+      &.mobile-none-ind {
+        @media (max-width: 560px) {
           display: none;
-          @media (max-width: 560px) {
-            display: block;
-          }
         }
       }
+
+      &.mobile-block-ind {
+        display: none;
+        @media (max-width: 560px) {
+          display: block;
+        }
+      }
+    }
   }
 
   #product-category {
@@ -826,18 +863,23 @@
         gap: 16px;
         align-items: center;
         padding: 20px;
-        transition: 0.15s;
+        transition: 0.2s;
         border-radius: 2px;
         background: white;
 
         &:hover {
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+          img {
+            transform: scale(1.1);
+          }
         }
 
         img {
           height: 64px;
           aspect-ratio: 1/1;
           object-fit: contain;
+          transition: 0.2s;
         }
 
         .column {
@@ -1032,13 +1074,13 @@
         color: white;
       }
 
-      &.mobile-none-ind{
+      &.mobile-none-ind {
         @media (max-width: 560px) {
           display: none;
         }
       }
 
-      &.mobile-block-ind{
+      &.mobile-block-ind {
         display: none;
         @media (max-width: 560px) {
           display: block;

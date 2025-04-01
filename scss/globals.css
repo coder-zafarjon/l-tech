@@ -161,9 +161,13 @@ body header#navbar .up .container .socials a {
   font-weight: 400;
   font-family: Inter;
 }
+body header#navbar .up .container .socials a:hover svg path {
+  fill: var(--brand);
+}
 body header#navbar .up .container .socials a svg {
   width: 24px;
   height: 24px;
+  transition: 0.2s;
 }
 body header#navbar .up .container .nav {
   align-items: center;
@@ -182,6 +186,9 @@ body header#navbar .up .container .nav ul li a {
   font-weight: 400;
   line-height: 125%;
   letter-spacing: 0.178px;
+}
+body header#navbar .up .container .nav ul li a:hover {
+  color: var(--brand);
 }
 body header#navbar .up .container .nav ul li.lng {
   align-items: center;
@@ -279,7 +286,12 @@ body .main header#navbar.down .container .wrapper .search input::placeholder {
   font-weight: 400;
   line-height: 142.857%;
 }
-body .main header#navbar.down .container .wrapper .search button.types {
+body .main header#navbar.down .container .wrapper .search a, body .main header#navbar.down .container .wrapper .search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main header#navbar.down .container .wrapper .search a.types, body .main header#navbar.down .container .wrapper .search button.types {
   transition: 0.15s background-color;
   width: 163px;
   background: #f9fafb;
@@ -288,30 +300,34 @@ body .main header#navbar.down .container .wrapper .search button.types {
   gap: 9px;
 }
 @media (max-width: 1140px) {
-  body .main header#navbar.down .container .wrapper .search button.types {
+  body .main header#navbar.down .container .wrapper .search a.types, body .main header#navbar.down .container .wrapper .search button.types {
     width: 140px;
     gap: 4px;
   }
 }
-body .main header#navbar.down .container .wrapper .search button.types span {
+body .main header#navbar.down .container .wrapper .search a.types span, body .main header#navbar.down .container .wrapper .search button.types span {
   color: #161d25;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 142.857%;
 }
-body .main header#navbar.down .container .wrapper .search button.types:hover {
+body .main header#navbar.down .container .wrapper .search a.types:hover, body .main header#navbar.down .container .wrapper .search button.types:hover {
   background: #f4f6f8;
 }
-body .main header#navbar.down .container .wrapper .search button.iconbutton {
+body .main header#navbar.down .container .wrapper .search a.iconbutton, body .main header#navbar.down .container .wrapper .search button.iconbutton {
   background: #212b36;
   width: 44px;
   border-radius: 2px;
 }
-body .main header#navbar.down .container .wrapper .search button.iconbutton svg {
+body .main header#navbar.down .container .wrapper .search a.iconbutton:hover svg, body .main header#navbar.down .container .wrapper .search button.iconbutton:hover svg {
+  transform: scale(1.1);
+}
+body .main header#navbar.down .container .wrapper .search a.iconbutton svg, body .main header#navbar.down .container .wrapper .search button.iconbutton svg {
   width: 28px;
   height: 28px;
   margin-top: 1px;
+  transition: 0.2s;
 }
 body .main header#navbar.down .container .account {
   align-items: center;
@@ -323,6 +339,12 @@ body .main header#navbar.down .container .account .iconbutton {
   border-radius: 50%;
   border: 1px solid #f4f6f8;
   background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main header#navbar.down .container .account .iconbutton:hover svg {
+  transform: scale(1.1);
 }
 @media (max-width: 991px) {
   body .main header#navbar.down .container .account .iconbutton {
@@ -330,13 +352,13 @@ body .main header#navbar.down .container .account .iconbutton {
   }
 }
 body .main header#navbar.down .container .account .iconbutton svg {
-  margin-top: 1px;
+  transition: 0.2s;
 }
 body .main header#navbar.down .container .account .iconbutton.shop {
   position: relative;
 }
 body .main header#navbar.down .container .account .iconbutton.shop.active::before {
-  content: "5";
+  content: "";
   color: white;
   padding-top: 2px;
   position: absolute;
@@ -348,6 +370,7 @@ body .main header#navbar.down .container .account .iconbutton.shop.active::befor
   right: -8px;
   font-size: 12px;
   font-weight: 500;
+  text-align: center;
 }
 body .main header#navbar.down .container .account .user-info {
   align-items: center;
@@ -1150,6 +1173,7 @@ body #homepage main #hero .container img {
   padding-right: 4%;
   padding-bottom: 1%;
   max-height: 550px;
+  transition: 0.2s;
 }
 @media (max-width: 991px) {
   body #homepage main #hero .container img {
@@ -1161,6 +1185,9 @@ body #homepage main #hero .container img {
   body #homepage main #hero .container img {
     height: 300px;
   }
+}
+body #homepage main #hero .container img:hover {
+  transform: scale(1.02);
 }
 body #homepage main #hero .container .buy {
   margin-bottom: 55px;
@@ -1178,6 +1205,7 @@ body #homepage main #hero .container .buy {
     gap: 16px;
   }
 }
+body #homepage main #hero .container .buy a,
 body #homepage main #hero .container .buy button {
   width: 160px;
   height: 48px;
@@ -1191,22 +1219,26 @@ body #homepage main #hero .container .buy button {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 137.5%;
+  line-height: 47px;
 }
 @media (max-width: 560px) {
+  body #homepage main #hero .container .buy a,
   body #homepage main #hero .container .buy button {
     width: calc(50% - 8px);
     height: 44px;
   }
 }
+body #homepage main #hero .container .buy a:hover,
 body #homepage main #hero .container .buy button:hover {
   background: var(--brand);
   color: #fff;
 }
+body #homepage main #hero .container .buy a.active,
 body #homepage main #hero .container .buy button.active {
   background: var(--brand);
   color: #fff;
 }
+body #homepage main #hero .container .buy a.active:hover,
 body #homepage main #hero .container .buy button.active:hover {
   background: var(--brand-hover) !important;
 }
@@ -1261,6 +1293,12 @@ body #homepage main #advantages .tab {
   body #homepage main #advantages .tab {
     width: 100%;
   }
+}
+body #homepage main #advantages .tab:hover svg {
+  transform: scale(1.1);
+}
+body #homepage main #advantages .tab svg {
+  transition: 0.2s;
 }
 body #homepage main #advantages .tab .column {
   gap: 4px;
@@ -1396,13 +1434,21 @@ body #homepage main #hit-products .products .card {
 body #homepage main #hit-products .products .card:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
+body #homepage main #hit-products .products .card:hover .row {
+  transform: scale(1.05);
+}
 body #homepage main #hit-products .products .card:hover .wrapper .actions {
+  transform: scale(1.05);
   visibility: visible;
   opacity: 1;
+}
+body #homepage main #hit-products .products .card:hover img {
+  transform: scale(1.05);
 }
 body #homepage main #hit-products .products .card .row {
   align-items: center;
   justify-content: space-between;
+  transition: 0.2s;
 }
 body #homepage main #hit-products .products .card .row .empty .sale {
   display: none;
@@ -1442,6 +1488,7 @@ body #homepage main #hit-products .products .card img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2px;
+  transition: 0.2s;
 }
 body #homepage main #hit-products .products .card .wrapper {
   position: relative;
@@ -1491,7 +1538,6 @@ body #homepage main #hit-products .products .card .wrapper .title .price .rate {
   }
 }
 body #homepage main #hit-products .products .card .wrapper .actions {
-  transition: 0.1s;
   background: white;
   width: 100%;
   position: absolute;
@@ -1500,6 +1546,7 @@ body #homepage main #hit-products .products .card .wrapper .actions {
   opacity: 0;
   margin-top: 2.5px;
   gap: 10px;
+  transition: 0.2s;
 }
 body #homepage main #hit-products .products .card .wrapper .actions button {
   transition: 0.2s;
@@ -1554,6 +1601,9 @@ body #homepage main #news {
     padding-top: 60px;
   }
 }
+body #homepage main #news:hover .wrapper img {
+  transform: scale(1.05);
+}
 body #homepage main #news .wrapper {
   height: 100%;
   align-items: center;
@@ -1569,6 +1619,7 @@ body #homepage main #news .wrapper {
 body #homepage main #news .wrapper img {
   height: 102%;
   margin-top: 2%;
+  transition: 0.2s;
 }
 @media (max-width: 991px) {
   body #homepage main #news .wrapper img {
@@ -1741,8 +1792,12 @@ body #homepage main #categories .categories .card {
 body #homepage main #categories .categories .card:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
+body #homepage main #categories .categories .card:hover .icon {
+  transform: scale(1.1);
+}
 body #homepage main #categories .categories .card .icon {
   padding: 46px 0;
+  transition: 0.2s;
 }
 body #homepage main #categories .categories .card h5 {
   color: #161d25;
@@ -1843,18 +1898,22 @@ body #homepage main #product-category .tab button.card {
   gap: 16px;
   align-items: center;
   padding: 20px;
-  transition: 0.15s;
+  transition: 0.2s;
   border-radius: 2px;
   background: white;
 }
 body #homepage main #product-category .tab button.card:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
+body #homepage main #product-category .tab button.card:hover img {
+  transform: scale(1.1);
+}
 body #homepage main #product-category .tab button.card img {
   height: 64px;
   aspect-ratio: 1/1;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: 0.2s;
 }
 body #homepage main #product-category .tab button.card .column {
   min-width: 60%;
@@ -2557,6 +2616,12 @@ body #searchpage main #base aside .box ul li label.active {
 body #searchpage main #base aside .box ul li button.iconbutton {
   background: white;
 }
+body #searchpage main #base aside .box ul a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 body #searchpage main #base aside .box ul.prices {
   gap: 10px;
 }
@@ -2766,12 +2831,20 @@ body #searchpage main #base section .shops .card {
     width: 100%;
   }
 }
+body #searchpage main #base section .shops .card:hover {
+  box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.04);
+}
+body #searchpage main #base section .shops .card:hover img {
+  transform: scale(1.1);
+}
 body #searchpage main #base section .shops .card img {
   width: 100%;
   padding: 10px 10px 20px;
   aspect-ratio: 8/7;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: 0.2s;
+  cursor: pointer;
 }
 body #searchpage main #base section .shops .card .details {
   gap: 6px;
@@ -2869,12 +2942,17 @@ body #searchpage main #base section .products .card {
 body #searchpage main #base section .products .card:hover {
   box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.04);
 }
+body #searchpage main #base section .products .card:hover img {
+  transform: scale(1.1);
+}
 body #searchpage main #base section .products .card img {
   width: 100%;
   padding: 10px 10px 20px;
   aspect-ratio: 8/7;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: 0.2s;
+  cursor: pointer;
 }
 body #searchpage main #base section .products .card .details {
   gap: 6px;
@@ -3187,9 +3265,7 @@ body #productpage main #product-hero .details .control .box .colors button {
 body #productpage main #product-hero .details .control .box .colors button.active {
   background: #637381;
   color: #fff;
-  font-size: 16px;
   font-weight: 500;
-  line-height: 137.5%;
 }
 body #productpage main #product-hero .details .price-box {
   align-items: center;
@@ -3760,20 +3836,40 @@ body #productpage main #rating-reviews #reviews .reviews .review .user-actions .
 body #productpage main #rating-reviews #reviews .reviews .review .user-actions .actions button.active.diss svg path {
   fill: var(--red);
 }
-body #productpage main #rating-reviews #reviews .reviews .review p.description {
+body #productpage main #rating-reviews #reviews .reviews .review .description {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+body #productpage main #rating-reviews #reviews .reviews .review .description p {
   color: #5a7184;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 175%;
 }
-body #productpage main #rating-reviews #reviews .reviews .review p.description span {
+body #productpage main #rating-reviews #reviews .reviews .review .description button {
+  display: none;
+  background: transparent;
+  width: -moz-min-content;
+  width: min-content;
   color: var(--brand);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 137.5%;
+  text-wrap: nowrap;
   cursor: pointer;
+}
+body #productpage main #rating-reviews #reviews .reviews .review .description.non-active p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body #productpage main #rating-reviews #reviews .reviews .review .description.non-active button {
+  display: block;
 }
 body #productpage main #rating-reviews #reviews .reviews .review hr {
   all: unset;
@@ -3915,11 +4011,75 @@ body #productpage main #related .title h2 {
   line-height: 133.333%;
   letter-spacing: 0.2px;
 }
-body #productpage main #related .products {
-  gap: 30px;
+body #productpage main #related .swiper {
+  width: 100%;
+  height: 100%;
+  padding: 0 40px 40px !important;
+  max-width: 1440px;
 }
-body #productpage main #related .products .card {
-  width: calc((100% - 90px) / 4);
+@media (max-width: 1400px) {
+  body #productpage main #related .swiper {
+    max-width: 1280px;
+  }
+}
+@media (max-width: 1280px) {
+  body #productpage main #related .swiper {
+    max-width: 1080px;
+  }
+}
+@media (max-width: 1140px) {
+  body #productpage main #related .swiper {
+    max-width: 980px;
+  }
+}
+@media (max-width: 991px) {
+  body #productpage main #related .swiper {
+    max-width: 880px;
+  }
+}
+@media (max-width: 860px) {
+  body #productpage main #related .swiper {
+    max-width: 780px;
+  }
+}
+@media (max-width: 768px) {
+  body #productpage main #related .swiper {
+    max-width: 680px;
+  }
+}
+@media (max-width: 660px) {
+  body #productpage main #related .swiper {
+    max-width: 580px;
+  }
+}
+@media (max-width: 560px) {
+  body #productpage main #related .swiper {
+    max-width: 520px;
+  }
+}
+@media (max-width: 480px) {
+  body #productpage main #related .swiper {
+    max-width: 480px;
+  }
+}
+@media (max-width: 440px) {
+  body #productpage main #related .swiper {
+    max-width: 440px;
+  }
+}
+@media (max-width: 380px) {
+  body #productpage main #related .swiper {
+    max-width: 400px;
+  }
+}
+body #productpage main #related .swiper .swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #productpage main #related .swiper .card {
   transition: 0.15s;
   height: auto;
   border-radius: 8px;
@@ -3929,44 +4089,30 @@ body #productpage main #related .products .card {
   position: relative;
   overflow: hidden;
 }
-@media (max-width: 991px) {
-  body #productpage main #related .products .card {
-    width: calc((100% - 60px) / 3);
-  }
-  body #productpage main #related .products .card:last-child {
-    display: none;
-  }
-}
-@media (max-width: 560px) {
-  body #productpage main #related .products .card {
-    width: 100%;
-  }
-  body #productpage main #related .products .card:last-child {
-    display: none;
-  }
-}
-body #productpage main #related .products .card:hover {
+body #productpage main #related .swiper .card:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
-body #productpage main #related .products .card:hover .actions {
+body #productpage main #related .swiper .card:hover .actions {
   visibility: visible;
   opacity: 1;
 }
-body #productpage main #related .products .card .sales {
+body #productpage main #related .swiper .card .sales {
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   height: 25.5px;
+  transition: 0.2s;
 }
-body #productpage main #related .products .card .sales .sale {
+body #productpage main #related .swiper .card .sales .sale {
   display: none;
   background: rgba(220, 54, 24, 0.1019607843);
   border-radius: 2px;
   padding: 4px 9px 3.5px;
 }
-body #productpage main #related .products .card .sales .sale.active {
+body #productpage main #related .swiper .card .sales .sale.active {
   display: block;
 }
-body #productpage main #related .products .card .sales .sale span {
+body #productpage main #related .swiper .card .sales .sale span {
   color: var(--red);
   text-align: center;
   font-family: Inter;
@@ -3975,14 +4121,19 @@ body #productpage main #related .products .card .sales .sale span {
   font-weight: 600;
   line-height: 150%;
 }
-body #productpage main #related .products .card img {
+body #productpage main #related .swiper .card img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2px;
+  transition: 0.2s;
 }
-body #productpage main #related .products .card .title h4 {
+body #productpage main #related .swiper .card .title {
+  width: 100%;
+  transition: 0.2s;
+}
+body #productpage main #related .swiper .card .title h4 {
   color: #161d25;
   font-family: Inter;
   font-size: 18px;
@@ -3993,23 +4144,25 @@ body #productpage main #related .products .card .title h4 {
   text-wrap: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  text-align: start;
 }
-body #productpage main #related .products .card .title .price {
+body #productpage main #related .swiper .card .title .price {
   align-items: center;
   justify-content: space-between;
 }
-body #productpage main #related .products .card .title .price p {
+body #productpage main #related .swiper .card .title .price p {
   color: var(--brand);
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 142.857%;
+  text-align: start;
 }
-body #productpage main #related .products .card .title .price .rate {
+body #productpage main #related .swiper .card .title .price .rate {
   gap: 4px;
 }
-body #productpage main #related .products .card .actions {
+body #productpage main #related .swiper .card .actions {
   transition: 0.1s;
   background: rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -4021,21 +4174,21 @@ body #productpage main #related .products .card .actions {
   opacity: 0;
   gap: 19px;
 }
-body #productpage main #related .products .card .actions button {
+body #productpage main #related .swiper .card .actions button {
   background: white;
   border: 1px solid rgba(196, 205, 213, 0.1019607843);
   border-radius: 2px;
   width: 36px;
   height: 36px;
 }
-body #productpage main #related .products .card .actions button svg {
+body #productpage main #related .swiper .card .actions button svg {
   width: 24px;
   height: 24px;
 }
-body #productpage main #related .products .card .actions button.active svg path {
+body #productpage main #related .swiper .card .actions button.active svg path {
   fill: #454f5b;
 }
-body #productpage main #related .products .card .actions button.favorite {
+body #productpage main #related .swiper .card .actions button.favorite {
   position: absolute;
   top: 25px;
   right: 20px;
@@ -4292,6 +4445,23 @@ body #basket main #shopping #products ul li .actions .counter {
   align-items: center;
   justify-content: space-between;
 }
+body #basket main #shopping #products ul li .actions .counter input {
+  width: 40px;
+  height: 38px;
+  text-align: center;
+  color: #161d25;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 142.857%;
+}
+body #basket main #shopping #products ul li .actions .counter input[type=number]::-webkit-inner-spin-button, body #basket main #shopping #products ul li .actions .counter input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
 body #basket main #shopping #products ul li .actions .iconbutton {
   width: 38px;
   height: 38px;
@@ -4303,9 +4473,15 @@ body #basket main #shopping #products ul li .actions .iconbutton.minus {
   border-right: 1px solid #f4f6f8;
   border-radius: 0;
 }
+body #basket main #shopping #products ul li .actions .iconbutton.minus:hover {
+  background: #f4f6f8;
+}
 body #basket main #shopping #products ul li .actions .iconbutton.plus {
   border-left: 1px solid #f4f6f8;
   border-radius: 0;
+}
+body #basket main #shopping #products ul li .actions .iconbutton.plus:hover {
+  background: #f4f6f8;
 }
 body #basket main #shopping #products ul li .actions .iconbutton.del:hover {
   background: var(--red-container);
@@ -4483,6 +4659,7 @@ body #basket main #shopping aside #order .form textarea::placeholder {
   font-weight: 400;
   line-height: 142.857%;
 }
+body #basket main #shopping aside #order .form a,
 body #basket main #shopping aside #order .form button {
   margin-top: 14px;
   width: 100%;
@@ -4514,13 +4691,76 @@ body #basket main #related .title h2 {
   line-height: 133.333%;
   letter-spacing: 0.2px;
 }
-body #basket main #related .products {
-  gap: 20px;
+body #basket main #related .swiper {
+  width: 100%;
+  height: 100%;
+  padding: 0 40px 40px !important;
+  max-width: 1440px;
 }
-body #basket main #related .products .card {
-  width: calc((100% - 100px) / 6);
+@media (max-width: 1400px) {
+  body #basket main #related .swiper {
+    max-width: 1280px;
+  }
+}
+@media (max-width: 1280px) {
+  body #basket main #related .swiper {
+    max-width: 1080px;
+  }
+}
+@media (max-width: 1140px) {
+  body #basket main #related .swiper {
+    max-width: 980px;
+  }
+}
+@media (max-width: 991px) {
+  body #basket main #related .swiper {
+    max-width: 880px;
+  }
+}
+@media (max-width: 860px) {
+  body #basket main #related .swiper {
+    max-width: 780px;
+  }
+}
+@media (max-width: 768px) {
+  body #basket main #related .swiper {
+    max-width: 680px;
+  }
+}
+@media (max-width: 660px) {
+  body #basket main #related .swiper {
+    max-width: 580px;
+  }
+}
+@media (max-width: 560px) {
+  body #basket main #related .swiper {
+    max-width: 520px;
+  }
+}
+@media (max-width: 480px) {
+  body #basket main #related .swiper {
+    max-width: 480px;
+  }
+}
+@media (max-width: 440px) {
+  body #basket main #related .swiper {
+    max-width: 440px;
+  }
+}
+@media (max-width: 380px) {
+  body #basket main #related .swiper {
+    max-width: 400px;
+  }
+}
+body #basket main #related .swiper .swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #basket main #related .swiper .card {
   transition: 0.15s;
-  height: auto;
   border-radius: 2px;
   padding: 20px;
   z-index: 9;
@@ -4528,48 +4768,28 @@ body #basket main #related .products .card {
   position: relative;
   overflow: hidden;
 }
-@media (max-width: 1400px) {
-  body #basket main #related .products .card {
-    width: calc((100% - 80px) / 5);
-  }
-}
-@media (max-width: 1280px) {
-  body #basket main #related .products .card {
-    width: calc((100% - 60px) / 4);
-  }
-}
-@media (max-width: 991px) {
-  body #basket main #related .products .card {
-    width: calc((100% - 40px) / 3);
-  }
-}
-@media (max-width: 660px) {
-  body #basket main #related .products .card {
-    width: calc((100% - 20px) / 2);
-  }
-}
-@media (max-width: 480px) {
-  body #basket main #related .products .card {
-    width: 100%;
-  }
-}
-body #basket main #related .products .card:hover {
+body #basket main #related .swiper .card:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
-body #basket main #related .products .card .sales {
+body #basket main #related .swiper .card:hover img, body #basket main #related .swiper .card:hover .sales, body #basket main #related .swiper .card:hover .title, body #basket main #related .swiper .card:hover a, body #basket main #related .swiper .card:hover button {
+  transform: scale(1.1);
+}
+body #basket main #related .swiper .card .sales {
+  width: 100%;
   align-items: center;
   justify-content: space-between;
+  transition: 0.2s;
 }
-body #basket main #related .products .card .sales .sale {
+body #basket main #related .swiper .card .sales .sale {
   display: none;
   background: rgba(220, 54, 24, 0.1019607843);
   border-radius: 2px;
   padding: 0 8px 2px;
 }
-body #basket main #related .products .card .sales .sale.active {
+body #basket main #related .swiper .card .sales .sale.active {
   display: block;
 }
-body #basket main #related .products .card .sales .sale span {
+body #basket main #related .swiper .card .sales .sale span {
   color: var(--red);
   text-align: center;
   font-family: Inter;
@@ -4578,14 +4798,19 @@ body #basket main #related .products .card .sales .sale span {
   font-weight: 600;
   line-height: 150%;
 }
-body #basket main #related .products .card img {
+body #basket main #related .swiper .card img {
   width: 100%;
   aspect-ratio: 10/9;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2px;
+  transition: 0.2s;
 }
-body #basket main #related .products .card .title h4 {
+body #basket main #related .swiper .card .title {
+  width: 100%;
+  transition: 0.2s;
+}
+body #basket main #related .swiper .card .title h4 {
   color: #161d25;
   font-family: Inter;
   font-size: 14px;
@@ -4597,11 +4822,11 @@ body #basket main #related .products .card .title h4 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-body #basket main #related .products .card .title .price {
+body #basket main #related .swiper .card .title .price {
   align-items: center;
   justify-content: space-between;
 }
-body #basket main #related .products .card .title .price p {
+body #basket main #related .swiper .card .title .price p {
   color: #50b83c;
   font-family: Inter;
   font-size: 14px;
@@ -4609,23 +4834,24 @@ body #basket main #related .products .card .title .price p {
   font-weight: 500;
   line-height: 142.857%;
 }
-body #basket main #related .products .card .title .price .rate {
+body #basket main #related .swiper .card .title .price .rate {
   gap: 4px;
   align-items: center;
 }
-body #basket main #related .products .card .title .price .rate svg {
+body #basket main #related .swiper .card .title .price .rate svg {
   width: 15px;
   height: 15px;
 }
-body #basket main #related .products .card .title .price .rate span {
+body #basket main #related .swiper .card .title .price .rate span {
   color: #161d25;
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
 }
-body #basket main #related .products .card a,
-body #basket main #related .products .card button {
+body #basket main #related .swiper .card a,
+body #basket main #related .swiper .card button {
+  width: 100%;
   transition: 0.2s;
   padding: 5px 0;
   border-radius: 4px;
@@ -4639,8 +4865,8 @@ body #basket main #related .products .card button {
   font-weight: 500;
   line-height: 142.857%;
 }
-body #basket main #related .products .card a:hover,
-body #basket main #related .products .card button:hover {
+body #basket main #related .swiper .card a:hover,
+body #basket main #related .swiper .card button:hover {
   background: var(--brand);
   color: white;
 }
@@ -5083,7 +5309,7 @@ body #customer main #shopping aside .form {
   gap: 15px;
   margin-top: 10px;
 }
-body #customer main #shopping aside .form button {
+body #customer main #shopping aside .form a, body #customer main #shopping aside .form button {
   width: 100%;
   height: 48px;
   gap: 6px;
@@ -5097,7 +5323,7 @@ body #customer main #shopping aside .form button {
   font-weight: 500;
   line-height: 137.5%;
 }
-body #customer main #shopping aside .form button.active {
+body #customer main #shopping aside .form a.active, body #customer main #shopping aside .form button.active {
   background: #43467f;
   color: #fff;
 }
@@ -5692,7 +5918,7 @@ body #payment main #shopping aside .form {
   gap: 15px;
   margin-top: 10px;
 }
-body #payment main #shopping aside .form button {
+body #payment main #shopping aside .form a, body #payment main #shopping aside .form button {
   width: 100%;
   height: 48px;
   gap: 6px;
@@ -5706,7 +5932,7 @@ body #payment main #shopping aside .form button {
   font-weight: 500;
   line-height: 137.5%;
 }
-body #payment main #shopping aside .form button.active {
+body #payment main #shopping aside .form a.active, body #payment main #shopping aside .form button.active {
   background: #43467f;
   color: #fff;
 }
@@ -6090,7 +6316,7 @@ body #review main #shopping #payment-section #pay .title h3 {
   line-height: 120%;
   letter-spacing: 0.2px;
 }
-body #review main #shopping #payment-section #pay .title button {
+body #review main #shopping #payment-section #pay .title a, body #review main #shopping #payment-section #pay .title button {
   background: transparent;
   color: var(--brand);
   text-align: right;
@@ -6429,7 +6655,7 @@ body #review main #shopping aside .form {
   gap: 15px;
   margin-top: 10px;
 }
-body #review main #shopping aside .form button {
+body #review main #shopping aside .form a, body #review main #shopping aside .form button {
   width: 100%;
   height: 48px;
   gap: 6px;
@@ -6443,7 +6669,7 @@ body #review main #shopping aside .form button {
   font-weight: 500;
   line-height: 137.5%;
 }
-body #review main #shopping aside .form button.active {
+body #review main #shopping aside .form a.active, body #review main #shopping aside .form button.active {
   background: #43467f;
   color: #fff;
 }
@@ -6628,10 +6854,14 @@ body #order main #shopping #package .progress .box.next p {
   color: var(--brand);
   font-weight: 500;
 }
+body #order main #shopping #package .box-details {
+  height: 25px;
+}
 body #order main #shopping #package .box-details .title {
   margin-bottom: 20px;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 body #order main #shopping #package .box-details .title h3 {
   color: #161d25;
@@ -6641,12 +6871,19 @@ body #order main #shopping #package .box-details .title h3 {
   font-weight: 500;
   line-height: 137.5%;
 }
+body #order main #shopping #package .box-details .title svg {
+  transition: 0.2s;
+  transform: rotate(180deg);
+}
 body #order main #shopping #package .box-details .box {
   height: 56px;
   width: 100%;
   border-radius: 2px;
   padding: 18px 20px;
   justify-content: space-between;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
 }
 @media (max-width: 991px) {
   body #order main #shopping #package .box-details .box {
@@ -6687,6 +6924,15 @@ body #order main #shopping #package .box-details .box span {
   body #order main #shopping #package .box-details .box span {
     padding-left: 30px;
   }
+}
+body #order main #shopping #package .box-details.active .title svg {
+  transform: rotate(0deg);
+}
+body #order main #shopping #package .box-details.active .box {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s;
 }
 body #order main #shopping #package .problem {
   padding: 20px 24px;
@@ -6828,6 +7074,7 @@ body #order main #shopping aside ul.shopping li .name .sub .iconbutton:hover svg
   fill: var(--red);
 }
 body #order main #shopping aside ul.shopping button {
+  display: none;
   background: transparent;
   gap: 4px;
   color: var(--brand);
@@ -6837,6 +7084,15 @@ body #order main #shopping aside ul.shopping button {
   font-weight: 500;
   margin-top: 20px;
   margin: 20px 0 10px;
+}
+body #order main #shopping aside ul.shopping.non-active li {
+  display: none;
+}
+body #order main #shopping aside ul.shopping.non-active li:nth-child(1), body #order main #shopping aside ul.shopping.non-active li:nth-child(2) {
+  display: flex;
+}
+body #order main #shopping aside ul.shopping.non-active button {
+  display: flex;
 }
 body #order main #shopping aside ul.total {
   gap: 15px;
@@ -6943,7 +7199,7 @@ body #done main section .title p {
 body #done main section .title p span {
   color: #000;
 }
-body #done main section button {
+body #done main section a, body #done main section button {
   gap: 6px;
   background: transparent;
   color: var(--brand);
@@ -8106,25 +8362,7 @@ body footer .up .container .nav {
 }
 body footer .up .container .nav .tab {
   gap: 16px;
-}
-@media (max-width: 991px) {
-  body footer .up .container .nav .tab {
-    width: 25%;
-    gap: 12px;
-  }
-}
-@media (max-width: 768px) {
-  body footer .up .container .nav .tab {
-    width: calc(50% - 20px);
-    gap: 8px;
-  }
-}
-@media (max-width: 480px) {
-  body footer .up .container .nav .tab {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
+  transition: 0.2s;
 }
 body footer .up .container .nav .tab h3 {
   color: #161d25;
@@ -8134,6 +8372,7 @@ body footer .up .container .nav .tab h3 {
   font-weight: 400;
   line-height: 125%;
   letter-spacing: 0.237px;
+  transition: 0.2s;
 }
 @media (max-width: 768px) {
   body footer .up .container .nav .tab h3 {
@@ -8153,6 +8392,9 @@ body footer .up .container .nav .tab h3 {
     font-size: 20px;
     cursor: pointer;
   }
+  body footer .up .container .nav .tab h3:hover {
+    padding-left: 4px;
+  }
 }
 body footer .up .container .nav .tab a {
   color: #161d25;
@@ -8161,6 +8403,7 @@ body footer .up .container .nav .tab a {
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+  transition: 0.2s;
 }
 @media (max-width: 768px) {
   body footer .up .container .nav .tab a {
@@ -8169,7 +8412,44 @@ body footer .up .container .nav .tab a {
 }
 @media (max-width: 480px) {
   body footer .up .container .nav .tab a {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  body footer .up .container .nav .tab a:hover {
+    font-weight: 500;
+  }
+}
+body footer .up .container .nav .tab a:hover {
+  color: var(--brand);
+}
+@media (max-width: 991px) {
+  body footer .up .container .nav .tab {
+    width: 25%;
+    gap: 12px;
+  }
+}
+@media (max-width: 768px) {
+  body footer .up .container .nav .tab {
+    width: calc(50% - 20px);
+    gap: 8px;
+  }
+}
+@media (max-width: 480px) {
+  body footer .up .container .nav .tab {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  body footer .up .container .nav .tab h3 {
+    cursor: pointer;
+  }
+  body footer .up .container .nav .tab.active {
+    margin-bottom: 10px;
+  }
+  body footer .up .container .nav .tab.active a {
+    visibility: visible;
+    opacity: 1;
   }
 }
 body footer .down {
@@ -8225,6 +8505,9 @@ body footer .down .container .socials {
   body footer .down .container .socials {
     gap: 17.5px;
   }
+}
+body footer .down .container .socials a:hover svg path {
+  fill: var(--brand);
 }
 body footer .down .container .socials a svg {
   width: 28px;
