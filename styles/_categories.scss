@@ -9,12 +9,12 @@
 
   @media (max-width: 560px) {
     background: linear-gradient(
-    180deg,
-    #f9fafb 0%,
-    #f9fafb 5%,
-    transparent 5%,
-    transparent 100%
-  );
+      180deg,
+      #f9fafb 0%,
+      #f9fafb 5%,
+      transparent 5%,
+      transparent 100%
+    );
   }
 
   #title-path {
@@ -136,6 +136,7 @@
 
     .card {
       width: calc((100% - (2 * 30px)) / 3);
+      height: 319.5px;
       transition: 0.15s;
       border-radius: 2px;
       padding: 20px;
@@ -143,17 +144,110 @@
       background: #fff;
       gap: 16px;
 
+      @media (max-width: 1400px) {
+        height: 288.5px;
+      }
+
+      @media (max-width: 1280px) {
+        height: 249.5px;
+      }
+
+      @media (max-width: 1140px) {
+        height: 230px;
+      }
+
       @media (max-width: 991px) {
         width: calc((100% - 25px) / 2);
+        height: 292.5px;
+      }
+
+      @media (max-width: 860px) {
+        height: 263.5px;
+      }
+
+      @media (max-width: 768px) {
+        height: 234.5px;
+      }
+
+      @media (max-width: 660px) {
+        height: 235.5px;
       }
 
       @media (max-width: 560px) {
         width: 100%;
+        height: 323.5px;
+      }
+
+      @media (max-width: 480px) {
+        height: 300px;
+      }
+
+      @media (max-width: 440px) {
+        height: 276.5px;
+      }
+
+      @media (max-width: 380px) {
+        height: 253.5px;
       }
 
       &:hover {
         box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.04);
         border-color: white;
+        height: 605.5px;
+
+        @media (max-width: 1400px) {
+          height: 574.5px;
+        }
+
+        @media (max-width: 1280px) {
+          height: 535.5px;
+        }
+
+        @media (max-width: 1140px) {
+          height: 516px;
+        }
+
+        @media (max-width: 991px) {
+          height: 578.5px;
+        }
+
+        @media (max-width: 860px) {
+          height: 549.5px;
+        }
+
+        @media (max-width: 768px) {
+          height: 520.5px;
+        }
+  
+        @media (max-width: 660px) {
+          height: 521.5px;
+        }
+  
+        @media (max-width: 560px) {
+          height: 609.5px;
+        }
+  
+        @media (max-width: 480px) {
+          height: 586px;
+        }
+  
+        @media (max-width: 440px) {
+          height: 562.5px;
+        }
+  
+        @media (max-width: 380px) {
+          height: 539.5px;
+        }
+
+        img {
+          transform: scale(1.05);
+        }
+
+        ul li {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       img {
@@ -163,6 +257,7 @@
         border-radius: 8px;
         background: #efefef;
         margin-bottom: 4px;
+        transition: 0.2s;
       }
 
       .title {
@@ -190,30 +285,36 @@
         }
       }
 
-      ul li {
-        list-style: none;
-        align-items: center;
-        height: 54px;
-        gap: 8px;
+      ul {
+        li {
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(-10px);
+          list-style: none;
+          align-items: center;
+          height: 54px;
+          gap: 8px;
+          transition: 0.2s;
 
-        p {
-          width: 100%;
-          color: #161d25;
-          font-family: Inter;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 137.5%;
-        }
+          p {
+            width: 100%;
+            color: #161d25;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 137.5%;
+          }
 
-        span {
-          color: #959ead;
-          text-align: right;
-          font-family: Inter;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 142.857%;
+          span {
+            color: #959ead;
+            text-align: right;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 142.857%;
+          }
         }
       }
     }

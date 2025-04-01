@@ -227,7 +227,6 @@ body .main header#navbar.down {
   position: sticky;
   top: 0;
   z-index: 10;
-  overflow: hidden;
   border-bottom: 1px solid #f4f6f8;
 }
 body .main header#navbar.down .container {
@@ -286,12 +285,14 @@ body .main header#navbar.down .container .wrapper .search input::placeholder {
   font-weight: 400;
   line-height: 142.857%;
 }
-body .main header#navbar.down .container .wrapper .search a, body .main header#navbar.down .container .wrapper .search button {
+body .main header#navbar.down .container .wrapper .search a,
+body .main header#navbar.down .container .wrapper .search button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body .main header#navbar.down .container .wrapper .search a.types, body .main header#navbar.down .container .wrapper .search button.types {
+body .main header#navbar.down .container .wrapper .search a.types,
+body .main header#navbar.down .container .wrapper .search button.types {
   transition: 0.15s background-color;
   width: 163px;
   background: #f9fafb;
@@ -300,30 +301,36 @@ body .main header#navbar.down .container .wrapper .search a.types, body .main he
   gap: 9px;
 }
 @media (max-width: 1140px) {
-  body .main header#navbar.down .container .wrapper .search a.types, body .main header#navbar.down .container .wrapper .search button.types {
+  body .main header#navbar.down .container .wrapper .search a.types,
+  body .main header#navbar.down .container .wrapper .search button.types {
     width: 140px;
     gap: 4px;
   }
 }
-body .main header#navbar.down .container .wrapper .search a.types span, body .main header#navbar.down .container .wrapper .search button.types span {
+body .main header#navbar.down .container .wrapper .search a.types span,
+body .main header#navbar.down .container .wrapper .search button.types span {
   color: #161d25;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 142.857%;
 }
-body .main header#navbar.down .container .wrapper .search a.types:hover, body .main header#navbar.down .container .wrapper .search button.types:hover {
+body .main header#navbar.down .container .wrapper .search a.types:hover,
+body .main header#navbar.down .container .wrapper .search button.types:hover {
   background: #f4f6f8;
 }
-body .main header#navbar.down .container .wrapper .search a.iconbutton, body .main header#navbar.down .container .wrapper .search button.iconbutton {
+body .main header#navbar.down .container .wrapper .search a.iconbutton,
+body .main header#navbar.down .container .wrapper .search button.iconbutton {
   background: #212b36;
   width: 44px;
   border-radius: 2px;
 }
-body .main header#navbar.down .container .wrapper .search a.iconbutton:hover svg, body .main header#navbar.down .container .wrapper .search button.iconbutton:hover svg {
+body .main header#navbar.down .container .wrapper .search a.iconbutton:hover svg,
+body .main header#navbar.down .container .wrapper .search button.iconbutton:hover svg {
   transform: scale(1.1);
 }
-body .main header#navbar.down .container .wrapper .search a.iconbutton svg, body .main header#navbar.down .container .wrapper .search button.iconbutton svg {
+body .main header#navbar.down .container .wrapper .search a.iconbutton svg,
+body .main header#navbar.down .container .wrapper .search button.iconbutton svg {
   width: 28px;
   height: 28px;
   margin-top: 1px;
@@ -331,7 +338,74 @@ body .main header#navbar.down .container .wrapper .search a.iconbutton svg, body
 }
 body .main header#navbar.down .container .account {
   align-items: center;
+  position: relative;
   gap: 15px;
+}
+body .main header#navbar.down .container .account .basket:hover .shop-showing {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+body .main header#navbar.down .container .account .basket .shop-showing {
+  width: 100%;
+  transition: 0.2s;
+  padding-top: 20px;
+  position: absolute;
+  top: 49px;
+  left: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  opacity: 0;
+}
+body .main header#navbar.down .container .account .basket .shop-showing .box {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  background: white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+body .main header#navbar.down .container .account .basket .shop-showing .box .card {
+  height: 64px;
+  border-bottom: 1px solid #f4f6f8;
+  align-items: center;
+  padding: 10px;
+  gap: 12px;
+  transition: 0.1s background-color;
+}
+body .main header#navbar.down .container .account .basket .shop-showing .box .card:hover {
+  background: #f4f6f8;
+}
+body .main header#navbar.down .container .account .basket .shop-showing .box .card:last-child {
+  border-bottom: none;
+}
+body .main header#navbar.down .container .account .basket .shop-showing .box .card img {
+  width: 40px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #eee;
+  border-radius: 4px;
+}
+body .main header#navbar.down .container .account .basket .shop-showing .box .card .name {
+  width: calc(100% - 100px);
+  gap: 2px;
+}
+body .main header#navbar.down .container .account .basket .shop-showing .box .card .name h3 {
+  color: #161d25;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+body .main header#navbar.down .container .account .basket .shop-showing .box .card .name p {
+  color: #50b83c;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 137.5%;
 }
 body .main header#navbar.down .container .account .iconbutton {
   width: 48px;
@@ -2261,6 +2335,7 @@ body #categories main #category {
 }
 body #categories main #category .card {
   width: calc((100% - 60px) / 3);
+  height: 319.5px;
   transition: 0.15s;
   border-radius: 2px;
   padding: 20px;
@@ -2268,19 +2343,130 @@ body #categories main #category .card {
   background: #fff;
   gap: 16px;
 }
+@media (max-width: 1400px) {
+  body #categories main #category .card {
+    height: 288.5px;
+  }
+}
+@media (max-width: 1280px) {
+  body #categories main #category .card {
+    height: 249.5px;
+  }
+}
+@media (max-width: 1140px) {
+  body #categories main #category .card {
+    height: 230px;
+  }
+}
 @media (max-width: 991px) {
   body #categories main #category .card {
     width: calc((100% - 25px) / 2);
+    height: 292.5px;
+  }
+}
+@media (max-width: 860px) {
+  body #categories main #category .card {
+    height: 263.5px;
+  }
+}
+@media (max-width: 768px) {
+  body #categories main #category .card {
+    height: 234.5px;
+  }
+}
+@media (max-width: 660px) {
+  body #categories main #category .card {
+    height: 235.5px;
   }
 }
 @media (max-width: 560px) {
   body #categories main #category .card {
     width: 100%;
+    height: 323.5px;
+  }
+}
+@media (max-width: 480px) {
+  body #categories main #category .card {
+    height: 300px;
+  }
+}
+@media (max-width: 440px) {
+  body #categories main #category .card {
+    height: 276.5px;
+  }
+}
+@media (max-width: 380px) {
+  body #categories main #category .card {
+    height: 253.5px;
   }
 }
 body #categories main #category .card:hover {
   box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.04);
   border-color: white;
+  height: 605.5px;
+}
+@media (max-width: 1400px) {
+  body #categories main #category .card:hover {
+    height: 574.5px;
+  }
+}
+@media (max-width: 1280px) {
+  body #categories main #category .card:hover {
+    height: 535.5px;
+  }
+}
+@media (max-width: 1140px) {
+  body #categories main #category .card:hover {
+    height: 516px;
+  }
+}
+@media (max-width: 991px) {
+  body #categories main #category .card:hover {
+    height: 578.5px;
+  }
+}
+@media (max-width: 860px) {
+  body #categories main #category .card:hover {
+    height: 549.5px;
+  }
+}
+@media (max-width: 768px) {
+  body #categories main #category .card:hover {
+    height: 520.5px;
+  }
+}
+@media (max-width: 660px) {
+  body #categories main #category .card:hover {
+    height: 521.5px;
+  }
+}
+@media (max-width: 560px) {
+  body #categories main #category .card:hover {
+    height: 609.5px;
+  }
+}
+@media (max-width: 480px) {
+  body #categories main #category .card:hover {
+    height: 586px;
+  }
+}
+@media (max-width: 440px) {
+  body #categories main #category .card:hover {
+    height: 562.5px;
+  }
+}
+@media (max-width: 380px) {
+  body #categories main #category .card:hover {
+    height: 539.5px;
+  }
+}
+body #categories main #category .card:hover img {
+  transform: scale(1.05);
+}
+body #categories main #category .card:hover ul li {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 body #categories main #category .card img {
   width: 100%;
@@ -2290,6 +2476,7 @@ body #categories main #category .card img {
   border-radius: 8px;
   background: #efefef;
   margin-bottom: 4px;
+  transition: 0.2s;
 }
 body #categories main #category .card .title {
   align-items: center;
@@ -2314,10 +2501,14 @@ body #categories main #category .card .title p {
   line-height: 142.857%;
 }
 body #categories main #category .card ul li {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
   list-style: none;
   align-items: center;
   height: 54px;
   gap: 8px;
+  transition: 0.2s;
 }
 body #categories main #category .card ul li p {
   width: 100%;
@@ -7422,22 +7613,53 @@ body #login main section .register hr {
     display: none;
   }
 }
+body #login main section .swiper {
+  width: 100%;
+  height: 100%;
+}
+body #login main section .swiper .swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #login main section .swiper .swiper-pagination {
+  bottom: 170px;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 30px;
+}
+body #login main section .swiper .swiper-pagination span {
+  background: transparent;
+  border: 1px solid white;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  transform: rotate(2deg);
+}
+body #login main section .swiper .swiper-pagination span.swiper-pagination-bullet-active {
+  background: white;
+  border-radius: 50%;
+}
 body #login main section .slider {
   width: calc(36% - 30px);
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 2px;
   overflow: hidden;
+}
+body #login main section .slider .swiper-wrapper .card {
   position: relative;
 }
-body #login main section .slider img {
+body #login main section .slider .swiper-wrapper .card img {
   width: 100%;
   height: 100%;
   aspect-ratio: 6/11;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body #login main section .slider .shadow {
+body #login main section .slider .swiper-wrapper .card .shadow {
   width: 100%;
   height: 60%;
   position: absolute;
@@ -7450,21 +7672,23 @@ body #login main section .slider .shadow {
   padding: 0 30px 40px 30px;
   gap: 8px;
 }
-body #login main section .slider .shadow h3 {
+body #login main section .slider .swiper-wrapper .card .shadow h3 {
   color: #fff;
   font-family: Inter;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.2px;
+  text-align: start;
 }
-body #login main section .slider .shadow p {
+body #login main section .slider .swiper-wrapper .card .shadow p {
   color: #959ead;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 142.857%;
+  text-align: start;
 }
 body #login-alt main #hero {
   padding: 60px 0;
@@ -7728,7 +7952,8 @@ body #register main section {
     flex-direction: column;
     height: auto;
   }
-  body #register main section .register, body #register main section .slider {
+  body #register main section .register,
+  body #register main section .slider {
     width: 100% !important;
   }
   body #register main section .slider {
@@ -7958,22 +8183,53 @@ body #register main section .register hr {
     display: none;
   }
 }
+body #register main section .swiper {
+  width: 100%;
+  height: 100%;
+}
+body #register main section .swiper .swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #register main section .swiper .swiper-pagination {
+  bottom: 170px;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 30px;
+}
+body #register main section .swiper .swiper-pagination span {
+  background: transparent;
+  border: 1px solid white;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  transform: rotate(2deg);
+}
+body #register main section .swiper .swiper-pagination span.swiper-pagination-bullet-active {
+  background: white;
+  border-radius: 50%;
+}
 body #register main section .slider {
   width: calc(36% - 30px);
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 2px;
   overflow: hidden;
+}
+body #register main section .slider .swiper-wrapper .card {
   position: relative;
 }
-body #register main section .slider img {
+body #register main section .slider .swiper-wrapper .card img {
   width: 100%;
   height: 100%;
   aspect-ratio: 6/11;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body #register main section .slider .shadow {
+body #register main section .slider .swiper-wrapper .card .shadow {
   width: 100%;
   height: 60%;
   position: absolute;
@@ -7986,21 +8242,23 @@ body #register main section .slider .shadow {
   padding: 0 30px 40px 30px;
   gap: 8px;
 }
-body #register main section .slider .shadow h3 {
+body #register main section .slider .swiper-wrapper .card .shadow h3 {
   color: #fff;
   font-family: Inter;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.2px;
+  text-align: start;
 }
-body #register main section .slider .shadow p {
+body #register main section .slider .swiper-wrapper .card .shadow p {
   color: #959ead;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 142.857%;
+  text-align: start;
 }
 body #register-alt main #hero {
   padding: 40px 0;
